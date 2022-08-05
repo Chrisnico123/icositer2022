@@ -47,7 +47,7 @@
         </div>
     </nav>
 
-    <!-- Home -->
+    <!-- Page1 -->
     <section>
         <h2 id="text">ICoSITeR<br>2022</h2>
         <img src="{{ asset('assets') }}/images/clouds.svg" id="clouds">
@@ -60,6 +60,7 @@
         <img src="{{ asset('assets') }}/images/ground.svg" id="ground">
     </section>
 
+    <!-- Page2 -->
     <div class="page2">
         <h2>NEWS</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada porttitor vestibulum. Sed suscipit
