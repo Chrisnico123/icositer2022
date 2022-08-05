@@ -75,11 +75,12 @@
                         tortor quam, volutpat ac lacus sed, imperdiet ultrices risus. Cras sed mollis est.
 
                     <div class="button">
-                        <a href="#view" type="button" class="btn btn-primary btn-lg">View</a>
+                        <a href="#view" type="button" class="btn btn-success">View</a>
                     </div>
                 </div>
-                <div class="col">
 
+                <div class="col">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
                 </div>
 
             </div>
@@ -87,6 +88,36 @@
         </div>
 
         </p>
+    </div>
+
+    <!-- Page4 -->
+    <div class="page4">
+        <h2>GALLERY</H2>
+        <div class="row">
+            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+            </div>
+
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+            </div>
+
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+            </div>
+
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+            </div>
+        </div>
     </div>
 
 </body>
