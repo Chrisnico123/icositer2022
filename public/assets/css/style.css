@@ -5,7 +5,7 @@
     --secondary: #90e463;
     --font-family: 'Poppins', sans-serif;
     --font-family: 'swis721-blk-bt-black', sans-serif;
-    --font-color : #0c413d;
+    --font-color: #0c413d;
 }
 
 * {
@@ -30,7 +30,7 @@ body {
     border-radius: 27px;
 }
 
-/* Page1 */
+/* Page 1 */
 section {
     position: relative;
     width: 100%;
@@ -50,6 +50,7 @@ section img {
 
 #text {
     position: absolute;
+    /* top: 23%; */
     top: 23%;
     right: 60%;
     transform: translateY(-50%);
@@ -103,7 +104,7 @@ section img {
     padding-top: 20%;
 }
 
-/* page 4 */
+/* Page 4 */
 .page4 {
     position: relative;
     padding: 100px;
