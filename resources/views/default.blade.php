@@ -51,6 +51,7 @@
     <section>
         <h2 id="text">ICoSITeR<br>2022</h2>
         <img src="{{ asset('assets') }}/images/clouds.svg" id="clouds">
+        <img src="{{ asset('assets') }}/images/clouds.svg" id="clouds2">
         <img src="{{ asset('assets') }}/images/bigcloud.svg" id="bigcloud">
         <img src="{{ asset('assets') }}/images/mountain.svg" id="mountain">
         <img src="{{ asset('assets') }}/images/airballoon.svg" id="airballoon">
@@ -63,6 +64,7 @@
     <script>
         let text = document.getElementById('text');
         let clouds = document.getElementById('clouds');
+        let clouds2 = document.getElementById('clouds2');
         let bigcloud = document.getElementById('bigcloud');
         let mountain = document.getElementById('mountain');
         let airballoon = document.getElementById('airballoon');
@@ -73,7 +75,15 @@
 
         window.addEventListener('scroll', function() {
             let value = window.scrollY;
+            clouds.style.bottom = value * 0.3 + 'px';
+            clouds2.style.bottom = value * 0.1 + 'px';
+            prop.style.transform = 'translateY(' + value / 70 + '%)';
+            prop2.style.transform = 'translateY(' + value / 70 + '%)';
+            pole.style.transform = 'translateY(' + value / 70 + '%)';
+            bigcloud.style.transform = 'translateY(' + value / 60 + '%)';
+            mountain.style.transform = 'translateY(' + value / 40 + '%)';
             text.style.top = 149 + value * 0.5 + 'px';
+            airballoon.style.bottom = value * 0.5 + 'px';
         });
     </script>
     <!-- Page2 -->
