@@ -42,7 +42,7 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                 </ul>
-                <a href="#register" type="button" class="btn btn-danger">Register</a>
+                <a href="/lomba1/page1" type="button" class="btn btn-danger">Register</a>
             </div>
         </div>
     </nav>

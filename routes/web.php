@@ -16,9 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+
+Route::get('/', function() {
     return view('default');
 });
+
 
 Route::controller(Lomba1Controller::class)->group(function (){
     Route::get('/lomba1/page1' , 'lomba1_page1')->name('lomba1_page1');
