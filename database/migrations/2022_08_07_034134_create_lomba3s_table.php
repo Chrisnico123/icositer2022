@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('lomba3s', function (Blueprint $table) {
+        Schema::create('prototype', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });

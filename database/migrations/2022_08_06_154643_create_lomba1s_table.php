@@ -13,8 +13,27 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('lomba1s', function (Blueprint $table) {
+        Schema::create('lkti', function (Blueprint $table) {
             $table->id();
+            $table->string('email')->unique();
+            $table->string('nama_team')->unique();
+            $table->string('perguruan_tinggi');
+            $table->string('nama_ketua');
+            $table->integer('nim_ketua')->unique();
+            $table->string('prodi_ketua');
+            $table->string('nama_anggota1');
+            $table->integer('nim_anggota1')->unique();
+            $table->string('prodi_anggota1');
+            $table->string('nama_anggota2');
+            $table->integer('nim_anggota2')->unique();
+            $table->string('prodi_anggota2');
+            $table->integer('no_wa_ketua')->unique();
+            $table->string('KTM');
+            $table->string('follow_ig');
+            $table->string('twibbon');
+            $table->string('subtema');
+            $table->string('judul_karya');
+            $table->string('abstrak');
             $table->timestamps();
         });
     }
