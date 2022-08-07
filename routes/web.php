@@ -23,13 +23,13 @@ Route::get('/', function () {
 
 
 Route::controller(Lomba1Controller::class)->group(function () {
-    Route::get('/lkti/page1', 'lkti_form_page1')->name('lkti_form_page1');
-    Route::post('/lkti/page1', 'lkti_page1')->name('lkti_page1');
-    Route::get('/lkti/page2', 'lkti_form_page2')->name('lkti_form_page2');
-    Route::post('/lkti/page2', 'lkti_page2')->name('lkti_page2');
-    Route::get('/lkti/page3', 'lkti_form_page3')->name('lkti_form_page3');
-    Route::post('/lkti/page3', 'lkti_page3')->name('lkti_page3');
-    Route::get('/lkti/page4', 'lkti_page4')->name('lkti_page4');
+    Route::get('/lomba1s/page1', 'lomba1s_form_page1')->name('lomba1s_form_page1');
+    Route::post('/lomba1s/page1', 'lomba1s_page1')->name('lomba1s_page1');
+    Route::get('/lomba1s/page2', 'lomba1s_form_page2')->name('lomba1s_form_page2');
+    Route::post('/lomba1s/page2', 'lomba1s_page2')->name('lomba1s_page2');
+    Route::get('/lomba1s/page3', 'lomba1s_form_page3')->name('lomba1s_form_page3');
+    Route::post('/lomba1s/page3', 'lomba1s_page3')->name('lomba1s_page3');
+    Route::get('/lomba1s/page4', 'lomba1s_page4')->name('lomba1s_page4');
 });
 Route::controller(Lomba2Controller::class)->group(function () {
     Route::get('/lomba2/page1', 'lomba2_page1')->name('lomba2_page1');

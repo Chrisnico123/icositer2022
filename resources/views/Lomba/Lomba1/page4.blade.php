@@ -3,7 +3,7 @@
     <div class="row g-3">
         <div class="nav">
             <div class="name">
-                <h1>LKTI</h1>
+                <h1>lomba1s</h1>
             </div>
             <div class="close">
                 <a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"

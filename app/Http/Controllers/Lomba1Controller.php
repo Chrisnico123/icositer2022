@@ -7,72 +7,72 @@ use Illuminate\Http\Request;
 
 class Lomba1Controller extends Controller
 {
-    public function lkti_form_page1(Request $request)
+    public function lomba1s_form_page1(Request $request)
     {
-        $lkti = $request->session()->get('lkti');
-        return view('Lomba.Lomba1.page1', compact('lkti'));
+        $lomba1s = $request->session()->get('lomba1s');
+        return view('Lomba.Lomba1.page1', compact('lomba1s'));
     }
 
-    public function lkti_page1(Request $request)
+    public function lomba1s_page1(Request $request)
     {
 
         $validateData = $request->validate([
-            'email' => 'required|email|unique:lkti',
-            'nama_team' => 'required|unique:lkti',
+            'email' => 'required|email|unique:lomba1s',
+            'nama_team' => 'required|unique:lomba1s',
             'perguruan_tinggi' => 'required',
             'nama_ketua' => 'required',
             'prodi_ketua' => 'required',
-            'nim_ketua' => 'required|unique:lkti',
-            'no_wa_ketua' => 'required|unique:lkti'
+            'nim_ketua' => 'required|unique:lomba1s',
+            'no_wa_ketua' => 'required|unique:lomba1s'
         ]);
 
-        if (empty($request->session()->get('lkti'))) {
-            $lkti = new Lomba1();
-            $lkti->fill($validateData);
-            $request->session()->put('lkti', $lkti);
+        if (empty($request->session()->get('lomba1s'))) {
+            $lomba1s = new Lomba1();
+            $lomba1s->fill($validateData);
+            $request->session()->put('lomba1s', $lomba1s);
         } else {
-            $lkti = $request->session()->get('lkti');
-            $lkti->fill($validateData);
-            $request->session()->put('lkti', $lkti);
+            $lomba1s = $request->session()->get('lomba1s');
+            $lomba1s->fill($validateData);
+            $request->session()->put('lomba1s', $lomba1s);
         }
 
-        return redirect(route('lkti_form_page2'));
+        return redirect(route('lomba1s_form_page2'));
     }
 
 
-    public function lkti_form_page2(Request $request)
+    public function lomba1s_form_page2(Request $request)
     {
-        $lkti = $request->session()->get('lkti');
-        return view('Lomba.Lomba1.page2', compact('lkti'));
+        $lomba1s = $request->session()->get('lomba1s');
+        return view('Lomba.Lomba1.page2', compact('lomba1s'));
     }
 
-    public function lkti_page2(Request $request)
+    public function lomba1s_page2(Request $request)
     {
         $validateData = $request->validate([
             'nama_anggota1' => 'required',
             'nama_anggota2' => 'required',
             'prodi_anggota1' => 'required',
             'prodi_anggota2' => 'required',
-            'nim_anggota1' => 'required|unique:lkti',
-            'nim_anggota2' => 'required|unique:lkti',
+            'nim_anggota1' => 'required|unique:lomba1s',
+            'nim_anggota2' => 'required|unique:lomba1s',
         ]);
 
-        $lkti = $request->session()->get('lkti');
-        $lkti->fill($validateData);
-        $request->session()->put('lkti', $lkti);
+        $lomba1s = $request->session()->get('lomba1s');
+        $lomba1s->fill($validateData);
+        $request->session()->put('lomba1s', $lomba1s);
 
-        return redirect(route('lkti_form_page3'));
+        return redirect(route('lomba1s_form_page3'));
     }
 
-    public function lkti_form_page3(Request $request)
+    public function lomba1s_form_page3(Request $request)
     {
-        $lkti = $request->session()->get('lkti');
-        return view('Lomba.Lomba1.page3', compact('lkti'));
+        $lomba1s = $request->session()->get('lomba1s');
+        return view('Lomba.Lomba1.page3', compact('lomba1s'));
     }
 
-    public function lkti_page3(Request $request)
+    public function lomba1s_page3(Request $request)
     {
-        $validateData = $request->validate([
+        $request->validate([
             'KTM' => 'required|mimes:pdf,xlx,csv',
             'follow_ig' => 'required|mimes:pdf,xlx,csv',
             'twibbon' => 'required|mimes:pdf,xlx,csv',
@@ -81,25 +81,22 @@ class Lomba1Controller extends Controller
             'abstrak' => 'required|mimes:pdf,xlx,csv',
         ]);
 
-        $lkti = $request->session()->get('lkti');
+        $lomba1s = $request->session()->get('lomba1s');
 
-        $validatedData['KTM'] = time() . $request->KTM->extension();
-        $validatedData['follow_ig'] = time() . $request->follow_ig->extension();
-        $validatedData['twibbon'] = time() . $request->twibbon->extension();
-        $validatedData['abstrak'] = time() . $request->abstrak->extension();
-
-        $request->file('KTM')->store('public/files/' . $lkti->nama_team);
-        $request->file('follow_ig')->store('public/files/' . $lkti->nama_team);
-        $request->file('twibbon')->store('public/files/' . $lkti->nama_team);
-        $request->file('abstrak')->store('public/files/' . $lkti->nama_team);
-
-        $lkti->fill($validateData);
-        $lkti->save();
-        $request->session()->pull('lkti');
-        return redirect(route('lkti_page4'));
+        $lomba1s->fill([
+            'KTM' => $request->file('KTM')->store('public/files/' . $lomba1s->nama_team),
+            'follow_ig' => $request->file('follow_ig')->store('public/files/' . $lomba1s->nama_team),
+            'twibbon' => $request->file('twibbon')->store('public/files/' . $lomba1s->nama_team),
+            'abstrak' =>  $request->file('abstrak')->store('public/files/' . $lomba1s->nama_team),
+            'subtema' => $request->subtema,
+            'judul_karya' => $request->judul_karya
+        ]);
+        $lomba1s->save();
+        $request->session()->pull('lomba1s');
+        return redirect(route('lomba1s_page4'));
     }
 
-    public function lkti_page4()
+    public function lomba1s_page4()
     {
         return view('Lomba.Lomba1.page4');
     }

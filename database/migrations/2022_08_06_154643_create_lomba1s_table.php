@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('lkti', function (Blueprint $table) {
+        Schema::create('lomba1s', function (Blueprint $table) {
             $table->id();
             $table->string('email')->unique();
             $table->string('nama_team')->unique();

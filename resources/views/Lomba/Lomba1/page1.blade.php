@@ -1,10 +1,10 @@
 @extends('TemplateLomba/lomba1')
 @section('page1')
-    <form class="row g-3" method="POST" action={{ route('lkti_page1') }}>
+    <form class="row g-3" method="POST" action={{ route('lomba1s_page1') }}>
         @csrf
         <div class="nav">
             <div class="name">
-                <h1>LKTI</h1>
+                <h1>lomba1s</h1>
             </div>
             <div class="close">
                 <a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
@@ -16,37 +16,58 @@
         </div>
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Email Ketua</label>
-            <input type="text" class="form-control" id="inputEmail4" name="email" value="{{ $lkti->email ?? '' }}">
+            <input type="text" class="form-control" id="inputEmail4" name="email" value="{{ $lomba1s->email ?? '' }}">
+            @error('email')
+                <span class="text-danger">{{ $message }}</span>
+            @enderror
         </div>
         <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Nama Tim</label>
             <input type="text" class="form-control" id="inputPassword4" name="nama_team"
-                value="{{ $lkti->nama_team ?? '' }}">
+                value="{{ $lomba1s->nama_team ?? '' }}">
+            @error('nama_team')
+                <span class="text-danger">{{ $message }}</span>
+            @enderror
         </div>
         <div class="col-12">
             <label for="inputAddress" class="form-label">Asal Perguruan Tinggi</label>
             <input type="text" class="form-control" id="inputAddress" placeholder="" name="perguruan_tinggi"
-                value="{{ $lkti->perguruan_tinggi ?? '' }}">
+                value="{{ $lomba1s->perguruan_tinggi ?? '' }}">
+            @error('perguruan_tinggi')
+                <span class="text-danger">{{ $message }}</span>
+            @enderror
         </div>
         <div class="col-12">
             <label for="inputAddress2" class="form-label">Nama Ketua</label>
             <input type="text" class="form-control" id="inputAddress2" placeholder="" name="nama_ketua"
-                value="{{ $lkti->nama_ketua ?? '' }}">
+                value="{{ $lomba1s->nama_ketua ?? '' }}">
+            @error('nama_ketua')
+                <span class="text-danger">{{ $message }}</span>
+            @enderror
         </div>
         <div class="col-md-6">
             <label for="inputCity" class="form-label">Prodi Ketua</label>
             <input type="text" class="form-control" id="inputCity" name="prodi_ketua"
-                value="{{ $lkti->prodi_ketua ?? '' }}">
+                value="{{ $lomba1s->prodi_ketua ?? '' }}">
+            @error('prodi_ketua')
+                <span class="text-danger">{{ $message }}</span>
+            @enderror
         </div>
         <div class="col-md-4">
             <label for="inputState" class="form-label">Nomor Induk Mahasiswa Ketua</label>
             <input type="text" class="form-control" id="inputState" name="nim_ketua"
-                value="{{ $lkti->nim_ketua ?? '' }}">
+                value="{{ $lomba1s->nim_ketua ?? '' }}">
+            @error('nim_ketua')
+                <span class="text-danger">{{ $message }}</span>
+            @enderror
         </div>
         <div class="col-md-2">
             <label for="inputZip" class="form-label">Nomor WA Ketua</label>
             <input type="text" class="form-control" id="inputZip" name="no_wa_ketua"
-                value="{{ $lkti->no_wa_ketua ?? '' }}">
+                value="{{ $lomba1s->no_wa_ketua ?? '' }}">
+            @error('no_wa_ketua')
+                <span class="text-danger">{{ $message }}</span>
+            @enderror
         </div>
         <div class="col-12">
             <button type="submit" class="btn btn-primary">Next</button>

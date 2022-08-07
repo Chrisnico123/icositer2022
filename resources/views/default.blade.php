@@ -42,7 +42,7 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                 </ul>
-                <a href="/lkti/page1" type="button" class="btn btn-danger">Register</a>
+                <a href="/lomba1s/page1" type="button" class="btn btn-danger">Register</a>
             </div>
         </div>
     </nav>
@@ -149,7 +149,7 @@
                 <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
                     class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
             </div>
-            
+
         </div>
     </div>
 
