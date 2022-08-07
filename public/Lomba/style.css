@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --primary: #1dc2ee;
+    --secondary: #90e463;
+    --font-family: "Poppins", sans-serif;
+    --font-family: "swis721-blk-bt-black", sans-serif;
+    --font-color: #0c413d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    background: var(--primary) !important;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.nav-link {
+    font-size: large;
+}
+
+.btn-danger {
+    font-size: large;
+    border-radius: 27px;
+}
+
+/* Page 1 */
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+#text {
+    position: absolute;
+    /* top: 23%; */
+    top: 23%;
+    right: 60%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-family: var(--font-family2);
+    font-weight: bold;
+    font-size: 6vw;
+    white-space: normal;
+    text-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row {
+    position: relative;
+    background-color: rgb(143, 228, 99);
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    position: relative;
+    z-index: 99999;
+    margin: 200px auto;
+    justify-content: center;
+}
+
+.verifed > img {
+    margin: 0 auto;
+}
+.verifed1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 1280px) {
+    section {
+        position: relative;
+        width: 100%;
+        top: 210px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
+    }
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 912px) {
+    section {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        height: 1300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
+    }
+}
+@media screen and (max-width: 541px) {
+    body {
+        overflow: auto;
+    }
+}
+@media screen and (max-width: 415px) {
+}
+@media screen and (max-width: 395px) {
+}

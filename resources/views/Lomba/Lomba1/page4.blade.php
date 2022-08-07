@@ -3,7 +3,7 @@
     <div class="row g-3">
         <div class="nav">
             <div class="name">
-                <h1>lomba1s</h1>
+                <h1>LKTI</h1>
             </div>
             <div class="close">
                 <a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
@@ -13,16 +13,12 @@
                     </svg></a>
             </div>
         </div>
-        <div class="col-md-3"></div>
-        <div class="col-md-6" class="verif">
-            <img src="/Lomba/assets/verifed.png" width="200" height="200" class="verifed">
+        <div class="verifed">
+            <center>
+                <img src="/Lomba/assets/verifed.png" height="200">
+            </center>
         </div>
-        <div class="col-md-3"></div>
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
-            <h1 class="verifed1">Berhasil Mendaftar !!!</h1>
-        </div>
-        <div class="col-md-1"></div>
+        <h1 class="verifed1">Berhasil Mendaftar !!!</h1>
         <div class="col-12">
             {{-- <p>Dipersilahkan Ketua Kelompok Untuk Bergabung Kedalam Grup WhatsApp Peserta Lomba Prototype</p>
       <a href="https://chat.whatsapp.com/DQXiDOw7MXKIjgnDQ18YBk" target="_blank"><button class="btn btn-primary">Grup WhatsApp</button></a> --}}

@@ -4,7 +4,7 @@
         @csrf
         <div class="nav">
             <div class="name">
-                <h1>lomba1s</h1>
+                <h1>LKTI</h1>
             </div>
             <div class="close">
                 <a href="/lomba1s/page2"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
