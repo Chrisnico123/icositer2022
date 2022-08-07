@@ -149,6 +149,7 @@
                 <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
                     class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
             </div>
+            
         </div>
     </div>
 
