@@ -15,13 +15,14 @@ return new class extends Migration
     {
         Schema::create('lomba3s', function (Blueprint $table) {
             $table->id();
-            $table->string('nama', 25);
-            $table->string('email', 30);
+            $table->string('nama_tim', 25);
+            $table->string('email', 30)->unique();
+            $table->string('nama_ketua', 25);
             $table->string('anggota', 100);
-            $table->string('no_wa', 15);
+            $table->string('no_wa', 15)->unique();
             $table->string('asal_daerah', 25);
             $table->string('asal_instansi', 30);
-            $table->string('ktm', 100);
+            $table->string('ktm', 100)->unique();
             $table->string('sub_tema', 30);
             $table->string('judul_karya', 50);
             $table->string('sketsa', 100);

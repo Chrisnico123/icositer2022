@@ -1,6 +1,6 @@
 @extends('TemplateLomba/lomba1')
 @section('page1')
-<form class="row g-3" method="POST" action={{ route('lomba3_page2') }}>
+<form class="row g-3" method="POST" action={{ route('lomba3s_page1') }}>
   @csrf
     <div class="nav">
         <div class="name">
@@ -14,31 +14,53 @@
     </div>
     <div class="col-md-6">
       <label for="inputEmail4" class="form-label">Email Ketua</label>
-      <input type="text" class="form-control" id="inputEmail4">
+      <input type="text" class="form-control" id="inputEmail4" name="email" value="{{ $lomba3s->email ?? '' }}">
+        @error('email')
+                <span class="text-danger">{{ $message }}</span>
+        @enderror
     </div>
     <div class="col-md-6">
       <label for="inputPassword4" class="form-label">Nama Tim</label>
-      <input type="text" class="form-control" id="inputPassword4">
+      <input type="text" class="form-control" id="inputPassword4" name="nama_tim" value="{{ $lomba3s->nama_tim ?? '' }}">
+        @error('nama_tim')
+            <span class="text-danger">{{ $message }}</span>
+        @enderror
     </div>
     <div class="col-12">
       <label for="inputAddress" class="form-label">Asal Perguruan Tinggi</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="">
+      <input type="text" class="form-control" id="inputAddress" name="asal_instansi" value="{{ $lomba3s->asal_instansi ?? '' }}">
+        @error('asal_instansi')
+                <span class="text-danger">{{ $message }}</span>
+        @enderror
     </div>
     <div class="col-12">
       <label for="inputAddress2" class="form-label">Nama Ketua</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="">
+      <input type="text" class="form-control" id="inputAddress2" name="nama_ketua" value="{{ $lomba3s->nama_ketua ?? '' }}">
+        @error('nama_ketua')
+                <span class="text-danger">{{ $message }}</span>
+        @enderror
     </div>
     <div class="col-12">
       <label for="inputCity" class="form-label">Nama Lengkap Anggota Tim (Ditulis beserta Nomor)</label>
-      <input type="text" class="form-control" id="inputCity" placeholder="Contoh : 1. Antonio 2. Susilawati 3. Rahmawan">
+      <input type="text" class="form-control" id="inputCity" placeholder="Contoh : 1. Antonio 2. Susilawati 3. Rahmawan" name="anggota"
+      value="{{ $lomba3s->anggota ?? '' }}">
+        @error('anggota')
+                <span class="text-danger">{{ $message }}</span>
+        @enderror
     </div>
     <div class="col-md-6">
       <label for="inputState" class="form-label">Asal daerah / Provinsi</label>
-      <input type="text" class="form-control" id="inputState">
+      <input type="text" class="form-control" id="inputState" name="asal_daerah" value="{{ $lomba3s->asal_daerah ?? '' }}">
+        @error('asal_daerah')
+                <span class="text-danger">{{ $message }}</span>
+        @enderror
     </div>
     <div class="col-md-6">
       <label for="inputZip" class="form-label">Nomor WA Ketua</label>
-      <input type="text" class="form-control" id="inputZip">
+      <input type="text" class="form-control" id="inputZip" name="no_wa" value="{{ $lomba3s->no_wa ?? '' }}">
+        @error('no_wa')
+                <span class="text-danger">{{ $message }}</span>
+        @enderror
     </div>
     <div class="col-12">
       <button type="submit" class="btn btn-primary">Next</button>
