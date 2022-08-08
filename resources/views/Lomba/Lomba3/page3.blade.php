@@ -1,6 +1,6 @@
 @extends('TemplateLomba/lomba1')
 @section('page3')
-<form class="row g-3" method="POST" action={{ route('lomba3_page4') }}>   
+<form class="row g-3" method="POST" action={{ route('lomba3s_page3') }}>   
   @csrf
     <div class="nav">
         <div class="name">
@@ -13,16 +13,32 @@
         </div>
     </div>
     <div class="col-12">
+      <label for="inputEmail4" class="form-label">Bukti follow IG icos Seluruh anggota tim (Dijadikan Satu) Format : NamaTim_BuktiFollowIG.pdf</label>
+      <input type="file" class="form-control" id="inputEmail4" name = "follow_ig" value = "{{ $lomba3s->follow_ig ?? '' }}">
+      @error('follow_ig')
+        <span class = "text-danger">{{ $message }}</span>
+      @enderror
+    </div>
+    <div class="col-12">
       <label for="inputEmail4" class="form-label">Bukti Upload Twibon Seluruh anggota (Dijadikan Satu) Format : NamaTim_BuktiUPTwibon.pdf</label>
-      <input type="file" class="form-control" id="inputEmail4" placeholder="">
+      <input type="file" class="form-control" id="inputPassword4" name = "upload_twibbon" value = "{{ $lomba3s->upload_twibbon ?? '' }}">
+      @error('upload_twibbon')
+        <span class = "text-danger">{{ $message }}</span>
+      @enderror
     </div>
     <div class="col-12">
-      <label for="inputPassword4" class="form-label">Upload Scan Surat Pernyataan Orisinalitas Karya Format : NamaTim_SuratOrisinalitasKarya_Subtema.pdf</label>
-      <input type="file" class="form-control" id="inputPassword4">
+      <label for="inputAddress" class="form-label">Upload Scan Surat Pernyataan Orisinalitas Karya Format : NamaTim_SuratOrisinalitasKarya_Subtema.pdf </label>
+      <input type="file" class="form-control" id="inputAddress" name = "surat_pernyataan" value = "{{ $lomba3s->surat_pernyataan ?? '' }}">
+      @error('surat_pernyataan')
+        <span class = "text-danger">{{ $message }}</span>
+      @enderror
     </div>
     <div class="col-12">
-      <label for="inputAddress" class="form-label">Upload Scan Seluruh Lampiran Data Diri Peserta hingga Dosen Pendamping Format: (NamaTim_LampiranDataDiri),pdf </label>
-      <input type="file" class="form-control" id="inputAddress" placeholder="">
+      <label for="inputAddress" class="form-label">Upload Scan Seluruh Lampiran Data Diri Peserta hingga Dosen Pendamping (Dijadikan Satu) Format : NamaTim_LampiranDataDiri.pdf </label>
+      <input type="file" class="form-control" id="inputAddress2" name = "lampiran" value = "{{ $lomba3s->lampiran ?? '' }}">
+      @error('lampiran')
+        <span class = "text-danger">{{ $message }}</span>
+      @enderror
     </div>
     <div class="col-12">
       <button type="submit" class="btn btn-primary">Submit</button>

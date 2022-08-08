@@ -1,6 +1,6 @@
 @extends('TemplateLomba/lomba1')
 @section('page2')
-<form class="row g-3" method="POST" action={{ route('lomba3s_page2') }}>
+<form class="row g-3" method="POST" action={{ route('lomba3s_page2') }}>   
   @csrf
     <div class="nav">
         <div class="name">

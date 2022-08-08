@@ -70,16 +70,37 @@ class Lomba3Controller extends Controller
     public function lomba3s_form_page3(Request $request)
     {
         $lomba3s = $request->session()->get('lomba3s');
+
         return view('Lomba.Lomba3.page3',compact('lomba3s'));
     }
+
     public function lomba3s_page3(Request $request)
+
     {
-        return view('/Lomba/Lomba3/page3');
+        $request->validate([
+            'follow_ig' => 'required|mimes:pdf',
+            'upload_twibbon' => 'required|mimes:pdf',
+            'surat_pernyataan' => 'required|mimes:pdf',
+            'lampiran' => 'required|mimes:pdf',
+        ]);
+
+        $lomba3s = $request->session()->get('lomba3s');
+
+        $lomba3s->fill([
+            'follow_ig' => $request->file('follow_ig')->store('public/files/' . $lomba3s->nama_team),
+            'upload_twibbon' => $request->file('upload_twibbon')->store('public/files/' . $lomba3s->nama_team),
+            'surat_pernyataan' => $request->file('surat_pernyataan')->store('public/files/' . $lomba3s->nama_team),
+            'lampiran' => $request->file('lampiran')->store('public/files/' . $lomba3s->nama_team),
+        ]);
+
+        $lomba3s->save();
+        $request->session()->pull('lomba3s');
+        return redirect(route('lomba3s_page4'));
     }
 
     public function lomba3s_page4(Request $request)
     {
-        return view('/Lomba/Lomba3/page4');
+        return view('Lomba.Lomba3.page4');
     }
     public function prototype_submit()
     {
