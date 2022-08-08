@@ -53,26 +53,26 @@ class Lomba3Controller extends Controller
     public function lomba3s_page2(Request $request)
     {
         $validateData = $request->validate([
-            'tema' => 'required',
-            'nama_anggota2' => 'required',
-            'prodi_anggota1' => 'required',
-            'prodi_anggota2' => 'required',
-            'nim_anggota1' => 'required|unique:lomba1s',
-            'nim_anggota2' => 'required|unique:lomba1s',
+            'ktm' => 'required',
+            'follow_ig' => 'required',
+            'sketsa' => 'required|unique:lomba3s',
+            'sub_tema' => 'required',
+            'judul_karya' => 'required|unique:lomba3s',
         ]);
 
-        $lomba1s = $request->session()->get('lomba1s');
-        $lomba1s->fill($validateData);
-        $request->session()->put('lomba1s', $lomba1s);
+        $lomba3s = $request->session()->get('lomba3s');
+        $lomba3s->fill($validateData);
+        $request->session()->put('lomba3s', $lomba3s);
 
-        return redirect(route('lomba1s_form_page3'));
+        return redirect(route('lomba3s_form_page3'));
     }
 
     public function lomba3s_form_page3(Request $request)
     {
-        return view('/Lomba/Lomba3/page3');
+        $lomba3s = $request->session()->get('lomba3s');
+        return view('Lomba.Lomba3.page3',compact('lomba3s'));
     }
-    public function post_lomba3s_page3(Request $request)
+    public function lomba3s_page3(Request $request)
     {
         return view('/Lomba/Lomba3/page3');
     }
