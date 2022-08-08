@@ -52,16 +52,21 @@ class Lomba3Controller extends Controller
 
     public function lomba3s_page2(Request $request)
     {
-        $validateData = $request->validate([
-            'ktm' => 'required',
-            'follow_ig' => 'required',
-            'sketsa' => 'required|unique:lomba3s',
+        $request->validate([
+            'ktm' => 'required|mimes:pdf',
+            'sketsa' => 'required|mimes:pdf',
             'sub_tema' => 'required',
             'judul_karya' => 'required|unique:lomba3s',
         ]);
 
+
         $lomba3s = $request->session()->get('lomba3s');
-        $lomba3s->fill($validateData);
+        $lomba3s->fill([
+            'ktm' => $request->file('ktm')->store('public/files/' . $lomba3s->ktm),
+            'sketsa' => $request->file('sketsa')->store('public/files/' . $lomba3s->sketsa),
+            'sub_tema' => $request->sub_tema,
+            'judul_karya' => $request->judul_karya,
+        ]);
         $request->session()->put('lomba3s', $lomba3s);
 
         return redirect(route('lomba3s_form_page3'));
@@ -70,7 +75,6 @@ class Lomba3Controller extends Controller
     public function lomba3s_form_page3(Request $request)
     {
         $lomba3s = $request->session()->get('lomba3s');
-
         return view('Lomba.Lomba3.page3',compact('lomba3s'));
     }
 
@@ -87,10 +91,10 @@ class Lomba3Controller extends Controller
         $lomba3s = $request->session()->get('lomba3s');
 
         $lomba3s->fill([
-            'follow_ig' => $request->file('follow_ig')->store('public/files/' . $lomba3s->nama_team),
-            'upload_twibbon' => $request->file('upload_twibbon')->store('public/files/' . $lomba3s->nama_team),
-            'surat_pernyataan' => $request->file('surat_pernyataan')->store('public/files/' . $lomba3s->nama_team),
-            'lampiran' => $request->file('lampiran')->store('public/files/' . $lomba3s->nama_team),
+            'follow_ig' => $request->file('follow_ig')->store('public/files/' . $lomba3s->follow_ig),
+            'upload_twibbon' => $request->file('upload_twibbon')->store('public/files/' . $lomba3s->upload_twibbon),
+            'surat_pernyataan' => $request->file('surat_pernyataan')->store('public/files/' . $lomba3s->surat_pernyataan),
+            'lampiran' => $request->file('lampiran')->store('public/files/' . $lomba3s->lampiran),
         ]);
 
         $lomba3s->save();

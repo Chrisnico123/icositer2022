@@ -1,6 +1,6 @@
 @extends('TemplateLomba/lomba1')
 @section('page2')
-<form class="row g-3" method="POST" action={{ route('lomba3s_page2') }}>   
+<form class="row g-3" method="POST" action={{ route('lomba3s_page2') }} enctype="multipart/form-data">
   @csrf
     <div class="nav">
         <div class="name">
@@ -20,27 +20,20 @@
         @enderror
     </div>
     <div class="col-12">
-      <label for="inputPassword4" class="form-label">ScreenShoot Bukti Follow Instagram Icositer (Dijadikan Satu) Format : NamaTim_BuktiFollowIG.pdf</label>
-      <input type="file" class="form-control" id="inputPassword4" name="follow_ig" value="{{ $lomba3s->follow_ig }}">
-        @error('follow_ig')
-                <span class="text-danger">{{ $message }}</span>
-        @enderror
-    </div>
-    <div class="col-12">
       <label for="inputAddress" class="form-label">Upload Sketsa Karya Format : (NamaTim_Subtema_LaporanTahapAwal),pdf </label>
       <input type="file" class="form-control" id="inputAddress" placeholder="" name="sketsa" value="{{ $lomba3s->sketsa }}">
         @error('sketsa')
                 <span class="text-danger">{{ $message }}</span>
         @enderror
     </div>
-    <div class="col-md-6">
+    <div class="col-md-12">
       <label for="inputAddress2" class="form-label">Sub Tema yang dipilih </label>
       <input type="text" class="form-control" id="inputAddress2" placeholder="" name="sub_tema" value="{{ $lomba3s->sub_tema }}">
         @error('sub_tema')
                 <span class="text-danger">{{ $message }}</span>
         @enderror
     </div>
-    <div class="col-md-6">
+    <div class="col-md-12">
       <label for="inputCity" class="form-label">Judul Karya Prototype of Scientific Innovation</label>
       <input type="text" class="form-control" id="inputCity" name="judul_karya" value="{{ $lomba3s->judul_karya }}">
         @error('judul_karya')

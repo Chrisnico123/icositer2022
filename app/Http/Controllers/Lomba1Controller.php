@@ -84,10 +84,10 @@ class Lomba1Controller extends Controller
         $lomba1s = $request->session()->get('lomba1s');
 
         $lomba1s->fill([
-            'KTM' => $request->file('KTM')->store('public/files/' . $lomba1s->nama_team),
-            'follow_ig' => $request->file('follow_ig')->store('public/files/' . $lomba1s->nama_team),
-            'twibbon' => $request->file('twibbon')->store('public/files/' . $lomba1s->nama_team),
-            'abstrak' =>  $request->file('abstrak')->store('public/files/' . $lomba1s->nama_team),
+            'KTM' => $request->file('KTM')->store('public/files/' . $lomba1s->KTM),
+            'follow_ig' => $request->file('follow_ig')->store('public/files/' . $lomba1s->follow_ig),
+            'twibbon' => $request->file('twibbon')->store('public/files/' . $lomba1s->twibbon),
+            'abstrak' =>  $request->file('abstrak')->store('public/files/' . $lomba1s->abstrak),
             'subtema' => $request->subtema,
             'judul_karya' => $request->judul_karya
         ]);
