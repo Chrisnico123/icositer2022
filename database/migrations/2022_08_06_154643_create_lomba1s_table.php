@@ -27,7 +27,7 @@ return new class extends Migration
             $table->string('nama_anggota2');
             $table->integer('nim_anggota2')->unique();
             $table->string('prodi_anggota2');
-            $table->integer('no_wa_ketua')->unique();
+            $table->bigInteger('no_wa_ketua')->unique();
             $table->string('KTM');
             $table->string('follow_ig');
             $table->string('twibbon');

@@ -1,0 +1,71 @@
+body {
+    font-family: Poppins, "sans-serif";
+}
+
+.background-error {
+    max-height: 616px;
+    width: 1280px;
+    position: relative;
+}
+
+.content-error {
+    width: 450px;
+    height: 273px;
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    left: 32%;
+    padding: 20px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+    border: 12px solid #6fa03e;
+}
+
+.content-error > h1 {
+    font-size: 60px;
+}
+
+.content-error > p {
+    font-size: 32px;
+}
+
+.content-error > .link-home-error {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #6fa03e;
+    border-radius: 10px;
+    color: black;
+}
+
+.atribute-errorA {
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    left: 12%;
+    animation-name: terbangKeatas;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+.atribute-errorB {
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    left: 75%;
+    animation-name: terbangKeatas;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes terbangKeatas {
+    0% {
+        top: 30%;
+    }
+    100% {
+        top: -50%;
+    }
+}

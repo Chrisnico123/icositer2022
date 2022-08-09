@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css">
     </link>
 
+    <link rel="stylesheet" href="{{ asset('assets') }}/css/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -162,6 +164,46 @@
 
         </div>
     </div>
+
+    {{-- Page 5 --}}
+    <div class="page5">
+        <h2>Recent Post</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="{{ asset('assets') }}/js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            spaceBetween: 30,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 
 </body>
 

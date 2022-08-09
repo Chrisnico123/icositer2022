@@ -24,7 +24,7 @@
         </div>
         <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Nomor Induk Mahasiswa</label>
-            <input type="text" class="form-control" id="inputPassword4" name="nim_anggota1"
+            <input type="number" class="form-control" id="inputPassword4" name="nim_anggota1"
                 value="{{ $lomba1s->nim_anggota1 ?? '' }}">
             @error('nim_anggota1')
                 <span class="text-danger">{{ $message }}</span>
@@ -40,7 +40,7 @@
         </div>
         <div class="col-md-6">
             <label for="inputAddress2" class="form-label">Nomor Induk Mahasiswa </label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="" name="nim_anggota2"
+            <input type="number" class="form-control" id="inputAddress2" placeholder="" name="nim_anggota2"
                 value="{{ $lomba1s->nim_anggota2 ?? '' }}">
             @error('nim_anggota2')
                 <span class="text-danger">{{ $message }}</span>
