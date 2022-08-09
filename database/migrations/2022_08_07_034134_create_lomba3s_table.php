@@ -15,21 +15,21 @@ return new class extends Migration
     {
         Schema::create('lomba3s', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_tim', 25);
-            $table->string('email', 30)->unique();
-            $table->string('nama_ketua', 25);
-            $table->string('anggota', 100);
-            $table->string('no_wa', 15)->unique();
-            $table->string('asal_daerah', 25);
-            $table->string('asal_instansi', 30);
-            $table->string('ktm', 100)->unique();
-            $table->string('sub_tema', 30);
-            $table->string('judul_karya', 50);
-            $table->string('sketsa', 100);
-            $table->string('follow_ig', 100);
-            $table->string('upload_twibbon', 100);
-            $table->string('surat_pernyataan', 100);
-            $table->string('lampiran', 100);
+            $table->string('nama_tim');
+            $table->string('email')->unique();
+            $table->string('nama_ketua');
+            $table->string('anggota');
+            $table->string('no_wa')->unique();
+            $table->string('asal_daerah');
+            $table->string('asal_instansi');
+            $table->string('ktm')->unique();
+            $table->string('sub_tema');
+            $table->string('judul_karya');
+            $table->string('sketsa');
+            $table->string('follow_ig');
+            $table->string('upload_twibbon');
+            $table->string('surat_pernyataan');
+            $table->string('lampiran');
             $table->timestamps();
         });
     }
