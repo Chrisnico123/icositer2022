@@ -123,6 +123,15 @@
 
         </p>
     </div>
+    {{-- Page3 --}}
+    <div class="page3">
+        <div class="speaker">
+            
+        </div>
+        <section class="s3">
+            <img src="{{ asset('assets') }}/images/group1.png" alt="" class="img">
+        </section>
+    </div>
 
     <!-- Page4 -->
     <div class="page4">

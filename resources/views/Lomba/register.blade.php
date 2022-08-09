@@ -21,7 +21,7 @@
         <div class="card-body">
           <h1 class="card-title">PROTOTYPE</h1>
           <p class="card-text">"<i>Prototype of Scientific Innovation (Prototype)</i>" merupakan sebuah lomba yang menuntut mahasiswa untuk merealisasikan inovasi dan kreatifitas terkait tema yang ada di acara ICoSITeR</p>
-          <a href="/lomba3/page1" class="btn btn-success">REGISTER</a>
+          <a href="/lomba3s/page1" class="btn btn-success">REGISTER</a>
           <a href="/download/Prototype.pdf" class="btn btn-danger">DETAIL</a>
         </div>
       </div>
