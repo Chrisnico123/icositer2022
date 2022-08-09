@@ -16,47 +16,48 @@
         </div>
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Scan Ktm Semua Peserta Format : pdf</label>
-            <input type="file" class="form-control" id="inputEmail4" name="KTM" value="{{ $lomba1s->KTM ?? '' }}">
+            <input type="file" class="form-control @error('KTM') is-invalid @enderror" id="inputEmail4" name="KTM"
+                value="{{ old('KTM', $lomba1s->KTM ?? '') }}">
             @error('KTM')
                 <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="col-md-6">
             <label for="inputPassword4" class="form-label">ScreenShoot Bukti Follow Instagram Icositer Format : pdf</label>
-            <input type="file" class="form-control" id="inputPassword4" name="follow_ig"
-                value="{{ $lomba1s->follow_ig ?? '' }}">
+            <input type="file" class="form-control @error('follow_ig') is-invalid @enderror" id="inputPassword4"
+                name="follow_ig" value="{{ old('follow_ig', $lomba1s->follow_ig ?? '') }}">
             @error('follow_ig')
                 <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="col-md-6">
             <label for="inputAddress" class="form-label">ScreenShoot Hasil Bukti Upload Twibon</label>
-            <input type="file" class="form-control" id="inputAddress" placeholder="" name="twibbon"
-                value="{{ $lomba1s->twibbon ?? '' }}">
+            <input type="file" class="form-control @error('twibbon') is-invalid @enderror" id="inputAddress"
+                placeholder="" name="twibbon" value="{{ old('twibbon', $lomba1s->twibbon ?? '') }}">
             @error('twibbon')
                 <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="col-md-6">
             <label for="inputAddress2" class="form-label">Sub Tema yang dipilih </label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="" name="subtema"
-                value="{{ $lomba1s->subtema ?? '' }}">
+            <input type="text" class="form-control @error('subtema') is-invalid @enderror" id="inputAddress2"
+                placeholder="" name="subtema" value="{{ old('subtema', $lomba1s->subtema ?? '') }}">
             @error('subtema')
                 <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="col-md-6">
             <label for="inputCity" class="form-label">Judul Karya</label>
-            <input type="text" class="form-control" id="inputCity" name="judul_karya"
-                value="{{ $lomba1s->judul_karya ?? '' }}">
+            <input type="text" class="form-control @error('judul_karya') is-invalid @enderror" id="inputCity"
+                name="judul_karya" value="{{ old('judul_karya', $lomba1s->judul_karya ?? '') }}">
             @error('judul_karya')
                 <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="col-md-6">
             <label for="inputState" class="form-label">Upload Abstrak</label>
-            <input type="file" class="form-control" id="inputState" name="abstrak"
-                value="{{ $lomba1s->abstrak ?? '' }}">
+            <input type="file" class="form-control @error('abstrak') is-invalid @enderror" id="inputState" name="abstrak"
+                value="{{ old('abstrak', $lomba1s->abstrak ?? '') }}">
             @error('abstrak')
                 <span class="text-danger">{{ $message }}</span>
             @enderror

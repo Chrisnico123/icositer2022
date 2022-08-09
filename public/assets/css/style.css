@@ -92,9 +92,33 @@ section img#clouds3 {
 
 /* Start Page 2 */
 .page2 {
+    margin: 0;
     position: relative;
-    padding: 100px;
+    padding: 100px 0px;
     background: var(--secondary);
+    display: flex;
+}
+
+.page2 .container {
+    padding-top: 205px;
+    margin-left: 268px;
+}
+
+.col1 {
+    width: 50%;
+    float: left;
+    padding-top: 20px;
+}
+
+.col2 {
+    width: 50%;
+    float: left;
+    padding-left: 130px;
+}
+
+
+.page2 img {
+    border-radius: 15%;
 }
 
 .page2 h2 {
@@ -115,13 +139,6 @@ section img#clouds3 {
     font-family: var(--font-family2);
 }
 
-@media screen and (max-width: 800px) {
-    .col {
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-
 .btn-success {
     background-color: #31ae4a;
     height: 58px;
@@ -134,8 +151,54 @@ section img#clouds3 {
     border-radius: 27px;
 }
 
-.container px-4 {
-    padding-top: 20%;
+/* Page 2&4 responsive */
+@media screen and (max-width: 992px) {
+    .page2 {
+        padding-top: 0px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page2 .p {
+        font-size: 1.2vw;
+    }
+
+    .page2 .container {
+        padding-top: 0px;
+        padding-left: 0px;
+        margin-left: 0;
+        margin-left: 0px;
+    }
+
+    .page2 img {
+        width: 300px;
+        height: auto;
+    }
+
+    .col1 {
+        width: 100%;
+        flex: 100%;
+        padding: 50px;
+    }
+
+    .col2 {
+        padding-top: 20px;
+        width: auto;
+        padding-left: 50px;
+    }
+
+    .page2 h2 {
+        font-size: 6vw;
+    }
+
+    .page4 h2 {
+        font-size: 6vw;
+    }
+
+    .btn-success {
+        font-size: 20px !important;
+    }
 }
 
 /* Page3 */
@@ -184,7 +247,7 @@ section img#clouds3 {
     font-family: var(--font-family2);
 }
 
-.page5 > h2 {
+.page5>h2 {
     color: var(--font-color);
     font-size: 4vw;
     font-family: var(--font-family2);
@@ -201,6 +264,7 @@ section img#clouds3 {
     overflow: hidden;
     padding: 20px;
 }
+
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -261,4 +325,5 @@ section img#clouds3 {
         border: 10px solid #0c413d;
     }
 }
+
 /* End Page 5 */
