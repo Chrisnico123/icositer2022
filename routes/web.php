@@ -3,6 +3,8 @@
 use App\Http\Controllers\Lomba1Controller;
 use App\Http\Controllers\Lomba2Controller;
 use App\Http\Controllers\Lomba3Controller;
+use App\Http\Controllers\Register;
+use GuzzleHttp\Psr7\Response;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,8 +19,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+Route::get('/download/{filename}' , function($filename){
+    $file_path = public_path().'/Lomba/download/'.$filename;
+    if(file_exists($file_path)){
+        return response()->download($file_path, $filename, [
+            'Content-type: application/pdf'
+        ]);
+    }else{
+        exit('Request file does not exist on our server');
+    }
+});
+
 Route::get('/', function () {
     return view('default');
+});
+
+Route::controller(Register::class)->group(function () {
+    Route::get('/register' , 'register_form')->name('register_form');
 });
 
 
