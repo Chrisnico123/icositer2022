@@ -10,6 +10,7 @@ class Lomba1Controller extends Controller
     public function lomba1s_form_page1(Request $request)
     {
         $lomba1s = $request->session()->get('lomba1s');
+
         return view('Lomba.Lomba1.page1', compact('lomba1s'));
     }
 
@@ -43,6 +44,7 @@ class Lomba1Controller extends Controller
     public function lomba1s_form_page2(Request $request)
     {
         $lomba1s = $request->session()->get('lomba1s');
+
         return view('Lomba.Lomba1.page2', compact('lomba1s'));
     }
 
@@ -67,6 +69,7 @@ class Lomba1Controller extends Controller
     public function lomba1s_form_page3(Request $request)
     {
         $lomba1s = $request->session()->get('lomba1s');
+
         return view('Lomba.Lomba1.page3', compact('lomba1s'));
     }
 
@@ -83,14 +86,21 @@ class Lomba1Controller extends Controller
 
         $lomba1s = $request->session()->get('lomba1s');
 
+
+        if ($request->file('KTM') && $request->file('follow_ig') && $request->file('twibbon') && $request->file('abstrak')) {
+            $lomba1s->fill([
+                'KTM' => $request->file('KTM')->store('public/files/' . $lomba1s->nama_team),
+                'follow_ig' => $request->file('follow_ig')->store('public/files/' . $lomba1s->nama_team),
+                'twibbon' => $request->file('twibbon')->store('public/files/' . $lomba1s->nama_team),
+                'abstrak' =>  $request->file('abstrak')->store('public/files/' . $lomba1s->nama_team),
+            ]);
+        }
+
         $lomba1s->fill([
-            'KTM' => $request->file('KTM')->store('public/files/' . $lomba1s->KTM),
-            'follow_ig' => $request->file('follow_ig')->store('public/files/' . $lomba1s->follow_ig),
-            'twibbon' => $request->file('twibbon')->store('public/files/' . $lomba1s->twibbon),
-            'abstrak' =>  $request->file('abstrak')->store('public/files/' . $lomba1s->abstrak),
             'subtema' => $request->subtema,
             'judul_karya' => $request->judul_karya
         ]);
+
         $lomba1s->save();
         $request->session()->pull('lomba1s');
         return redirect(route('lomba1s_page4'));

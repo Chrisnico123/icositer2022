@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css">
     </link>
 
+    <link rel="stylesheet" href="{{ asset('assets') }}/css/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -125,8 +127,53 @@
     </div>
     {{-- Page3 --}}
     <div class="page3">
+        <center class="page2">
+            <h2>SPEAKERS</h2>
+        </center>
         <div class="speaker">
-            
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+          
+              <!-- Swiper JS -->
+              <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+          
+              <!-- Initialize Swiper -->
+              <script>
+                var swiper = new Swiper(".mySwiper", {
+                  effect: "coverflow",
+                  grabCursor: true,
+                  centeredSlides: true,
+                  slidesPerView: "auto",
+                  coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                  },
+                  pagination: {
+                    el: ".swiper-pagination",
+                  },
+                });
+              </script>
         </div>
         <section class="s3">
             <img src="{{ asset('assets') }}/images/group1.png" alt="" class="img">
@@ -171,6 +218,46 @@
 
         </div>
     </div>
+
+    {{-- Page 5 --}}
+    <div class="page5">
+        <h2>Recent Post</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="{{ asset('assets') }}/js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            spaceBetween: 30,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 
 </body>
 

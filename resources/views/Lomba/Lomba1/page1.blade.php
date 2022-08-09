@@ -16,7 +16,7 @@
         </div>
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Email Ketua</label>
-            <input type="text" class="form-control" id="inputEmail4" name="email" value="{{ $lomba1s->email ?? '' }}">
+            <input type="email" class="form-control" id="inputEmail4" name="email" value="{{ $lomba1s->email ?? '' }}">
             @error('email')
                 <span class="text-danger">{{ $message }}</span>
             @enderror
@@ -55,7 +55,7 @@
         </div>
         <div class="col-md-4">
             <label for="inputState" class="form-label">Nomor Induk Mahasiswa Ketua</label>
-            <input type="text" class="form-control" id="inputState" name="nim_ketua"
+            <input type="number" class="form-control" id="inputState" name="nim_ketua"
                 value="{{ $lomba1s->nim_ketua ?? '' }}">
             @error('nim_ketua')
                 <span class="text-danger">{{ $message }}</span>
@@ -63,7 +63,7 @@
         </div>
         <div class="col-md-2">
             <label for="inputZip" class="form-label">Nomor WA Ketua</label>
-            <input type="text" class="form-control" id="inputZip" name="no_wa_ketua"
+            <input type="number" class="form-control" id="inputZip" name="no_wa_ketua"
                 value="{{ $lomba1s->no_wa_ketua ?? '' }}">
             @error('no_wa_ketua')
                 <span class="text-danger">{{ $message }}</span>
