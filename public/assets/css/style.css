@@ -95,6 +95,10 @@ section img#clouds3 {
     padding: 100px 0px;
     background: var(--secondary);
     display: flex;
+    flex-direction: row;
+    background-image: url(../images/page2-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .page2 .container {
@@ -107,18 +111,15 @@ section img#clouds3 {
     float: left;
     padding-top: 20px;
 }
-
 .col2 {
     width: 50%;
     float: left;
     padding-left: 130px;
 }
 
-
 .page2 img {
     border-radius: 15%;
 }
-
 .page2 h2 {
     top: 40%;
     right: 72%;
@@ -150,23 +151,13 @@ section img#clouds3 {
 }
 
 /* Page 2&4 responsive */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 920px) {
     .page2 {
-        padding-top: 0px;
         position: relative;
+        width: 100%;
+        height: 100vh;
         justify-content: center;
         align-items: center;
-    }
-
-    .page2 .p {
-        font-size: 1.2vw;
-    }
-
-    .page2 .container {
-        padding-top: 0px;
-        padding-left: 0px;
-        margin-left: 0;
-        margin-left: 0px;
     }
 
     .page2 img {
@@ -177,13 +168,13 @@ section img#clouds3 {
     .col1 {
         width: 100%;
         flex: 100%;
-        padding: 50px;
     }
 
     .col2 {
-        padding-top: 20px;
-        width: auto;
-        padding-left: 50px;
+        padding-top: 50px;
+        flex: 100%;
+        max-width: 100%;
+        padding-left: 0px;
     }
 
     .page2 h2 {
@@ -228,7 +219,7 @@ section img#clouds3 {
     font-family: var(--font-family2);
 }
 
-.page5>h2 {
+.page5 > h2 {
     color: var(--font-color);
     font-size: 4vw;
     font-family: var(--font-family2);
@@ -245,7 +236,6 @@ section img#clouds3 {
     overflow: hidden;
     padding: 20px;
 }
-
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -306,5 +296,4 @@ section img#clouds3 {
         border: 10px solid #0c413d;
     }
 }
-
 /* End Page 5 */
