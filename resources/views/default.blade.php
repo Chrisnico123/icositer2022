@@ -257,6 +257,37 @@
             },
         });
     </script>
+    <footer>
+        <div class="atas">
+            <div class="icos">
+                <img src="{{ asset('assets') }}/images/logo.png" width="77.2" height="58.5" alt="">
+            </div>
+            <div class="alamat">
+                <p>Jl.Terusan Ryacudu,Wayhuwi,Kec,Jati Agung,
+                    <br>
+                    Kabupaten Lampung Selatan,Lampung,35365
+                </p>
+            </div>
+        </div>
+        <div class="bawah">
+            <div class="email">
+                <div class="vektor1">
+                    <img src="{{ asset('assets') }}/images/vektor1.png" width="" height="" alt="">
+                </div>
+                <div class="par1">
+                    <p>icositer2022@gmail.com</p>
+                </div>
+            </div>
+            <div class="telepon">
+                <div class="vektor2">
+                    <img src="{{ asset('assets') }}/images/Vector2.png" width="" height="" alt="">
+                </div>
+                <div class="par2">
+                    <p>+6281282434826</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
