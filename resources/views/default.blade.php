@@ -135,19 +135,13 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" class="sizeimg"/>
                   </div>
                   <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" class="sizeimg"/>
                   </div>
                   <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" class="sizeimg"/>
                   </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -178,7 +172,8 @@
               </script>
         </div>
         <section class="s3">
-            <img src="{{ asset('assets') }}/images/group1.png" alt="" class="img">
+            <img src="{{ asset('assets') }}/images/group1.png" class="isi1">
+            <img src="{{ asset('assets') }}/images/group2.png" class="isi2">
         </section>
         {{-- </p> --}}
     </div>
