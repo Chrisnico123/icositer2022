@@ -15,7 +15,9 @@
         </div>
         <div class="col-md-3"></div>
         <div class="col-md-6" class="verif">
-            <img src="/Lomba/assets/verifed.png" width="200" height="200" class="verifed">
+            <center>
+                <img src="/Lomba/assets/verifed.png" width="200" height="200" class="verifed">
+            </center>
         </div>
         <div class="col-md-3"></div>
         <div class="col-md-1"></div>

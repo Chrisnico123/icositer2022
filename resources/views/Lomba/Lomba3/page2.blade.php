@@ -14,28 +14,28 @@
     </div>
     <div class="col-12">
       <label for="inputEmail4" class="form-label">Scan Ktm (Kartu Tanda Mahasiswa) Semua Peserta Format : NamaTim_KTM.pdf</label>
-      <input type="file" class="form-control" id="inputEmail4" placeholder="" name="ktm" value="{{ $lomba3s->ktm }}">
+      <input type="file" class="form-control" id="inputEmail4" placeholder="" name="ktm" value="{{ $lomba3s->ktm ?? ''}}">
         @error('ktm')
                 <span class="text-danger">{{ $message }}</span>
         @enderror
     </div>
     <div class="col-12">
       <label for="inputAddress" class="form-label">Upload Sketsa Karya Format : (NamaTim_Subtema_LaporanTahapAwal),pdf </label>
-      <input type="file" class="form-control" id="inputAddress" placeholder="" name="sketsa" value="{{ $lomba3s->sketsa }}">
+      <input type="file" class="form-control" id="inputAddress" placeholder="" name="sketsa" value="{{ $lomba3s->sketsa ?? '' }}">
         @error('sketsa')
                 <span class="text-danger">{{ $message }}</span>
         @enderror
     </div>
     <div class="col-md-12">
       <label for="inputAddress2" class="form-label">Sub Tema yang dipilih </label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="" name="sub_tema" value="{{ $lomba3s->sub_tema }}">
+      <input type="text" class="form-control" id="inputAddress2" placeholder="" name="sub_tema" value="{{ $lomba3s->sub_tema ?? ''}}">
         @error('sub_tema')
                 <span class="text-danger">{{ $message }}</span>
         @enderror
     </div>
     <div class="col-md-12">
       <label for="inputCity" class="form-label">Judul Karya Prototype of Scientific Innovation</label>
-      <input type="text" class="form-control" id="inputCity" name="judul_karya" value="{{ $lomba3s->judul_karya }}">
+      <input type="text" class="form-control" id="inputCity" name="judul_karya" value="{{ $lomba3s->judul_karya ?? ''}}">
         @error('judul_karya')
                 <span class="text-danger">{{ $message }}</span>
         @enderror
