@@ -10,10 +10,7 @@
 
     <!-- Styling -->
     <link rel="stylesheet" href="{{ asset('assets') }}/css/bootstrap.css">
-    </link>
     <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css">
-    </link>
-
     <link rel="stylesheet" href="{{ asset('assets') }}/css/swiper-bundle.min.css" />
 
 </head>
@@ -183,6 +180,7 @@
         <section class="s3">
             <img src="{{ asset('assets') }}/images/group1.png" alt="" class="img">
         </section>
+        {{-- </p> --}}
     </div>
 
     <!-- Page4 -->
@@ -228,16 +226,16 @@
         <h2 class="title">Recent Post</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random/1"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random/2"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random/3"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random/4"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random/5"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random/6"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random/7"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random/8"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random/9"></div>
+                <div class="swiper-slide"><img src="https://source.unsplash.com/random/10"></div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
@@ -247,7 +245,6 @@
 
     <!-- Swiper JS -->
     <script src="{{ asset('assets') }}/js/swiper-bundle.min.js"></script>
-
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {

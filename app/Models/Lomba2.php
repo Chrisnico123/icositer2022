@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Lomba2 extends Model
 {
     use HasFactory;
+    protected $guarded = ['id'];
 }

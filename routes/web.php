@@ -49,12 +49,15 @@ Route::controller(Lomba1Controller::class)->group(function () {
     Route::get('/lomba1s/page4', 'lomba1s_page4')->name('lomba1s_page4');
 });
 Route::controller(Lomba2Controller::class)->group(function () {
-    Route::get('/lomba2/page1', 'lomba2_page1')->name('lomba2_page1');
-    Route::post('/lomba2/page2', 'lomba2_page2')->name('lomba2_page2');
-    Route::post('/lomba2/page3', 'lomba2_page3')->name('lomba2_page3');
-    Route::post('/lomba2/page4', 'lomba2_page4')->name('lomba2_page4');
-    Route::post('/lomba2/page5', 'lomba2_page5')->name('lomba2_page5');
-    // Route::post('/lomba2/page3' , 'lomba2_page3')->name('lomba2_page3');
+    Route::get('/lomba2s/page1', 'lomba2s_form_page1')->name('lomba2s_form_page1');
+    Route::post('/lomba2s/page1', 'lomba2s_page1')->name('lomba2s_page1');
+    Route::get('/lomba2s/page2', 'lomba2s_form_page2')->name('lomba2s_form_page2');
+    Route::post('/lomba2s/page2', 'lomba2s_page2')->name('lomba2s_page2');
+    Route::get('/lomba2s/page3', 'lomba2s_form_page3')->name('lomba2s_form_page3');
+    Route::post('/lomba2s/page3', 'lomba2s_page3')->name('lomba2s_page3');
+    Route::get('/lomba2s/page4', 'lomba2s_form_page4')->name('lomba2s_form_page4');
+    Route::post('/lomba2s/page4', 'lomba2s_page4')->name('lomba2s_page4');
+    Route::get('/lomba2s/page5', 'lomba2s_page5')->name('lomba2s_page5');
 });
 Route::controller(Lomba3Controller::class)->group(function () {
     Route::get('/lomba3s/page1', 'lomba3s_form_page1')->name('lomba3s_form_page1');
