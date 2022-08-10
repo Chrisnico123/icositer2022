@@ -139,8 +139,8 @@
                       <figure class="imghvr-fade">
                         <img src="{{asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png')}}" class="sizeimg">
                         <figcaption class="bg-light">
-                            <h3 class="text-center text-light">Guess Who</h3>
-                            <p class="text-center text-light">
+                            <h3 class="text-center">Guess Who</h3>
+                            <p class="text-center">
                              lorem
                             </p>
                         </figcaption>

@@ -288,11 +288,6 @@ section img#clouds3 {
     background-color: rgba(0, 0, 0, 0) !important;
 }
 
-.imghvr-fade figcaption {
-    background-color: var(--secondary) !important;
-    border-radius: 15% !important;
-}
-
 .s3 {
     height: 10vh;
     z-index: 1;
