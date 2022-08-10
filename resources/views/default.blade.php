@@ -92,10 +92,10 @@
     <!-- Page2 -->
 
     <div class="page2">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col1">
-                    <h2>News</h2>
+        <div class="row1">
+            <div class="col1">
+                <center>
+                    <h2 class="title">News</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada porttitor vestibulum. Sed
                         suscipit
                         sollicitudin dui non porta. Curabitur hendrerit turpis leo, a sagittis tellus consectetur in.
@@ -116,27 +116,23 @@
                         fermentum mi in turpis commodo, in fermentum sapien faucibus. Nam auctor non massa vitae
                         condimentum. In
                         tortor quam, volutpat ac lacus sed, imperdiet ultrices risus. Cras sed mollis est.
-
+                    </p>
                     <div class="button">
                         <a href="#view" type="button" class="btn btn-success">View</a>
                     </div>
-                </div>
-
-                <div class="col2">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" width=727px
-                        height=467px class="news-img" alt="Boat on Calm Water" />
-                </div>
-
+                </center>
             </div>
-
+            <div class="col2">
+                <center>
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="news-img" alt="Boat on Calm Water" />
+                </center>
+            </div>
         </div>
-
-        </p>
     </div>
     {{-- Page3 --}}
     <div class="page3">
         <center class="page2">
-            <h2>SPEAKERS</h2>
+            <h2 class="title">SPEAKERS</h2>
         </center>
         <div class="speaker">
             <div class="swiper mySwiper">
@@ -169,6 +165,7 @@
                   effect: "coverflow",
                   grabCursor: true,
                   centeredSlides: true,
+                  loop:true,
                   slidesPerView: "auto",
                   coverflowEffect: {
                     rotate: 50,
@@ -190,7 +187,7 @@
 
     <!-- Page4 -->
     <div class="page4">
-        <h2>GALLERY</H2>
+        <h2 class="title">GALLERY</H2>
         <div class="row">
             <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                 <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
@@ -228,7 +225,7 @@
 
     {{-- Page 5 --}}
     <div class="page5">
-        <h2>Recent Post</h2>
+        <h2 class="title">Recent Post</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="https://source.unsplash.com/random"></div>
