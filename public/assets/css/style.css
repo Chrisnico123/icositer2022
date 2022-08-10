@@ -284,6 +284,14 @@ section img#clouds3 {
     position: relative;
     z-index: 9999;
 }
+.imghvr-fade {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.imghvr-fade figcaption {
+    background-color: var(--secondary) !important;
+    border-radius: 15% !important;
+}
 
 .s3 {
     height: 10vh;

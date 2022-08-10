@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ asset('assets') }}/css/bootstrap.css">
     <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css">
     <link rel="stylesheet" href="{{ asset('assets') }}/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{{ asset('assets/imagehover.css/css/imagehover.min.css') }}" />
 
 </head>
 
@@ -135,13 +136,15 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" class="sizeimg"/>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" class="sizeimg"/>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" class="sizeimg"/>
+                      <figure class="imghvr-fade">
+                        <img src="{{asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png')}}" class="sizeimg">
+                        <figcaption class="bg-light">
+                            <h3 class="text-center text-light">Guess Who</h3>
+                            <p class="text-center text-light">
+                             lorem
+                            </p>
+                        </figcaption>
+                      </figure>
                   </div>
                 </div>
                 <div class="swiper-pagination"></div>
