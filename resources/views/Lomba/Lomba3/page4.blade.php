@@ -13,7 +13,9 @@
     </div>
     <div class="col-md-3"></div>
     <div class="col-md-6" class="verif">
-        <img src="/Lomba/assets/verifed.png" width="200" height="200" class="verifed">
+        <center>
+            <img src="/Lomba/assets/verifed.png" height="200">
+        </center>
     </div>
     <div class="col-md-3"></div>
     <div class="col-md-1"></div>
@@ -22,8 +24,10 @@
     </div>
     <div class="col-md-1"></div>
     <div class="col-12">
-      <p>Dipersilahkan Ketua Kelompok Untuk Bergabung Kedalam Grup WhatsApp Peserta Lomba Prototype</p>
-      <a href="https://chat.whatsapp.com/DQXiDOw7MXKIjgnDQ18YBk" target="_blank"><button class="btn btn-primary">Grup WhatsApp</button></a>
+      <h5>Dipersilahkan Ketua Kelompok Untuk Bergabung Kedalam Grup WhatsApp Peserta Lomba Prototype</h5>
+      <center>
+        <a href="https://chat.whatsapp.com/DQXiDOw7MXKIjgnDQ18YBk" target="_blank"><button class="btn btn-primary">Grup WhatsApp</button></a>
+      </center>
     </div>
 </div>
 @endsection

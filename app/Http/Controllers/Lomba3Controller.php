@@ -62,8 +62,8 @@ class Lomba3Controller extends Controller
 
         $lomba3s = $request->session()->get('lomba3s');
         $lomba3s->fill([
-            'ktm' => $request->file('ktm')->store('public/files/' . $lomba3s->ktm),
-            'sketsa' => $request->file('sketsa')->store('public/files/' . $lomba3s->sketsa),
+            'ktm' => $request->file('ktm')->store('public/files/' . $lomba3s->nama_tim),
+            'sketsa' => $request->file('sketsa')->store('public/files/' . $lomba3s->nama_tim),
             'sub_tema' => $request->sub_tema,
             'judul_karya' => $request->judul_karya,
         ]);
@@ -89,21 +89,26 @@ class Lomba3Controller extends Controller
         ]);
 
         $lomba3s = $request->session()->get('lomba3s');
-
         $lomba3s->fill([
-            'follow_ig' => $request->file('follow_ig')->store('public/files/' . $lomba3s->follow_ig),
-            'upload_twibbon' => $request->file('upload_twibbon')->store('public/files/' . $lomba3s->upload_twibbon),
-            'surat_pernyataan' => $request->file('surat_pernyataan')->store('public/files/' . $lomba3s->surat_pernyataan),
-            'lampiran' => $request->file('lampiran')->store('public/files/' . $lomba3s->lampiran),
+            'follow_ig' => $request->file('follow_ig')->store('public/files' . $lomba3s->nama_tim),
+            'upload_twibbon' => $request->file('upload_twibbon')->store('public/files/' . $lomba3s->nama_tim),
+            'surat_pernyataan' => $request->file('surat_pernyataan')->store('public/files/' . $lomba3s->nama_tim),
+            'lampiran' => $request->file('lampiran')->store('public/files/' . $lomba3s->nama_tim),
         ]);
 
         $lomba3s->save();
+        $request->session()->put('fullable', true);
         $request->session()->pull('lomba3s');
         return redirect(route('lomba3s_page4'));
     }
 
     public function lomba3s_page4(Request $request)
     {
-        return view('Lomba.Lomba3.page4');
+        if ($request->session()->get('fullable') === null) {
+            return redirect('/');
+        } else {
+            $request->session()->pull('fullable');
+            return view('Lomba.Lomba3.page4');
+        }
     }
 }
