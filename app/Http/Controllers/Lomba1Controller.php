@@ -102,12 +102,18 @@ class Lomba1Controller extends Controller
         ]);
 
         $lomba1s->save();
+        $request->session()->put('fullable', true);
         $request->session()->pull('lomba1s');
         return redirect(route('lomba1s_page4'));
     }
 
-    public function lomba1s_page4()
+    public function lomba1s_page4(Request $request)
     {
-        return view('Lomba.Lomba1.page4');
+        if ($request->session()->get('fullable') === null) {
+            return redirect('/');
+        } else {
+            $request->session()->pull('fullable');
+            return view('Lomba.Lomba1.page4');
+        }
     }
 }

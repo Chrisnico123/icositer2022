@@ -15,7 +15,7 @@ class Lomba2Controller extends Controller
     public function lomba2s_form_page1(Request $request)
     {
         $lomba2s = $request->session()->get('lomba2s');
-        return view('Lomba.Lomba2.page1',compact('lomba2s'));
+        return view('Lomba.Lomba2.page1', compact('lomba2s'));
     }
 
     public function lomba2s_page1(Request $request)
@@ -30,11 +30,11 @@ class Lomba2Controller extends Controller
             'no_wa' => 'required'
         ]);
 
-        if(empty($request->session()->get('lomba2s'))){
+        if (empty($request->session()->get('lomba2s'))) {
             $lomba2s = new Lomba2();
             $lomba2s->fill($validatedData);
             $request->session()->put('lomba2s', $lomba2s);
-        }else{
+        } else {
             $lomba2s = $request->session()->get('lomba2s');
             $lomba2s->fill($validatedData);
             $request->session()->put('lomba2s', $lomba2s);
@@ -47,7 +47,7 @@ class Lomba2Controller extends Controller
     public function lomba2s_form_page2(Request $request)
     {
         $lomba2s = $request->session()->get('lomba2s');
-        return view('Lomba.Lomba2.page2',compact('lomba2s'));
+        return view('Lomba.Lomba2.page2', compact('lomba2s'));
     }
 
     public function lomba2s_page2(Request $request)
@@ -70,7 +70,7 @@ class Lomba2Controller extends Controller
     public function lomba2s_form_page3(Request $request)
     {
         $lomba2s = $request->session()->get('lomba2s');
-        return view('Lomba.Lomba2.page3',compact('lomba2s'));
+        return view('Lomba.Lomba2.page3', compact('lomba2s'));
     }
 
     public function lomba2s_page3(Request $request)
@@ -86,7 +86,7 @@ class Lomba2Controller extends Controller
         ]);
 
         $lomba2s = $request->session()->get('lomba2s');
-        if ($request->file('ktm') && $request->file('follow_ig') && $request->file('twibon') && $request->file('abstrak')){
+        if ($request->file('ktm') && $request->file('follow_ig') && $request->file('twibon') && $request->file('abstrak')) {
             $lomba2s->fill([
                 'ktm' => $request->file('follow_ig')->store('public/files/' . $lomba2s->ktm),
                 'follow_ig' => $request->file('follow_ig')->store('public/files/' . $lomba2s->follow_ig),
@@ -106,7 +106,7 @@ class Lomba2Controller extends Controller
     public function lomba2s_form_page4(Request $request)
     {
         $lomba2s = $request->session()->get('lomba2s');
-        return view('Lomba.Lomba2.page4',compact('lomba2s'));
+        return view('Lomba.Lomba2.page4', compact('lomba2s'));
     }
 
     public function lomba2s_page4(Request $request)
@@ -123,7 +123,6 @@ class Lomba2Controller extends Controller
                 'identitas_peserta' => $request->file('identitas_peserta')->store('public/files/' . $lomba2s->identitas_peserta),
                 'identitas_dospem' => $request->file('identitas_dospem')->store('public/files/' . $lomba2s->identitas_dospem),
             ]);
-
         }
         $lomba2s->save();
         $request->session()->pull('lomba2s');
