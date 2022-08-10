@@ -88,10 +88,10 @@ class Lomba2Controller extends Controller
         $lomba2s = $request->session()->get('lomba2s');
         if ($request->file('ktm') && $request->file('follow_ig') && $request->file('twibon') && $request->file('abstrak')) {
             $lomba2s->fill([
-                'ktm' => $request->file('follow_ig')->store('public/files/' . $lomba2s->ktm),
-                'follow_ig' => $request->file('follow_ig')->store('public/files/' . $lomba2s->follow_ig),
-                'twibon' => $request->file('twibon')->store('public/files/' . $lomba2s->twibon),
-                'abstrak' => $request->file('abstrak')->store('public/files/' . $lomba2s->abstrak),
+                'ktm' => $request->file('follow_ig')->store('public/' . $lomba2s->nama_tim),
+                'follow_ig' => $request->file('follow_ig')->store('public/' . $lomba2s->nama_tim),
+                'twibon' => $request->file('twibon')->store('public/' . $lomba2s->nama_tim),
+                'abstrak' => $request->file('abstrak')->store('public/' . $lomba2s->nama_tim),
             ]);
         }
         $lomba2s->fill([
@@ -119,9 +119,9 @@ class Lomba2Controller extends Controller
         $lomba2s = $request->session()->get('lomba2s');
         if ($request->file('surat_pernyataan') && $request->file('identitas_peserta') && $request->file('identitas_dospem')) {
             $lomba2s->fill([
-                'surat_pernyataan' => $request->file('surat_pernyataan')->store('public/files/' . $lomba2s->surat_pernyataan),
-                'identitas_peserta' => $request->file('identitas_peserta')->store('public/files/' . $lomba2s->identitas_peserta),
-                'identitas_dospem' => $request->file('identitas_dospem')->store('public/files/' . $lomba2s->identitas_dospem),
+                'surat_pernyataan' => $request->file('surat_pernyataan')->store('public/' . $lomba2s->nama_tim),
+                'identitas_peserta' => $request->file('identitas_peserta')->store('public/' . $lomba2s->nama_tim),
+                'identitas_dospem' => $request->file('identitas_dospem')->store('public/' . $lomba2s->nama_tim),
             ]);
         }
         $lomba2s->save();

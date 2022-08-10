@@ -89,10 +89,10 @@ class Lomba1Controller extends Controller
 
         if ($request->file('KTM') && $request->file('follow_ig') && $request->file('twibbon') && $request->file('abstrak')) {
             $lomba1s->fill([
-                'KTM' => $request->file('KTM')->store('public/files/' . $lomba1s->nama_team),
-                'follow_ig' => $request->file('follow_ig')->store('public/files/' . $lomba1s->nama_team),
-                'twibbon' => $request->file('twibbon')->store('public/files/' . $lomba1s->nama_team),
-                'abstrak' =>  $request->file('abstrak')->store('public/files/' . $lomba1s->nama_team),
+                'KTM' => $request->file('KTM')->store('public/' . $lomba1s->nama_team),
+                'follow_ig' => $request->file('follow_ig')->store('public/' . $lomba1s->nama_team),
+                'twibbon' => $request->file('twibbon')->store('public/' . $lomba1s->nama_team),
+                'abstrak' =>  $request->file('abstrak')->store('public/' . $lomba1s->nama_team),
             ]);
         }
 
