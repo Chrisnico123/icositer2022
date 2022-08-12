@@ -32,13 +32,13 @@
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#speakers">Speakers</a>
+                        <a class="nav-link" href="#page3">Speakers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#info">Info</a>
+                        <a class="nav-link" href="#page2">Info</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#page5">About</a>
                     </li>
                 </ul>
                 <a href="/register" type="button" class="btn btn-danger">Register</a>
@@ -89,7 +89,7 @@
     </script>
     <!-- Page2 -->
 
-    <div class="page2">
+    <div class="page2" id="page2">
         <div class="row1">
             <div class="col1">
                 <center>
@@ -128,27 +128,26 @@
         </div>
     </div>
     {{-- Page3 --}}
-    <div class="page3">
-        <center class="page2">
-            <h2 class="title">SPEAKERS</h2>
+    <div class="page3" id="page3">
+        <center class="page2" >
+            <h2 class="title">SPEAKER</h2>
         </center>
         <div class="speaker">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                      <figure class="imghvr-fade">
-                        <img src="{{asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png')}}" class="sizeimg">
-                        <figcaption class="bg-light">
-                            <h3 class="text-center">Guess Who</h3>
-                            <p class="text-center">
-                             lorem
-                            </p>
-                        </figcaption>
-                      </figure>
+                      <figure>
+                        <img src="{{asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png')}}" class="sizeimg bg-light">
+                    </figure>
+                  </div>
+                  <div class="swiper-slide">
+                      <figure>
+                        <img src="{{asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png')}}" class="sizeimg bg-light">
+                    </figure>
                   </div>
                 </div>
                 <div class="swiper-pagination"></div>
-              </div>
+            </div>
           
               <!-- Swiper JS -->
               <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -182,7 +181,7 @@
     </div>
 
     <!-- Page4 -->
-    <div class="page4">
+    <div class="page4" id="page4">
         <h2 class="title">GALLERY</H2>
         <div class="row">
             <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
@@ -220,7 +219,7 @@
     </div>
 
     {{-- Page 5 --}}
-    <div class="page5">
+    <div class="page5" id="page5">
         <h2 class="title">Recent Post</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">

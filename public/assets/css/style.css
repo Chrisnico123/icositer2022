@@ -276,16 +276,16 @@ section img#clouds3 {
 }
 
 .sizeimg {
-    width: 350px !important;
-    height: 450px !important;
+    width: 320px !important;
+    height: 400px !important;
 }
 
 .speaker {
     position: relative;
     z-index: 9999;
 }
-.imghvr-fade {
-    background-color: rgba(0, 0, 0, 0) !important;
+figcaption > h3 {
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .s3 {
@@ -458,6 +458,15 @@ footer p {
         height: 35px;
     }
 }
+@media screen and (max-width: 912px) {
+    footer {
+        padding: 2vh;
+    }
+
+    .atas {
+        gap: 10px;
+    }
+}
 
 @media screen and (max-width: 450px) {
     footer p {
@@ -472,5 +481,9 @@ footer p {
     .bawah img {
         width: 25px;
         height: 25px;
+    }
+
+    .atas {
+        border-bottom: 5px solid black;
     }
 }

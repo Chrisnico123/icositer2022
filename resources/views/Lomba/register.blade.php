@@ -9,7 +9,7 @@
                     menyelesaikan isu-isu yang berkaitan dengan tema ICoSITeR yaitu "<i>Green Growth Innovation to Reach
                         Global’s Sustainable Development Goals</i>"</p>
                 <a href="/lomba1s/page1" class="btn btn-success">REGISTER</a>
-                <a href="/download/LKTI.pdf" class="btn btn-danger">DETAIL</a>
+                <a href="/download/LKTI_IcoSITeR2022.pdf" class="btn btn-danger">DETAIL</a>
             </div>
         </div>
         <div class="card text-center" style="width: 50rem;">
@@ -19,7 +19,7 @@
                     mahasiswa dalam menuangkan gagasan kreatif, meningkatkan daya kreasi, inovatif dan solutif dalam
                     membahas/menyelesaikan isu-isu yang berkaitan dengan tema ICoSITeR 2022.</p>
                 <a href="/lomba2s/page1" class="btn btn-success">REGISTER</a>
-                <a href="/download/Poster.pdf" class="btn btn-danger">DETAIL</a>
+                <a href="/download/Poster_IcoSITeR2022.pdf" class="btn btn-danger">DETAIL</a>
             </div>
         </div>
         <div class="card text-center" style="width: 50rem;">
@@ -29,7 +29,7 @@
                     menuntut mahasiswa untuk merealisasikan inovasi dan kreatifitas terkait tema yang ada di acara ICoSITeR
                 </p>
                 <a href="/lomba3s/page1" class="btn btn-success">REGISTER</a>
-                <a href="/download/Prototype.pdf" class="btn btn-danger">DETAIL</a>
+                <a href="/download/Prototype_IcoSITeR2022.pdf" class="btn btn-danger">DETAIL</a>
             </div>
         </div>
     </div>
