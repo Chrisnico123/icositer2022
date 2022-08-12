@@ -18,14 +18,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-Route::get('/download/{filename}' , function($filename){
-    $file_path = public_path().'/Lomba/download/'.$filename;
-    if(file_exists($file_path)){
+Route::get('/download/{filename}', function ($filename) {
+    $file_path = public_path() . '/Lomba/download/' . $filename;
+    if (file_exists($file_path)) {
         return response()->download($file_path, $filename, [
             'Content-type: application/pdf'
         ]);
-    }else{
+    } else {
         exit('Request file does not exist on our server');
     }
 });
@@ -35,7 +34,7 @@ Route::get('/', function () {
 });
 
 Route::controller(Register::class)->group(function () {
-    Route::get('/register' , 'register_form')->name('register_form');
+    Route::get('/register', 'register_form')->name('register_form');
 });
 
 

@@ -75,6 +75,7 @@ class Lomba1Controller extends Controller
 
     public function lomba1s_page3(Request $request)
     {
+
         $request->validate([
             'KTM' => 'required|mimes:pdf,xlx,csv',
             'follow_ig' => 'required|mimes:pdf,xlx,csv',
@@ -84,15 +85,15 @@ class Lomba1Controller extends Controller
             'abstrak' => 'required|mimes:pdf,xlx,csv',
         ]);
 
-        $lomba1s = $request->session()->get('lomba1s');
 
+        $lomba1s = $request->session()->get('lomba1s');
 
         if ($request->file('KTM') && $request->file('follow_ig') && $request->file('twibbon') && $request->file('abstrak')) {
             $lomba1s->fill([
-                'KTM' => $request->file('KTM')->store('public/' . $lomba1s->nama_team),
-                'follow_ig' => $request->file('follow_ig')->store('public/' . $lomba1s->nama_team),
-                'twibbon' => $request->file('twibbon')->store('public/' . $lomba1s->nama_team),
-                'abstrak' =>  $request->file('abstrak')->store('public/' . $lomba1s->nama_team),
+                'KTM' => $request->file('KTM')->storeAs('public/' . $lomba1s->nama_team, $request->file('KTM')->getClientOriginalName()),
+                'follow_ig' => $request->file('follow_ig')->storeAs('public/' . $lomba1s->nama_team, $request->file('follow_ig')->getClientOriginalName()),
+                'twibbon' => $request->file('twibbon')->storeAs('public/' . $lomba1s->nama_team, $request->file('twibbon')->getClientOriginalName()),
+                'abstrak' =>  $request->file('abstrak')->storeAs('public/' . $lomba1s->nama_team, $request->file('abstrak')->getClientOriginalName()),
             ]);
         }
 
