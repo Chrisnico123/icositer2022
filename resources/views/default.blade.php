@@ -35,10 +35,7 @@
                         <a class="nav-link" href="#page3">Speakers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#page2">Info</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#page5">About</a>
+                        <a class="nav-link" href="#page2">About</a>
                     </li>
                 </ul>
                 <a href="/register" type="button" class="btn btn-danger">Register</a>
@@ -90,42 +87,26 @@
     <!-- Page2 -->
 
     <div class="page2" id="page2">
+        <center>
         <div class="row1">
             <div class="col1">
                 <center>
-                    <h2 class="title">News</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada porttitor vestibulum. Sed
-                        suscipit
-                        sollicitudin dui non porta. Curabitur hendrerit turpis leo, a sagittis tellus consectetur in.
-                        Nam vehicula
-                        eleifend sapien dictum ornare. Integer vehicula id ligula ac venenatis. Mauris non gravida erat.
-                        Phasellus
-                        sed augue tortor. Mauris vestibulum arcu libero. Nunc placerat, nisl vitae pellentesque gravida,
-                        est neque
-                        hendrerit quam, sit amet molestie lacus risus eu diam. Maecenas sollicitudin tincidunt
-                        consectetur. Vivamus
-                        fermentum mi in turpis commodo, in fermentum sapien faucibus. Nam auctor non massa vitae
-                        condimentum. In
-                        tortor quam, volutpat ac lacus sed, imperdiet ultrices risus. Cras sed mollis est.
-                        fermentum mi in turpis commodo, in fermentum sapien faucibus. Nam auctor non massa vitae
-                        condimentum. In
-                        tortor quam, volutpat ac lacus sed, imperdiet ultrices risus. Cras sed mollis est.
-                        tortor quam, volutpat ac lacus sed, imperdiet ultrices risus. Cras sed mollis est.
-                        fermentum mi in turpis commodo, in fermentum sapien faucibus. Nam auctor non massa vitae
-                        condimentum. In
-                        tortor quam, volutpat ac lacus sed, imperdiet ultrices risus. Cras sed mollis est.
+                    <h2 class="title">About</h2>
+                    <p>
+                        ICoSITeR (International Conference On Scientific, Infrastructure Technology and Regional Development) merupakan seminar skala internasional tahunan dan menjadi rangkaian acara Dies Natalis Institut Teknologi Sumatera. Seminar Internasional yang menjadi wadah bagi para peneliti, pengamat, masyarakat serta pihak terkait lainnya dengan tema – tema berbeda setiap tahunnya. Yang tentunya akan menghadirkan pembicara yang sangat kompeten dalam bidangnya baik dalam negeri maupun luar negeri. Selain seminar skala internasional, akan ada perlombaan dan cultural night berskala internasional. Pada tahun 2022 ini adalah kali ketujuh seminar ini akan diselenggarakan, dimana ICoSITeR pertama telah dilaksanakan mulai pada tahun 2016 lalu. Tujuan utama diselenggarakan ICoSITeR adalah untuk mengenalkan ITERA kepada dunia Internasional dalam rangka untuk menjalin kerja sama dalam bidang penelitian maupun pendidikan dan menjadi wadah dalam mengkolaborasikan seluruh program studi di ITERA
                     </p>
-                    <div class="button">
+                    {{-- <div class="button">
                         <a href="#view" type="button" class="btn btn-success">View</a>
-                    </div>
+                    </div> --}}
                 </center>
             </div>
+            <center>
             <div class="col2">
-                <center>
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" class="news-img" alt="Boat on Calm Water" />
-                </center>
+                <img src="{{ asset('assets') }}/images/logo.png"  alt="">
             </div>
+            </center>
         </div>
+    </center>
     </div>
     {{-- Page3 --}}
     <div class="page3" id="page3">

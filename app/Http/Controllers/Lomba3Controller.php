@@ -62,8 +62,8 @@ class Lomba3Controller extends Controller
 
         $lomba3s = $request->session()->get('lomba3s');
         $lomba3s->fill([
-            'ktm' => $request->file('ktm')->store('public/' . $lomba3s->nama_tim),
-            'sketsa' => $request->file('sketsa')->store('public/' . $lomba3s->nama_tim),
+            'ktm' => $request->file('ktm')->storeAs('public/' . $lomba3s->nama_tim , $request->file('ktm')->getClientOriginalName()),
+            'sketsa' => $request->file('sketsa')->storeAs('public/' . $lomba3s->nama_tim , $request->file('sketsa')->getClientOriginalName()),
             'sub_tema' => $request->sub_tema,
             'judul_karya' => $request->judul_karya,
         ]);
@@ -90,10 +90,10 @@ class Lomba3Controller extends Controller
 
         $lomba3s = $request->session()->get('lomba3s');
         $lomba3s->fill([
-            'follow_ig' => $request->file('follow_ig')->store('public/' . $lomba3s->nama_tim),
-            'upload_twibbon' => $request->file('upload_twibbon')->store('public/' . $lomba3s->nama_tim),
-            'surat_pernyataan' => $request->file('surat_pernyataan')->store('public/' . $lomba3s->nama_tim),
-            'lampiran' => $request->file('lampiran')->store('public/' . $lomba3s->nama_tim),
+            'follow_ig' => $request->file('follow_ig')->storeAs('public/' . $lomba3s->nama_tim , $request->file('follow_ig')->getClientOriginalName()),
+            'upload_twibbon' => $request->file('upload_twibbon')->storeAs('public/' . $lomba3s->nama_tim, $request->file('upload_twibbon')->getClientOriginalName()),
+            'surat_pernyataan' => $request->file('surat_pernyataan')->storeAs('public/' . $lomba3s->nama_tim , $request->file('surat_pernyataan')->getClientOriginalName()),
+            'lampiran' => $request->file('lampiran')->storeAs('public/' . $lomba3s->nama_tim , $request->file('lampiran')->getClientOriginalName()),
         ]);
 
         $lomba3s->save();

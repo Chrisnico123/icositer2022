@@ -14,42 +14,42 @@
         </div>
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Nama Anggota 1</label>
-            <input type="text" name="nama_anggota1" class="form-control @error('nama_anggota1') is-invalid @enderror" value="{{ old('nama_anggota1', $lomba2->nama_anggota1 ?? '') }}" id="inputEmail4" placeholder="Masukkan Nama Anggota 1">
+            <input type="text" name="nama_anggota1" class="form-control @error('nama_anggota1') is-invalid @enderror" value="{{ old('nama_anggota1', $lomba2s->nama_anggota1 ?? '') }}" id="inputEmail4" placeholder="Masukkan Nama Anggota 1">
             @error('nama_anggota1')
             <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="col-md-6">
             <label for="inputAddress" class="form-label">Nama Anggota 2</label>
-            <input type="text" name="nama_anggota2" class="form-control @error('nama_anggota2') is-invalid @enderror" value="{{ old('nama_anggota2', $lomba2->nama_anggota2 ?? '')}}" id="inputAddress" placeholder="Masukkan Nama Anggota 2">
+            <input type="text" name="nama_anggota2" class="form-control @error('nama_anggota2') is-invalid @enderror" value="{{ old('nama_anggota2', $lomba2s->nama_anggota2 ?? '')}}" id="inputAddress" placeholder="Masukkan Nama Anggota 2">
             @error('nama_anggota2')
             <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Nomor Induk Mahasiswa</label>
-            <input type="number" name="nim_anggota1" class="form-control @error('nim_anggota1') is-invalid @enderror" value="{{ old('nim_anggota1', $lomba2->nim_anggota1 ?? '') }}" id="inputPassword4" placeholder="Masukkan NIM Anggota 1">
+            <input type="number" name="nim_anggota1" class="form-control @error('nim_anggota1') is-invalid @enderror" value="{{ old('nim_anggota1', $lomba2s->nim_anggota1 ?? '') }}" id="inputPassword4" placeholder="Masukkan NIM Anggota 1">
             @error('nim_anggota1')
             <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="col-md-6">
             <label for="inputAddress2" class="form-label">Nomor Induk Mahasiswa </label>
-            <input type="number" name="nim_anggota2" class="form-control @error('nim_anggota2') is-invalid @enderror" value="{{ old('nim_anggota2', $lomba2->nim_anggota2 ?? '') }}" id="inputAddress2" placeholder="Masukkan NIM Anggota 2">
+            <input type="number" name="nim_anggota2" class="form-control @error('nim_anggota2') is-invalid @enderror" value="{{ old('nim_anggota2', $lomba2s->nim_anggota2 ?? '') }}" id="inputAddress2" placeholder="Masukkan NIM Anggota 2">
             @error('nim_anggota2')
             <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="col-md-6">
             <label for="inputState" class="form-label">Prodi Anggota 1</label>
-            <input type="text" name="prodi_anggota1" class="form-control @error('prodi_anggota1') is-invalid @enderror" value="{{ old('prodi_anggota1', $lomba2->prodi_anggota1 ?? '') }}" id="inputState" placeholder="Masukkan Prodi Anggota 1">
+            <input type="text" name="prodi_anggota1" class="form-control @error('prodi_anggota1') is-invalid @enderror" value="{{ old('prodi_anggota1', $lomba2s->prodi_anggota1 ?? '') }}" id="inputState" placeholder="Masukkan Prodi Anggota 1">
             @error('prodi_anggota1')
             <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="col-md-6">
             <label for="inputCity" class="form-label">Prodi Anggota 2</label>
-            <input type="text" name="prodi_anggota2" class="form-control @error('prodi_anggota2') is-invalid @enderror" value="{{ old('prodi_anggota2', $lomba2->prodi_anggota2 ?? '') }}" id="inputCity" placeholder="Masukkan Prodi Anggota 2">
+            <input type="text" name="prodi_anggota2" class="form-control @error('prodi_anggota2') is-invalid @enderror" value="{{ old('prodi_anggota2', $lomba2s->prodi_anggota2 ?? '') }}" id="inputCity" placeholder="Masukkan Prodi Anggota 2">
             @error('prodi_anggota2')
             <span class="text-danger">{{ $message }}</span>
             @enderror

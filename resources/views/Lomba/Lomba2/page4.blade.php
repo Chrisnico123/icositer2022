@@ -14,21 +14,21 @@
         </div>
         <div class="col-12">
             <label for="inputEmail4" class="form-label">Surat Pernyataan Originalitas Format : pdf</label>
-            <input type="file" name="surat_pernyataan" class="form-control @error('surat_pernyataan') is-invalid @enderror" value="{{ old('surat_pernyataan', $lomba2->surat_pernyataan ?? '') }}" id="inputEmail4">
+            <input type="file" name="surat_pernyataan" class="form-control @error('surat_pernyataan') is-invalid @enderror" value="{{ old('surat_pernyataan', $lomba2s->surat_pernyataan ?? '') }}" id="inputEmail4">
             @error('surat_pernyataan')
             <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="col-12">
             <label for="inputPassword4" class="form-label">Identitas diri ketua dan seluruh anggota kelompok Format : Sesuai Lampiran, pdf</label>
-            <input type="file" name="identitas_peserta" class="form-control @error('identitas_peserta') is-invalid @enderror" value="{{ old('identitas_peserta', $lomba2->identitas_peserta ?? '') }}" id="inputPassword4">
+            <input type="file" name="identitas_peserta" class="form-control @error('identitas_peserta') is-invalid @enderror" value="{{ old('identitas_peserta', $lomba2s->identitas_peserta ?? '') }}" id="inputPassword4">
             @error('identitas_peserta')
             <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="col-12">
             <label for="inputAddress" class="form-label">Identitas diri Dospem Format : Sesuai Lampiran, pdf</label>
-            <input type="file" name="identitas_dospem" class="form-control @error('identitas_dospem') is-invalid @enderror" value="{{ old('identitas_dospem', $lomba2->identitas_dospem ?? '') }}" id="inputAddress">
+            <input type="file" name="identitas_dospem" class="form-control @error('identitas_dospem') is-invalid @enderror" value="{{ old('identitas_dospem', $lomba2s->identitas_dospem ?? '') }}" id="inputAddress">
             @error('identitas_dospem')
             <span class="text-danger">{{ $message }}</span>
             @enderror
