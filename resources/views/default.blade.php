@@ -88,71 +88,71 @@
 
     <div class="page2" id="page2">
         <center>
-        <div class="row1">
-            <div class="col1">
-                <center>
-                    <h2 class="title">About</h2>
-                    <p>
-                        ICoSITeR (International Conference On Scientific, Infrastructure Technology and Regional Development) merupakan seminar skala internasional tahunan dan menjadi rangkaian acara Dies Natalis Institut Teknologi Sumatera. Seminar Internasional yang menjadi wadah bagi para peneliti, pengamat, masyarakat serta pihak terkait lainnya dengan tema – tema berbeda setiap tahunnya. Yang tentunya akan menghadirkan pembicara yang sangat kompeten dalam bidangnya baik dalam negeri maupun luar negeri. Selain seminar skala internasional, akan ada perlombaan dan cultural night berskala internasional. Pada tahun 2022 ini adalah kali ketujuh seminar ini akan diselenggarakan, dimana ICoSITeR pertama telah dilaksanakan mulai pada tahun 2016 lalu. Tujuan utama diselenggarakan ICoSITeR adalah untuk mengenalkan ITERA kepada dunia Internasional dalam rangka untuk menjalin kerja sama dalam bidang penelitian maupun pendidikan dan menjadi wadah dalam mengkolaborasikan seluruh program studi di ITERA
-                    </p>
-                    {{-- <div class="button">
+            <div class="row1">
+                <div class="col1">
+                    <center>
+                        <h2 class="title">About</h2>
+                        <p>
+                            ICoSITeR (International Conference On Scientific, Infrastructure Technology and Regional Development) merupakan seminar skala internasional tahunan dan menjadi rangkaian acara Dies Natalis Institut Teknologi Sumatera. Seminar Internasional yang menjadi wadah bagi para peneliti, pengamat, masyarakat serta pihak terkait lainnya dengan tema – tema berbeda setiap tahunnya. Yang tentunya akan menghadirkan pembicara yang sangat kompeten dalam bidangnya baik dalam negeri maupun luar negeri. Selain seminar skala internasional, akan ada perlombaan dan cultural night berskala internasional. Pada tahun 2022 ini adalah kali ketujuh seminar ini akan diselenggarakan, dimana ICoSITeR pertama telah dilaksanakan mulai pada tahun 2016 lalu. Tujuan utama diselenggarakan ICoSITeR adalah untuk mengenalkan ITERA kepada dunia Internasional dalam rangka untuk menjalin kerja sama dalam bidang penelitian maupun pendidikan dan menjadi wadah dalam mengkolaborasikan seluruh program studi di ITERA
+                        </p>
+                        {{-- <div class="button">
                         <a href="#view" type="button" class="btn btn-success">View</a>
                     </div> --}}
+                    </center>
+                </div>
+                <center>
+                    <div class="col2">
+                        <img src="{{ asset('assets') }}/images/logo.png" alt="">
+                    </div>
                 </center>
             </div>
-            <center>
-            <div class="col2">
-                <img src="{{ asset('assets') }}/images/logo.png"  alt="">
-            </div>
-            </center>
-        </div>
-    </center>
+        </center>
     </div>
     {{-- Page3 --}}
     <div class="page3" id="page3">
-        <center class="page2" >
+        <center class="page2">
             <h2 class="title">SPEAKER</h2>
         </center>
         <div class="speaker">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                      <figure>
-                        <img src="{{asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png')}}" class="sizeimg bg-light">
-                    </figure>
-                  </div>
-                  <div class="swiper-slide">
-                      <figure>
-                        <img src="{{asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png')}}" class="sizeimg bg-light">
-                    </figure>
-                  </div>
+                    <div class="swiper-slide">
+                        <figure>
+                            <img src="{{asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png')}}" class="sizeimg bg-light">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>
+                            <img src="{{asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png')}}" class="sizeimg bg-light">
+                        </figure>
+                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-          
-              <!-- Swiper JS -->
-              <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-          
-              <!-- Initialize Swiper -->
-              <script>
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
                 var swiper = new Swiper(".mySwiper", {
-                  effect: "coverflow",
-                  grabCursor: true,
-                  centeredSlides: true,
-                  loop:true,
-                  slidesPerView: "auto",
-                  coverflowEffect: {
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: true,
-                  },
-                  pagination: {
-                    el: ".swiper-pagination",
-                  },
+                    effect: "coverflow",
+                    grabCursor: true,
+                    centeredSlides: true,
+                    loop: true,
+                    slidesPerView: "auto",
+                    coverflowEffect: {
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                    },
                 });
-              </script>
+            </script>
         </div>
         <section class="s3">
             <img src="{{ asset('assets') }}/images/group1.png" class="isi1">
@@ -166,35 +166,28 @@
         <h2 class="title">GALLERY</H2>
         <div class="row">
             <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+                <img src="{{ asset('assets') }}/images/galeri1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
 
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+                <img src="{{ asset('assets') }}/images/galeri2.jpeg" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+                
             </div>
 
             <div class="col-lg-3 mb-4 mb-lg-0">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+                <img src="{{ asset('assets') }}/images/galeri3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
 
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+                <img src="{{ asset('assets') }}/images/galeri4.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
             </div>
 
             <div class="col-lg-3 mb-4 mb-lg-0">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+                <img src="{{ asset('assets') }}/images/galeri5.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
 
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+                <img src="{{ asset('assets') }}/images/galeri6.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
             </div>
 
             <div class="col-lg-3 mb-4 mb-lg-0">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+                <img src="{{ asset('assets') }}/images/galeri3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
 
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+                <img src="{{ asset('assets') }}/images/galeri1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
             </div>
         </div>
     </div>
