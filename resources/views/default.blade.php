@@ -18,8 +18,8 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container ">
             <a class="navbar-brand" href="#">
                 <img src="{{ asset('assets') }}/images/logo.png" width="77.2" height="58.5" alt="">
             </a>
@@ -29,13 +29,13 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#page3">Speakers</a>
+                        <a class="nav-link" href="#speakers">Speakers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#page2">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                 </ul>
                 <a href="/register" type="button" class="btn btn-danger">Register</a>
@@ -85,34 +85,27 @@
         });
     </script>
     <!-- Page2 -->
-
-    <div class="page2" id="page2">
-        <center>
+    
+    <div class="page2" id="about">
+                <h2 class="title">About</h2>
             <div class="row1">
                 <div class="col1">
-                    <center>
-                        <h2 class="title">About</h2>
                         <p>
                             ICoSITeR (International Conference On Scientific, Infrastructure Technology and Regional Development) merupakan seminar skala internasional tahunan dan menjadi rangkaian acara Dies Natalis Institut Teknologi Sumatera. Seminar Internasional yang menjadi wadah bagi para peneliti, pengamat, masyarakat serta pihak terkait lainnya dengan tema – tema berbeda setiap tahunnya. Yang tentunya akan menghadirkan pembicara yang sangat kompeten dalam bidangnya baik dalam negeri maupun luar negeri. Selain seminar skala internasional, akan ada perlombaan dan cultural night berskala internasional. Pada tahun 2022 ini adalah kali ketujuh seminar ini akan diselenggarakan, dimana ICoSITeR pertama telah dilaksanakan mulai pada tahun 2016 lalu. Tujuan utama diselenggarakan ICoSITeR adalah untuk mengenalkan ITERA kepada dunia Internasional dalam rangka untuk menjalin kerja sama dalam bidang penelitian maupun pendidikan dan menjadi wadah dalam mengkolaborasikan seluruh program studi di ITERA
                         </p>
                         {{-- <div class="button">
                         <a href="#view" type="button" class="btn btn-success">View</a>
                     </div> --}}
-                    </center>
                 </div>
-                <center>
                     <div class="col2">
                         <img src="{{ asset('assets') }}/images/logo.png" alt="">
                     </div>
-                </center>
             </div>
-        </center>
+            
     </div>
     {{-- Page3 --}}
-    <div class="page3" id="page3">
-        <center class="page2">
+    <div class="page3" id="speakers">
             <h2 class="title">SPEAKER</h2>
-        </center>
         <div class="speaker">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -120,6 +113,7 @@
                         <figure>
                             <img src="{{asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png')}}" class="sizeimg bg-light">
                         </figure>
+                        <div>Basrunki Siburian</div>
                     </div>
                     <div class="swiper-slide">
                         <figure>
@@ -162,38 +156,38 @@
     </div>
 
     <!-- Page4 -->
-    <div class="page4" id="page4">
+    <div class="page4" id="gallery">
         <h2 class="title">GALLERY</H2>
-        <div class="row">
-            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                <img src="{{ asset('assets') }}/images/galeri1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-
-                <img src="{{ asset('assets') }}/images/galeri2.jpeg" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
-                
+        <div class="gallery_container">
+            <!-- <img src="{{ asset('assets') }}/images/galeri2.jpeg" class="w-100 shadow-1-strong rounded mb-4" alt="Gallery" /> -->
+            <div class="gallery_content">
+                <div class="gallery_image">
+                    <div>
+                        <img src="{{ asset('assets') }}/images/galeri1.jpg" alt="gallery">
+                    </div>
+                    <div>
+                        <img src="{{ asset('assets') }}/images/galeri2.jpeg" alt="gallery">
+                    </div>
+                    <div>
+                        <img src="{{ asset('assets') }}/images/galeri3.jpg" alt="gallery">
+                    </div>
+                    <div>
+                        <img src="{{ asset('assets') }}/images/galeri4.jpg" alt="gallery">
+                    </div>
+                    <div>
+                        <img src="{{ asset('assets') }}/images/galeri5.jpg" alt="gallery">
+                    </div>
+                    <div>
+                        <img src="{{ asset('assets') }}/images/galeri6.jpg" alt="gallery">
+                    </div>
+                </div>
             </div>
-
-            <div class="col-lg-3 mb-4 mb-lg-0">
-                <img src="{{ asset('assets') }}/images/galeri3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
-
-                <img src="{{ asset('assets') }}/images/galeri4.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-            </div>
-
-            <div class="col-lg-3 mb-4 mb-lg-0">
-                <img src="{{ asset('assets') }}/images/galeri5.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
-
-                <img src="{{ asset('assets') }}/images/galeri6.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
-            </div>
-
-            <div class="col-lg-3 mb-4 mb-lg-0">
-                <img src="{{ asset('assets') }}/images/galeri3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
-
-                <img src="{{ asset('assets') }}/images/galeri1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-            </div>
+            
         </div>
     </div>
 
     {{-- Page 5 --}}
-    <div class="page5" id="page5">
+    <div class="page5" id="recent-post">
         <h2 class="title">Recent Post</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
