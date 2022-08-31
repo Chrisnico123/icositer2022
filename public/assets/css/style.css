@@ -109,16 +109,23 @@ section img#clouds3 {
 }
 .row1 {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 100px;
 }
 .col1 {
-    width: 500px;
     height: auto;
+    width: 800px;
+    margin: 20px;
 }
 .col1 span {
     font-size: large;
     font-weight: 1000;
-} 
+}
+
+.col2 img {
+    width: 340px;
+}
 
 /* gallery  */
 
@@ -138,16 +145,14 @@ section img#clouds3 {
     width: 500px;
     height: auto;
     margin: 10px;
-    box-shadow: 0px 3px 28px -3px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 3px 28px -3px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 3px 28px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 28px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 3px 28px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 3px 28px -3px rgba(0, 0, 0, 0.75);
 }
-
-
 
 /* end gallery */
 
-@media screen and (max-width : 1024px) {
+@media screen and (max-width: 1024px) {
     .row1 {
         display: flex;
         flex-direction: column;
@@ -172,23 +177,20 @@ section img#clouds3 {
         width: 350px;
     }
 }
-@media screen and (max-width : 600px) {
+@media screen and (max-width: 600px) {
     .row1 {
         flex-direction: column-reverse;
     }
-    .page2,.page4 {
+    .page2,
+    .page4 {
         margin: 0;
         padding: 0;
     }
-    
+
     .gallery_image {
         grid-template-columns: 1fr;
     }
-    
 }
-
-
-
 
 .btn-success {
     background-color: #31ae4a;
@@ -203,7 +205,6 @@ section img#clouds3 {
 }
 
 @media screen and (max-width: 1280px) {
-   
     .btn-success {
         height: 50px;
         width: 120px;
@@ -242,7 +243,6 @@ section img#clouds3 {
         font-size: 6vw;
     }
 
-
     .title {
         font-size: 70px !important;
     }
@@ -267,7 +267,6 @@ section img#clouds3 {
     }
 }
 @media screen and (max-width: 540px) {
-   
     .btn-success {
         height: 40px;
         width: 130px;
@@ -288,7 +287,6 @@ section img#clouds3 {
     }
 }
 @media screen and (max-width: 415px) {
-    
     .row {
         padding: 0px;
     }
@@ -302,7 +300,6 @@ section img#clouds3 {
     }
 }
 @media screen and (max-width: 391px) {
-    
     .btn-success {
         height: 40px;
         width: 110px;
@@ -340,7 +337,7 @@ figcaption > h3 {
 /* Start Page 4 */
 .page4 {
     /* position: relative; */
-    padding: 25px;   
+    padding: 25px;
     background: var(--secondary);
 }
 
