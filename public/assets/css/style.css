@@ -170,6 +170,9 @@ section img#clouds3 {
         max-width: 100%;
         height: auto;
     }
+    .col1 {
+        width: fit-content;
+    }
     .col1 p {
         font-size: 24px;
 
