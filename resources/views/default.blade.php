@@ -113,7 +113,6 @@
                         <figure>
                             <img src="{{asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png')}}" class="sizeimg bg-light">
                         </figure>
-                        <div>Basrunki Siburian</div>
                     </div>
                     <div class="swiper-slide">
                         <figure>

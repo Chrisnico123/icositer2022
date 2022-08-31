@@ -1,6 +1,13 @@
 @extends('/TemplateLomba/lomba1')
 @section('page1')
+    
     <div class="cont">
+        <div class="d-flex justify-content-between fixed-top p-4">
+            <div>
+            <a href="../" class="btn btn-success">HOME</a>
+            </div>
+            
+        </div>
         <div class="card text-center" style="width: 50rem;">
             <div class="card-body">
                 <h1 class="card-title">LKTI</h1>
