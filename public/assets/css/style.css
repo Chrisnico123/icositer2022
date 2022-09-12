@@ -194,13 +194,10 @@ section img#clouds3 {
 
 .btn-success {
     background-color: #31ae4a;
-    height: 50px;
-    width: 150px;
-    border: none;
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 1vw;
     align-items: center;
-    font-family: var(--font-family2);
+    font-family: var(--font -family2);
     border-radius: 27px;
 }
 
@@ -530,8 +527,9 @@ footer p {
 .organigram{
     position: relative;
     background: var(--secondary);
-    padding-top: 100px;
+    padding: 100px;
 }
+
 .title-organigram{
     text-align: center;
     color: white;
@@ -544,7 +542,6 @@ footer p {
     margin-bottom: -15px;
 }
 
-
 .title-organigram-1 {
     text-align: center;
     color: white;
@@ -556,3 +553,25 @@ footer p {
     padding-top: -10px;
     padding-bottom: -10px;
 }
+
+
+.container text-center {
+    position: relative;
+
+}
+.col-organigram{
+    padding-top: 100px;
+}
+.nama {
+    padding-top: -100px;
+    font-family: var(--font-family2);
+    font-weight: bold;
+    white-space: normal;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.jabatan {
+    font-family: var(--font-family2);
+    white-space: normal;
+}
+
