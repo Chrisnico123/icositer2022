@@ -94,9 +94,12 @@ section img#clouds3 {
 
 .page2 {
     position: relative;
-    padding: 100px;
+    padding-top: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
     background: var(--secondary);
 }
+
 .title {
     text-align: center;
     color: var(--font-color);
@@ -354,6 +357,7 @@ figcaption > h3 {
 /* Start Page 5 */
 .page5 {
     position: relative;
+    padding-top: 100px;
     background: var(--secondary);
     font-family: var(--font-family2);
 }
@@ -524,6 +528,7 @@ footer p {
     }
 }
 
+/* Organigram */
 .organigram{
     position: relative;
     background: var(--secondary);
@@ -554,15 +559,21 @@ footer p {
     padding-bottom: -10px;
 }
 
-
-.container text-center {
-    position: relative;
-
-}
 .col-organigram{
     padding-top: 100px;
 }
+
+.col-organigram img{
+    position: relative;
+}
+
+.col-organigram h2{
+    top: 500px;
+    position: absolute;
+}
+
 .nama {
+    position: absolute;
     padding-top: -100px;
     font-family: var(--font-family2);
     font-weight: bold;

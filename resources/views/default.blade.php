@@ -84,15 +84,26 @@
             airballoon.style.bottom = value * 0.5 + 'px';
         });
     </script>
-    <!-- Page2 -->
 
+    <!-- Page2 -->
     <div class="page2" id="about">
+        <img src="{{ asset('assets') }}/images/background/item1.svg" id="item1">
         <h2 class="title">About</h2>
         <div class="row1">
             <div class="col1">
                 <center>
                     <p>
-                        <span> ICoSITeR</span> (International Conference On Scientific, Infrastructure Technology and Regional Development) merupakan seminar skala internasional tahunan dan menjadi rangkaian acara Dies Natalis Institut Teknologi Sumatera. Seminar Internasional yang menjadi wadah bagi para peneliti, pengamat, masyarakat serta pihak terkait lainnya dengan tema – tema berbeda setiap tahunnya. Yang tentunya akan menghadirkan pembicara yang sangat kompeten dalam bidangnya baik dalam negeri maupun luar negeri. Selain seminar skala internasional, akan ada perlombaan dan cultural night berskala internasional. Pada tahun 2022 ini adalah kali ketujuh seminar ini akan diselenggarakan, dimana ICoSITeR pertama telah dilaksanakan mulai pada tahun 2016 lalu. Tujuan utama diselenggarakan ICoSITeR adalah untuk mengenalkan ITERA kepada dunia Internasional dalam rangka untuk menjalin kerja sama dalam bidang penelitian maupun pendidikan dan menjadi wadah dalam mengkolaborasikan seluruh program studi di ITERA
+                        <span> ICoSITeR</span> (International Conference On Scientific, Infrastructure Technology and
+                        Regional Development) merupakan seminar skala internasional tahunan dan menjadi rangkaian acara
+                        Dies Natalis Institut Teknologi Sumatera. Seminar Internasional yang menjadi wadah bagi para
+                        peneliti, pengamat, masyarakat serta pihak terkait lainnya dengan tema – tema berbeda setiap
+                        tahunnya. Yang tentunya akan menghadirkan pembicara yang sangat kompeten dalam bidangnya baik
+                        dalam negeri maupun luar negeri. Selain seminar skala internasional, akan ada perlombaan dan
+                        cultural night berskala internasional. Pada tahun 2022 ini adalah kali ketujuh seminar ini akan
+                        diselenggarakan, dimana ICoSITeR pertama telah dilaksanakan mulai pada tahun 2016 lalu. Tujuan
+                        utama diselenggarakan ICoSITeR adalah untuk mengenalkan ITERA kepada dunia Internasional dalam
+                        rangka untuk menjalin kerja sama dalam bidang penelitian maupun pendidikan dan menjadi wadah
+                        dalam mengkolaborasikan seluruh program studi di ITERA
                     </p>
                 </center>
                 {{-- <div class="button">
@@ -115,12 +126,14 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <figure>
-                            <img src="{{asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png')}}" class="sizeimg bg-light">
+                            <img src="{{ asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png') }}"
+                                class="sizeimg bg-light">
                         </figure>
                     </div>
                     <div class="swiper-slide">
                         <figure>
-                            <img src="{{asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png')}}" class="sizeimg bg-light">
+                            <img src="{{ asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png') }}"
+                                class="sizeimg bg-light">
                         </figure>
                     </div>
                 </div>
@@ -236,38 +249,38 @@
         <div class="container text-center">
             <div class="row row-cols-2">
                 <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" alt="">
-                    <h2 class="nama">Rahman Pajri</h2>
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" id="1">
+                    <h2>Rahman Pajri</h2>
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
                 <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" alt="">
-                    <h2 class="nama">Rahman Pajri</h2>
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" id="2">
+                    <h2>Rahman Pajri</h2>
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
                 <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" alt="">
-                    <h2 class="nama">Rahman Pajri</h2>
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" id="3">
+                    <h2>Rahman Pajri</h2>
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
                 <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" alt="">
-                    <h2 class="nama">Rahman Pajri</h2>
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" id="4">
+                    <h2>Rahman Pajri</h2>
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
                 <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" alt="">
-                    <h2 class="nama">Rahman Pajri</h2>
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" id="5">
+                    <h2>Rahman Pajri</h2>
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
                 <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" alt="">
-                    <h2 class="nama">Rahman Pajri</h2>
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" id="6">
+                    <h2>Rahman Pajri</h2>
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
             </div>
@@ -286,16 +299,17 @@
                 <img src="{{ asset('assets') }}/images/logo.png" width="77.2" height="58.5" alt="">
             </div>
             <div class="alamat">
-                <p>Jl.Terusan Ryacudu,Wayhuwi,Kec,Jati Agung,
+                <p>Jl.Terusan Ryacudu, Wayhuwi, Kec. Jati Agung,
                     <br>
-                    Kabupaten Lampung Selatan,Lampung,35365
+                    Kabupaten Lampung Selatan, Lampung, 35365
                 </p>
             </div>
         </div>
         <div class="bawah">
             <div class="email">
                 <div class="vektor1">
-                    <img src="{{ asset('assets') }}/images/vektor1.png" width="" height="" alt="">
+                    <img src="{{ asset('assets') }}/images/vektor1.png" width="" height=""
+                        alt="">
                 </div>
                 <div class="par1">
                     <p>icositer2022@gmail.com</p>
@@ -303,7 +317,8 @@
             </div>
             <div class="telepon">
                 <div class="vektor2">
-                    <img src="{{ asset('assets') }}/images/Vector2.png" width="" height="" alt="">
+                    <img src="{{ asset('assets') }}/images/Vector2.png" width="" height=""
+                        alt="">
                 </div>
                 <div class="par2">
                     <p>+6281282434826</p>
