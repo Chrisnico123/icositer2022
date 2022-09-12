@@ -559,6 +559,10 @@ footer p {
     padding-bottom: -10px;
 }
 
+.container text-center {
+    position: relative;
+}
+
 .col-organigram{
     padding-top: 100px;
 }
