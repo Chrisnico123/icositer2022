@@ -88,6 +88,7 @@
     <!-- Page2 -->
     <div class="page2" id="about">
         <img src="{{ asset('assets') }}/images/background/item1.svg" id="item1">
+        <img src="{{ asset('assets') }}/images/background/item2.svg" id="item2">
         <h2 class="title">About</h2>
         <div class="row1">
             <div class="col1">
