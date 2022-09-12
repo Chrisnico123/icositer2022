@@ -527,6 +527,32 @@ footer p {
     }
 }
 
+.organigram{
+    position: relative;
+    background: var(--secondary);
+    padding-top: 100px;
+}
 .title-organigram{
+    text-align: center;
     color: white;
+    font-size: 1.5vw;
+    font-family: var(--font-family2);
+    font-weight: bold;
+    white-space: normal;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    padding-bottom: -10px;
+    margin-bottom: -15px;
+}
+
+
+.title-organigram-1 {
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+    font-family: var(--font-family2);
+    font-weight: bold;
+    white-space: normal;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    padding-top: -10px;
+    padding-bottom: -10px;
 }

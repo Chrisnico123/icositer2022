@@ -228,7 +228,7 @@
         });
     </script>
 
-    {{-- organigram --}}
+    <!-- organigram -->
     <div class="organigram">
         <h2 class="title-organigram"> Our Headline In </h2>
         <h2 class="title-organigram-1">ICoSITeR</h2>
