@@ -85,31 +85,31 @@
         });
     </script>
     <!-- Page2 -->
-    
+
     <div class="page2" id="about">
-                <h2 class="title">About</h2>
-            <div class="row1">
-                <div class="col1">
-                    <center>
-                        <p>
-                            <span> ICoSITeR</span> (International Conference On Scientific, Infrastructure Technology and Regional Development) merupakan seminar skala internasional tahunan dan menjadi rangkaian acara Dies Natalis Institut Teknologi Sumatera. Seminar Internasional yang menjadi wadah bagi para peneliti, pengamat, masyarakat serta pihak terkait lainnya dengan tema – tema berbeda setiap tahunnya. Yang tentunya akan menghadirkan pembicara yang sangat kompeten dalam bidangnya baik dalam negeri maupun luar negeri. Selain seminar skala internasional, akan ada perlombaan dan cultural night berskala internasional. Pada tahun 2022 ini adalah kali ketujuh seminar ini akan diselenggarakan, dimana ICoSITeR pertama telah dilaksanakan mulai pada tahun 2016 lalu. Tujuan utama diselenggarakan ICoSITeR adalah untuk mengenalkan ITERA kepada dunia Internasional dalam rangka untuk menjalin kerja sama dalam bidang penelitian maupun pendidikan dan menjadi wadah dalam mengkolaborasikan seluruh program studi di ITERA
-                        </p>
-                    </center>
-                        {{-- <div class="button">
+        <h2 class="title">About</h2>
+        <div class="row1">
+            <div class="col1">
+                <center>
+                    <p>
+                        <span> ICoSITeR</span> (International Conference On Scientific, Infrastructure Technology and Regional Development) merupakan seminar skala internasional tahunan dan menjadi rangkaian acara Dies Natalis Institut Teknologi Sumatera. Seminar Internasional yang menjadi wadah bagi para peneliti, pengamat, masyarakat serta pihak terkait lainnya dengan tema – tema berbeda setiap tahunnya. Yang tentunya akan menghadirkan pembicara yang sangat kompeten dalam bidangnya baik dalam negeri maupun luar negeri. Selain seminar skala internasional, akan ada perlombaan dan cultural night berskala internasional. Pada tahun 2022 ini adalah kali ketujuh seminar ini akan diselenggarakan, dimana ICoSITeR pertama telah dilaksanakan mulai pada tahun 2016 lalu. Tujuan utama diselenggarakan ICoSITeR adalah untuk mengenalkan ITERA kepada dunia Internasional dalam rangka untuk menjalin kerja sama dalam bidang penelitian maupun pendidikan dan menjadi wadah dalam mengkolaborasikan seluruh program studi di ITERA
+                    </p>
+                </center>
+                {{-- <div class="button">
                         <a href="#view" type="button" class="btn btn-success">View</a>
                     </div> --}}
-                </div>
-                    <div class="col2">
-                        <center>
-                            <img src="{{ asset('assets') }}/images/logo.png" >
-                        </center>
-                    </div>
             </div>
-            
+            <div class="col2">
+                <center>
+                    <img src="{{ asset('assets') }}/images/logo.png">
+                </center>
+            </div>
+        </div>
+
     </div>
     {{-- Page3 --}}
     <div class="page3" id="speakers">
-            <h2 class="title">SPEAKER</h2>
+        <h2 class="title">SPEAKER</h2>
         <div class="speaker">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -185,7 +185,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
@@ -227,6 +227,13 @@
             },
         });
     </script>
+
+    {{-- organigram --}}
+    <div class="organigram">
+        <h2 class="title-organigram"> Our Headline In </h2>
+        <h2 class="title-organigram-1">ICoSITeR</h2>
+    </div>
+
     <footer>
         <div class="atas">
             <div class="icos">
