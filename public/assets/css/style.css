@@ -569,24 +569,25 @@ footer p {
 
 .col-organigram img{
     position: relative;
+    z-index: 0;
 }
 
-.col-organigram h2{
-    top: 500px;
-    position: absolute;
-}
 
 .nama {
     position: absolute;
-    padding-top: -100px;
+    padding-left: 20%;
+    padding-top: 13.5%;
     font-family: var(--font-family2);
     font-weight: bold;
+    font-size: 2vw;
     white-space: normal;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 2px 2px rgba(105, 103, 103, 0.781);
+    z-index: 1;
 }
 
 .jabatan {
     font-family: var(--font-family2);
     white-space: normal;
+    font-size: 1vw;
 }
 

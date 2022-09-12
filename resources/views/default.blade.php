@@ -126,14 +126,12 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <figure>
-                            <img src="{{ asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png') }}"
-                                class="sizeimg bg-light">
+                            <img src="{{ asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png') }}" class="sizeimg bg-light">
                         </figure>
                     </div>
                     <div class="swiper-slide">
                         <figure>
-                            <img src="{{ asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png') }}"
-                                class="sizeimg bg-light">
+                            <img src="{{ asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png') }}" class="sizeimg bg-light">
                         </figure>
                     </div>
                 </div>
@@ -249,45 +247,45 @@
         <div class="container text-center">
             <div class="row row-cols-2">
                 <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" id="1">
-                    <h2>Rahman Pajri</h2>
+                    <h2 class="nama">Rahman Pajri</h2>
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px">
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
                 <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" id="2">
-                    <h2>Rahman Pajri</h2>
+                    <h2 class="nama">Rahman Pajri</h2>
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px">
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
                 <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" id="3">
-                    <h2>Rahman Pajri</h2>
+                    <h2 class="nama">Rahman Pajri</h2>
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px">
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
                 <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" id="4">
-                    <h2>Rahman Pajri</h2>
+                    <h2 class="nama">Rahman Pajri</h2>
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px">
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
                 <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" id="5">
-                    <h2>Rahman Pajri</h2>
+                    <h2 class="nama">Rahman Pajri</h2>
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px">
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
                 <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" id="6">
-                    <h2>Rahman Pajri</h2>
+                    <h2 class="nama">Rahman Pajri</h2>
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px">
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
             </div>
         </div>
 
         <div class="text-center">
-            <button type="button" class="btn btn-success">Lihat Selengkapnya</button>
+            <button type="button" class="btn btn-success">Lihat Divisi</button>
         </div>
 
 
@@ -308,8 +306,7 @@
         <div class="bawah">
             <div class="email">
                 <div class="vektor1">
-                    <img src="{{ asset('assets') }}/images/vektor1.png" width="" height=""
-                        alt="">
+                    <img src="{{ asset('assets') }}/images/vektor1.png" width="" height="" alt="">
                 </div>
                 <div class="par1">
                     <p>icositer2022@gmail.com</p>
@@ -317,8 +314,7 @@
             </div>
             <div class="telepon">
                 <div class="vektor2">
-                    <img src="{{ asset('assets') }}/images/Vector2.png" width="" height=""
-                        alt="">
+                    <img src="{{ asset('assets') }}/images/Vector2.png" width="" height="" alt="">
                 </div>
                 <div class="par2">
                     <p>+6281282434826</p>
