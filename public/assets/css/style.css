@@ -3,6 +3,7 @@
 :root {
     --primary: #1dc2ee;
     --secondary: #90e463;
+    --scroll: #dc3545;
     --font-family: "Poppins", sans-serif;
     --font-family: "swis721-blk-bt-black", sans-serif;
     --font-family: Poppins, "sans-serif";
@@ -30,6 +31,17 @@ body {
 .btn-danger {
     font-size: large;
     border-radius: 27px;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 0.6rem;
+    background: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scroll);
+    border-radius: .5rem;
 }
 
 /* Start Page 1 */
@@ -145,11 +157,38 @@ section img#clouds3 {
 }
 
 .col2 img {
-    width: 340px;
+    padding-top: 10%;
+    width: 650px;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+    .col1 p {
+        margin-top: -100px;
+    }
+
+    .title {
+        padding-bottom: 90px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .col2 img {
+        margin-top: -100px;
+    }
+}
+
+/*speaker*/
+#item4 {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
 }
 
 /* gallery  */
-
 .gallery_image {
     /* background: #31ae4a; */
     display: flex;
@@ -379,7 +418,8 @@ figcaption>h3 {
 
 /* Start Page 4 */
 .page4 {
-    /* position: relative; */
+    z-index: 1;
+    position: relative;
     padding: 25px;
     background: var(--secondary);
 }
@@ -395,10 +435,20 @@ figcaption>h3 {
     text-align: right;
 }
 
+#item5 {
+    z-index: -1;
+    margin-top: -180px;
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    left: 0px;
+}
+
 /* End Page 4 */
 
 /* Start Page 5 */
 .page5 {
+    z-index: 0;
     position: relative;
     padding-top: 100px;
     background: var(--secondary);
@@ -414,6 +464,14 @@ figcaption>h3 {
     text-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
     padding-bottom: -10px;
     text-align: center;
+}
+
+#item6 {
+    margin-top: -100px;
+    z-index: -1;
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
 }
 
 .swiper-container {
