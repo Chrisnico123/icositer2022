@@ -245,41 +245,41 @@
         <h2 class="title-organigram"> Our Headline In </h2>
         <h2 class="title-organigram-1">ICoSITeR</h2>
 
-        <div class="container text-center">
-            <div class="row row-cols-2">
-                <div class="col-organigram">
+        <div class="row text-center">
+            <div class="row g-2 g-md-4">
+                <div class="col-12 col-md-6 ">
                     <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px">
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
-                <div class="col-organigram">
+                <div class="col-12 col-md-6">
                     <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px">
+                    <img  src="{{ asset('assets') }}/images/avatar-organigram.png" >
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
-                <div class="col-organigram">
+                <div class="col-12 col-md-6">
                     <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px">
+                    <img  src="{{ asset('assets') }}/images/avatar-organigram.png" >
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
-                <div class="col-organigram">
+                <div class="col-12 col-md-6">
                     <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px">
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" >
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
-                <div class="col-organigram">
+                <div class="col-12 col-md-6">
                     <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px">
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" >
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
-                <div class="col-organigram">
+                <div class="col-12 col-md-6">
                     <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px">
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" >
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
             </div>

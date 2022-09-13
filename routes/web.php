@@ -30,7 +30,7 @@ Route::get('/download/{filename}', function ($filename) {
 });
 
 Route::get('/', function () {
-    return view('default');
+    return view('divisi');
 });
 
 Route::controller(Register::class)->group(function () {
