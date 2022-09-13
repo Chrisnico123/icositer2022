@@ -291,7 +291,7 @@
         </div>
 
         <div class="text-center">
-            <button type="button" class="btn btn-success">Lihat Divisi</button>
+            <a href="/divisi" type="button" class="btn btn-success">Lihat Divisi</a>
         </div>
 
 

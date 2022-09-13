@@ -33,6 +33,10 @@ Route::get('/', function () {
     return view('default');
 });
 
+Route::get('/divisi', function(){
+    return view('divisi');
+});
+
 Route::controller(Register::class)->group(function () {
     Route::get('/register', 'register_form')->name('register_form');
 });
