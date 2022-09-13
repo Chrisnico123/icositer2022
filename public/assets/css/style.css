@@ -634,6 +634,7 @@ footer p {
 
 /* Organigram */
 .organigram {
+    z-index: 0;
     position: relative;
     background: var(--secondary);
     padding: 100px;
@@ -694,6 +695,14 @@ footer p {
     white-space: normal;
     font-size: 1vw;
     text-align: center;
+}
+
+#item7 {
+    z-index: -1;
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    left: 0px;
 }
 
 @media screen and (max-width: 912px) {

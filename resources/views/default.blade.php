@@ -247,6 +247,7 @@
 
     <!-- organigram -->
     <div class="organigram">
+        <img src="{{ asset('assets') }}/images/background/item7.svg" id="item7">
         <h2 class="title-organigram"> Our Headline In </h2>
         <h2 class="title-organigram-1">ICoSITeR</h2>
 
@@ -260,31 +261,31 @@
 
                 <div class="col-12 col-md-6">
                     <h2 class="nama">Rahman Pajri</h2>
-                    <img  src="{{ asset('assets') }}/images/avatar-organigram.png" >
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
                 <div class="col-12 col-md-6">
                     <h2 class="nama">Rahman Pajri</h2>
-                    <img  src="{{ asset('assets') }}/images/avatar-organigram.png" >
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
                 <div class="col-12 col-md-6">
                     <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" >
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
                 <div class="col-12 col-md-6">
                     <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" >
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
 
                 <div class="col-12 col-md-6">
                     <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" >
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
                 </div>
             </div>
