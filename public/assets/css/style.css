@@ -719,7 +719,12 @@ footer p {
 
     .title-organigram {
         padding-top: 0;
-        margin-bottom: -2px;
+        margin-bottom: -5px;
+        font-size: 12px;
+    }
+
+    .title-organigram-1 {
+        font-size:35px;
     }
 
 }

@@ -42,6 +42,7 @@
             </div>
         </div>
     </nav>
+    
     <div class="organigram">
         <h2 class="title-organigram"> Ketua Divisi </h2>
         <h2 class="title-organigram-1">ICoSITeR</h2>
