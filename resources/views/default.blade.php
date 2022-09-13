@@ -104,7 +104,7 @@
                         diselenggarakan, dimana ICoSITeR pertama telah dilaksanakan mulai pada tahun 2016 lalu. Tujuan
                         utama diselenggarakan ICoSITeR adalah untuk mengenalkan ITERA kepada dunia Internasional dalam
                         rangka untuk menjalin kerja sama dalam bidang penelitian maupun pendidikan dan menjadi wadah
-                        dalam mengkolaborasikan seluruh program studi di ITERA
+                        dalam mengkolaborasikan seluruh program studi di ITERA.
                     </p>
                 </center>
                 {{-- <div class="button">
@@ -113,7 +113,7 @@
             </div>
             <div class="col2">
                 <center>
-                    <img src="{{ asset('assets') }}/images/logo.png">
+                    <img src="{{ asset('assets') }}/images/background/item3.png" id="item3">
                 </center>
             </div>
         </div>
@@ -121,18 +121,21 @@
     </div>
     {{-- Page3 --}}
     <div class="page3" id="speakers">
+        <img src="{{ asset('assets') }}/images/background/item4.svg" id="item4">
         <h2 class="title">SPEAKER</h2>
         <div class="speaker">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <figure>
-                            <img src="{{ asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png') }}" class="sizeimg bg-light">
+                            <img src="{{ asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png') }}"
+                                class="sizeimg bg-light">
                         </figure>
                     </div>
                     <div class="swiper-slide">
                         <figure>
-                            <img src="{{ asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png') }}" class="sizeimg bg-light">
+                            <img src="{{ asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png') }}"
+                                class="sizeimg bg-light">
                         </figure>
                     </div>
                 </div>
@@ -172,6 +175,7 @@
 
     <!-- Page4 -->
     <div class="page4" id="gallery">
+        <img src="{{ asset('assets') }}/images/background/item5.svg" id="item5">
         <h2 class="title">GALLERY</H2>
         <div class="gallery_container">
             <!-- <img src="{{ asset('assets') }}/images/galeri2.jpeg" class="w-100 shadow-1-strong rounded mb-4" alt="Gallery" /> -->
@@ -203,6 +207,7 @@
 
     {{-- Page 5 --}}
     <div class="page5" id="recent-post">
+        <img src="{{ asset('assets') }}/images/background/item6.svg" id="item6">
         <h2 class="title">Recent Post</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -307,7 +312,8 @@
         <div class="bawah">
             <div class="email">
                 <div class="vektor1">
-                    <img src="{{ asset('assets') }}/images/vektor1.png" width="" height="" alt="">
+                    <img src="{{ asset('assets') }}/images/vektor1.png" width="" height=""
+                        alt="">
                 </div>
                 <div class="par1">
                     <p>icositer2022@gmail.com</p>
@@ -315,7 +321,8 @@
             </div>
             <div class="telepon">
                 <div class="vektor2">
-                    <img src="{{ asset('assets') }}/images/Vector2.png" width="" height="" alt="">
+                    <img src="{{ asset('assets') }}/images/Vector2.png" width="" height=""
+                        alt="">
                 </div>
                 <div class="par2">
                     <p>+6281282434826</p>
