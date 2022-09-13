@@ -42,70 +42,37 @@
             </div>
         </div>
     </nav>
+
+
     <div class="organigram">
-        <h2 class="title-organigram"> Ketua Divisi </h2>
+        <h2 class="title-organigram"> Kepala Sub-divisi</h2>
         <h2 class="title-organigram-1">ICoSITeR</h2>
 
-        <div class="container text-center">
-            <div class="row row-cols-2">
-                <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" alt="">
+        <div class="row text-center">
+            <div class="row g-2 g-md-4">
+
+                <div class="col-12 col-md-6">
                     <h2 class="nama">Rahman Pajri</h2>
-                    <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p class="jabatan">Kepala Sub Divisi Pendataan Peserta<br> TSE'20</br></p>
                     <div class="text-center">
-                        <button type="button" class="btn btn-success">Lihat Selengkapnya</button>
+                        <button type="button" class="btn btn-success">Staff</button>
                     </div>
                 </div>
 
-                <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" alt="">
+                <div class="col-12 col-md-6">
                     <h2 class="nama">Rahman Pajri</h2>
-                    <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
+                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p class="jabatan">Kepala Sub Divisi Website<br> TSE'20</br></p>
                     <div class="text-center">
-                        <button type="button" class="btn btn-success">Lihat Selengkapnya</button>
+                        <button type="button" class="btn btn-success">Staff</button>
                     </div>
                 </div>
-                
-                <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" alt="">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
-                    <div class="text-center">
-                        <button type="button" class="btn btn-success">Lihat Selengkapnya</button>
-                    </div>
-                </div>
-
-                <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" alt="">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
-                    <div class="text-center">
-                        <button type="button" class="btn btn-success">Lihat Selengkapnya</button>
-                    </div>
-                </div>
-
-                <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" alt="">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
-                    <div class="text-center">
-                        <button type="button" class="btn btn-success">Lihat Selengkapnya</button>
-                    </div>
-                </div>
-
-                <div class="col-organigram">
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png" height="350px" alt="">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <p class="jabatan">Ketua Divisi xxxxx <br> TSE'20</br></p>
-                    <div class="text-center">
-                        <button type="button" class="btn btn-success">Lihat Selengkapnya</button>
-                    </div>
-                </div>
-
-
 
             </div>
         </div>
+    </div>
+
 
 
     </div>
