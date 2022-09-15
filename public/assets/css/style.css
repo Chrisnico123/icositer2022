@@ -631,7 +631,6 @@ footer p {
     .atas {
         border-bottom: 5px solid black;
     }
-
 }
 
 /* Organigram */
@@ -724,6 +723,7 @@ footer p {
 
     .col-12 {
         display: flex;
+        flex-direction: column;
     }
 
 
