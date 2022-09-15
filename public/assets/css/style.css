@@ -723,7 +723,6 @@ footer p {
 
     .col-12 {
         display: flex;
-        flex-direction: column;
     }
 
 
@@ -739,6 +738,12 @@ footer p {
 
 }
 
-.btn-close {
+.row text-center {
     z-index: 999;
+}
+
+.sub-divisi {
+    position: relative;
+    background: var(--secondary);
+    padding: 100px;
 }
