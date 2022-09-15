@@ -55,7 +55,9 @@
                     <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Kepala Divisi Acara <br> TSE'20</br></p>
                     <div class="text-center">
-                        <button type="button" class="btn btn-success">Sub Divisi</button>
+                        <a href="/divisi/acara">
+                            <button type="button" class="btn btn-success">Sub Divisi</button>
+                        </a>
                     </div>
                 </div>
 
@@ -64,7 +66,9 @@
                     <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Kepala Divisi Eksternal <br> TSE'20</br></p>
                     <div class="text-center">
-                        <button type="button" class="btn btn-success">Sub Divisi</button>
+                        <a href="/divisi/acara">
+                            <button type="button" class="btn btn-success">Sub Divisi</button>
+                        </a>
                     </div>
                 </div>
 
@@ -73,7 +77,9 @@
                     <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Kepala Divisi Medkominfo <br> TSE'20</br></p>
                     <div class="text-center">
-                        <button type="button" class="btn btn-success">Sub Divisi</button>
+                        <a href="/divisi/kominfo">
+                            <button type="button" class="btn btn-success">Sub Divisi</button>
+                        </a>
                     </div>
                 </div>
 
@@ -82,7 +88,9 @@
                     <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Kepala Divisi Pusat Data <br> TSE'20</br></p>
                     <div class="text-center">
-                        <button type="button" class="btn btn-success">Sub Divisi</button>
+                        <a href="/divisi/pusdat">
+                            <button type="button" class="btn btn-success">Sub Divisi</button>
+                        </a>
                     </div>
                 </div>
 
@@ -91,7 +99,9 @@
                     <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Kepala Divisi Operasional <br> TSE'20</br></p>
                     <div class="text-center">
-                        <button type="button" class="btn btn-success">Sub Divisi</button>
+                        <a href="/divisi/operasional">
+                            <button type="button" class="btn btn-success">Sub Divisi</button>
+                        </a>
                     </div>
                 </div>
 
@@ -100,7 +110,9 @@
                     <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Kepala Divisi Akomodasi <br> TSE'20</br></p>
                     <div class="text-center">
-                        <button type="button" class="btn btn-success">Sub Divisi</button>
+                        <a href="/divisi/akomodasi">
+                            <button type="button" class="btn btn-success">Sub Divisi</button>
+                        </a>
                     </div>
                 </div>
 
@@ -109,7 +121,9 @@
                     <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Kepala Divisi Konsumsi <br> TSE'20</br></p>
                     <div class="text-center">
-                        <button type="button" class="btn btn-success">Sub Divisi</button>
+                        <a href="/divisi/konsumsi">
+                            <button type="button" class="btn btn-success">Sub Divisi</button>
+                        </a>
                     </div>
                 </div>
 
@@ -118,7 +132,9 @@
                     <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Kepala Divisi Manajemen Lapangan <br> TSE'20</br></p>
                     <div class="text-center">
-                        <button type="button" class="btn btn-success">Sub Divisi</button>
+                        <a href="/divisi/menlap">
+                            <button type="button" class="btn btn-success">Sub Divisi</button>
+                        </a>
                     </div>
                 </div>
 
@@ -127,7 +143,9 @@
                     <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Kepala Divisi Kreatif <br> TSE'20</br></p>
                     <div class="text-center">
-                        <button type="button" class="btn btn-success">Sub Divisi</button>
+                        <a href="/divisi/kreatif">
+                            <button type="button" class="btn btn-success">Sub Divisi</button>
+                        </a>
                     </div>
                 </div>
 
@@ -136,7 +154,9 @@
                     <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Kepala Divisi Fundraising <br> TSE'20</br></p>
                     <div class="text-center">
-                        <button type="button" class="btn btn-success">Sub Divisi</button>
+                        <a href="/divisi/fundraising">
+                            <button type="button" class="btn btn-success">Sub Divisi</button>
+                        </a>
                     </div>
                 </div>
             </div>
