@@ -44,8 +44,9 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="sub-divisi">
+        <img src="{{ asset('assets') }}/images/background/item7.svg" id="item7sub">
         <h2 class="title-organigram"> Kepala Sub-divisi</h2>
         <h2 class="title-organigram-1">ICoSITeR</h2>
 

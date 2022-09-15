@@ -743,7 +743,16 @@ footer p {
 }
 
 .sub-divisi {
+    z-index: 1060;
     position: relative;
     background: var(--secondary);
     padding: 100px;
+}
+
+#item7sub {
+    z-index: -1059;
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    left: 0px;
 }
