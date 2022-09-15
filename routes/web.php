@@ -32,6 +32,36 @@ Route::get('/download/{filename}', function ($filename) {
 Route::get('/', function () {
     return view('templateDivisi/acara');
 });
+Route::get('/divisi/acara', function () {
+    return view('/templateDivisi/acara');
+});
+Route::get('/divisi/akomodasi', function () {
+    return view('/templateDivisi/akomodasi');
+});
+Route::get('/divisi/eksternal', function () {
+    return view('/templateDivisi/eksternal');
+});
+Route::get('/divisi/fundraising', function () {
+    return view('/templateDivisi/fundraising');
+});
+Route::get('/divisi/kominfo', function () {
+    return view('/templateDivisi/kominfo');
+});
+Route::get('/divisi/konsumsi', function () {
+    return view('/templateDivisi/konsumsi');
+});
+Route::get('/divisi/kreatif', function () {
+    return view('/templateDivisi/kreatif');
+});
+Route::get('/divisi/menlap', function () {
+    return view('/templateDivisi/menlap');
+});
+Route::get('/divisi/operasional', function () {
+    return view('/templateDivisi/operasional');
+});
+Route::get('/divisi/pusdat', function () {
+    return view('/templateDivisi/pusdat');
+});
 
 Route::get('/divisi', function(){
     return view('divisi');
