@@ -631,7 +631,7 @@ footer p {
     .atas {
         border-bottom: 5px solid black;
     }
-        
+
 }
 
 /* Organigram */
@@ -741,4 +741,12 @@ footer p {
 
 .modal-backdrop {
     z-index: -1;
+}
+
+#item7sub {
+    z-index: -1;
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    left: 0px;
 }
