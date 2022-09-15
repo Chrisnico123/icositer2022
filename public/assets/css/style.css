@@ -737,3 +737,7 @@ footer p {
     }
 
 }
+
+.btn-close {
+    z-index: 999;
+}

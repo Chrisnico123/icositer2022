@@ -119,8 +119,7 @@
             </div>
             <div class="col2">
                 <center>
-                    <img data-aos="zoom-out-up" data-aos-duration="3000"
-                        src="{{ asset('assets') }}/images/background/item3.png" id="item3">
+                    <img data-aos="zoom-out-up" data-aos-duration="3000" src="{{ asset('assets') }}/images/background/item3.png" id="item3">
                 </center>
             </div>
         </div>
@@ -135,14 +134,12 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <figure>
-                            <img src="{{ asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png') }}"
-                                class="sizeimg bg-light">
+                            <img src="{{ asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png') }}" class="sizeimg bg-light">
                         </figure>
                     </div>
                     <div class="swiper-slide">
                         <figure>
-                            <img src="{{ asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png') }}"
-                                class="sizeimg bg-light">
+                            <img src="{{ asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png') }}" class="sizeimg bg-light">
                         </figure>
                     </div>
                 </div>
@@ -216,8 +213,7 @@
     <div class="page5" id="recent-post">
         <img src="{{ asset('assets') }}/images/background/item6.svg" id="item6">
         <h2 data-aos="zoom-in" data-aos-duration="1000" class="title">Recent Post</h2>
-        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000"
-            class="swiper-container">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000" class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="https://source.unsplash.com/random/1"></div>
                 <div class="swiper-slide"><img src="https://source.unsplash.com/random/2"></div>
@@ -306,6 +302,7 @@
 
     </div>
 
+    <!-- footer -->
     <footer>
         <div class="atas">
             <div class="icos">
@@ -321,8 +318,7 @@
         <div class="bawah">
             <div class="email">
                 <div class="vektor1">
-                    <img src="{{ asset('assets') }}/images/vektor1.png" width="" height=""
-                        alt="">
+                    <img src="{{ asset('assets') }}/images/vektor1.png" width="" height="" alt="">
                 </div>
                 <div class="par1">
                     <p>icositer2022@gmail.com</p>
@@ -330,8 +326,7 @@
             </div>
             <div class="telepon">
                 <div class="vektor2">
-                    <img src="{{ asset('assets') }}/images/Vector2.png" width="" height=""
-                        alt="">
+                    <img src="{{ asset('assets') }}/images/Vector2.png" width="" height="" alt="">
                 </div>
                 <div class="par2">
                     <p>+6281282434826</p>
