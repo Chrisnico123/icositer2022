@@ -738,12 +738,6 @@ footer p {
 
 }
 
-.row text-center {
-    z-index: 999;
-}
-
-.sub-divisi {
-    position: relative;
-    background: var(--secondary);
-    padding: 100px;
+.modal-backdrop {
+    z-index: -1;
 }

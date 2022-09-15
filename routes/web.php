@@ -30,8 +30,9 @@ Route::get('/download/{filename}', function ($filename) {
 });
 
 Route::get('/', function () {
-    return view('templateDivisi/acara');
+    return view('default');
 });
+
 Route::get('/divisi/acara', function () {
     return view('/templateDivisi/acara');
 });

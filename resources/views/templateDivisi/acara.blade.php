@@ -45,7 +45,7 @@
         </div>
     </nav>
     
-    <div class="sub-divisi">
+    <div class="organigram">
         <h2 class="title-organigram"> Kepala Sub-divisi</h2>
         <h2 class="title-organigram-1">ICoSITeR</h2>
 
