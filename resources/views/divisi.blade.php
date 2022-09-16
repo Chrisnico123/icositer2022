@@ -9,14 +9,17 @@
     <title>ICoSITeR 2022</title>
 
     <!-- Styling -->
+    <link rel="stylesheet" href="{{ asset('assets') }}/css/aos.css">
     <link rel="stylesheet" href="{{ asset('assets') }}/css/bootstrap.css">
     <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css">
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="{{ asset('assets/imagehover.css/css/imagehover.min.css') }}" />
 
 </head>
 
 <body>
+    <script src="{{ asset('assets') }}/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container ">
@@ -42,18 +45,19 @@
             </div>
         </div>
     </nav>
-    
-    <div class="organigram">
-        <h2 class="title-organigram"> Ketua Divisi </h2>
-        <h2 class="title-organigram-1">ICoSITeR</h2>
+
+    <div class="organigramdiv">
+        <img src="{{ asset('assets') }}/images/background/item7div.svg" id="item7div">
+        <h2 data-aos="fade-down" data-aos-duration="1000" class="title-organigram" class="title-organigram"> Ketua Divisi </h2>
+        <h2 data-aos="zoom-in" data-aos-duration="1000" class="title-organigram-1" class="title-organigram-1">ICoSITeR</h2>
 
         <div class="row text-center">
             <div class="row g-2 g-md-4">
 
                 <div class="col-12 col-md-6">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p class="jabatan">Kepala Divisi Acara <br> TSE'20</br></p>
+                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
+                    <img data-aos="fade-right" data-aos-duration="3000" src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Kepala Divisi Acara <br> TSE'20</br></p>
                     <div class="text-center">
                         <a href="/divisi/acara">
                             <button type="button" class="btn btn-success">Sub Divisi</button>
@@ -62,9 +66,9 @@
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p class="jabatan">Kepala Divisi Eksternal <br> TSE'20</br></p>
+                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
+                    <img data-aos="fade-right" data-aos-duration="3000" src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Kepala Divisi Eksternal <br> TSE'20</br></p>
                     <div class="text-center">
                         <a href="/divisi/acara">
                             <button type="button" class="btn btn-success">Sub Divisi</button>
@@ -73,9 +77,9 @@
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p class="jabatan">Kepala Divisi Medkominfo <br> TSE'20</br></p>
+                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
+                    <img data-aos="fade-right" data-aos-duration="3000" src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Kepala Divisi Medkominfo <br> TSE'20</br></p>
                     <div class="text-center">
                         <a href="/divisi/kominfo">
                             <button type="button" class="btn btn-success">Sub Divisi</button>
@@ -84,9 +88,9 @@
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p class="jabatan">Kepala Divisi Pusat Data <br> TSE'20</br></p>
+                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
+                    <img data-aos="fade-right" data-aos-duration="3000" src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Kepala Divisi Pusat Data <br> TSE'20</br></p>
                     <div class="text-center">
                         <a href="/divisi/pusdat">
                             <button type="button" class="btn btn-success">Sub Divisi</button>
@@ -95,9 +99,9 @@
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p class="jabatan">Kepala Divisi Operasional <br> TSE'20</br></p>
+                    <h2 data-aos="fade-left" data-aos-duration="3000"class="nama">Rahman Pajri</h2>
+                    <img data-aos="fade-right" data-aos-duration="3000"src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p data-aos="fade-up" data-aos-duration="3000"class="jabatan">Kepala Divisi Operasional <br> TSE'20</br></p>
                     <div class="text-center">
                         <a href="/divisi/operasional">
                             <button type="button" class="btn btn-success">Sub Divisi</button>
@@ -106,9 +110,9 @@
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p class="jabatan">Kepala Divisi Akomodasi <br> TSE'20</br></p>
+                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
+                    <img data-aos="fade-right" data-aos-duration="3000" src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Kepala Divisi Akomodasi <br> TSE'20</br></p>
                     <div class="text-center">
                         <a href="/divisi/akomodasi">
                             <button type="button" class="btn btn-success">Sub Divisi</button>
@@ -117,9 +121,9 @@
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p class="jabatan">Kepala Divisi Konsumsi <br> TSE'20</br></p>
+                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
+                    <img data-aos="fade-right" data-aos-duration="3000" src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Kepala Divisi Konsumsi <br> TSE'20</br></p>
                     <div class="text-center">
                         <a href="/divisi/konsumsi">
                             <button type="button" class="btn btn-success">Sub Divisi</button>
@@ -128,9 +132,9 @@
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p class="jabatan">Kepala Divisi Manajemen Lapangan <br> TSE'20</br></p>
+                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
+                    <img data-aos="fade-right" data-aos-duration="3000" src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Kepala Divisi Manajemen Lapangan <br> TSE'20</br></p>
                     <div class="text-center">
                         <a href="/divisi/menlap">
                             <button type="button" class="btn btn-success">Sub Divisi</button>
@@ -139,9 +143,9 @@
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p class="jabatan">Kepala Divisi Kreatif <br> TSE'20</br></p>
+                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
+                    <img data-aos="fade-right" data-aos-duration="3000" src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Kepala Divisi Kreatif <br> TSE'20</br></p>
                     <div class="text-center">
                         <a href="/divisi/kreatif">
                             <button type="button" class="btn btn-success">Sub Divisi</button>
@@ -150,9 +154,9 @@
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p class="jabatan">Kepala Divisi Fundraising <br> TSE'20</br></p>
+                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
+                    <img data-aos="fade-right" data-aos-duration="3000" src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Kepala Divisi Fundraising <br> TSE'20</br></p>
                     <div class="text-center">
                         <a href="/divisi/fundraising">
                             <button type="button" class="btn btn-success">Sub Divisi</button>

@@ -12,13 +12,15 @@
     <link rel="stylesheet" href="{{ asset('assets') }}/css/aos.css">
     <link rel="stylesheet" href="{{ asset('assets') }}/css/bootstrap.css">
     <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css">
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="{{ asset('assets/imagehover.css/css/imagehover.min.css') }}" />
 
 </head>
 
 <body>
+    <script src="{{ asset('assets') }}/js/aos.js"></script>
     <script src="{{ asset('assets') }}/js/bootstrap.bundle.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container ">
@@ -46,18 +48,22 @@
     </nav>
 
 
-    <div class="organigram">
+    <div class="organigramsub">
         <img src="{{ asset('assets') }}/images/background/item7sub.svg" id="item7sub">
-        <h2 class="title-organigram"> Kepala Sub-divisi</h2>
-        <h2 class="title-organigram-1">ICoSITeR</h2>
+        <h2 data-aos="fade-down" data-aos-duration="1000" class="title-organigram" class="title-organigram"> Kepala
+            Sub-divisi</h2>
+        <h2 data-aos="zoom-in" data-aos-duration="1000" class="title-organigram-1" class="title-organigram-1">ICoSITeR
+        </h2>
 
         <div class="row text-center">
             <div class="row g-2 g-md-4">
 
                 <div class="col-12 col-md-6">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p class="jabatan">Kepala Sub-divisi Manajemen acara<br> TSE'20</br></p>
+                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
+                    <img data-aos="fade-right" data-aos-duration="3000"
+                        src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Kepala Sub-divisi Manajemen acara<br>
+                        TSE'20</br></p>
 
                     <!-- Button trigger modal -->
                     <div class="text-center">
@@ -88,18 +94,22 @@
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p class="jabatan">Kepala Sub Divisi Expo dan Exhibition<br> TSE'20</br></p>
+                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
+                    <img data-aos="fade-right" data-aos-duration="3000"
+                        src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Kepala Sub Divisi Expo dan Exhibition<br>
+                        TSE'20</br></p>
                     <div class="text-center">
                         <button type="button" class="btn btn-success">Staff</button>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p class="jabatan">Kepala Sub Divisi Perlombaan<br> TSE'20</br></p>
+                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
+                    <img data-aos="fade-right" data-aos-duration="3000"
+                        src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Kepala Sub Divisi Perlombaan<br>
+                        TSE'20</br></p>
                     <div class="text-center">
                         <button type="button" class="btn btn-success">Staff</button>
                     </div>

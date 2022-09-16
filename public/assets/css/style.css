@@ -750,3 +750,27 @@ footer p {
     width: 100%;
     left: 0px;
 }
+
+#item7div {
+    z-index: -1;
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    left: 0px;
+}
+
+/* Organigram sub */
+.organigramsub {
+    z-index: 0;
+    position: relative;
+    background: linear-gradient(to bottom, #1dc2ee 0%, #90e463 30%);
+    padding: 100px;
+}
+
+/* Organigram div */
+.organigramdiv {
+    z-index: 0;
+    position: relative;
+    background: linear-gradient(to bottom, #1dc2ee 0%, #90e463 15%);
+    padding: 100px;
+}
