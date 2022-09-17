@@ -48,8 +48,8 @@
 
     <div class="organigramdiv">
         <img src="{{ asset('assets') }}/images/background/item7div.svg" id="item7div">
-        <h2 data-aos="fade-down" data-aos-duration="1000" class="title-organigram" class="title-organigram"> Ketua Divisi </h2>
-        <h2 data-aos="zoom-in" data-aos-duration="1000" class="title-organigram-1" class="title-organigram-1">ICoSITeR</h2>
+        <h2 data-aos="fade-down" data-aos-duration="1000" class="title-organigram"> Ketua Divisi </h2>
+        <h2 data-aos="zoom-in" data-aos-duration="1000" class="title-organigram-1">ICoSITeR</h2>
 
         <div class="row text-center">
             <div class="row g-2 g-md-4">

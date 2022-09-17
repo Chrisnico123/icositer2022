@@ -9,10 +9,9 @@
     <title>ICoSITeR 2022</title>
 
     <!-- Styling -->
+    <link rel="stylesheet" href="{{ asset('assets') }}/css/aos.css">
     <link rel="stylesheet" href="{{ asset('assets') }}/css/bootstrap.css">
     <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css">
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="{{ asset('assets/imagehover.css/css/imagehover.min.css') }}" />
 
 </head>
 
@@ -49,17 +48,18 @@
     </nav>
 
 
-    <div class="organigram">
-        <h2 class="title-organigram"> Kepala Sub-divisi</h2>
-        <h2 class="title-organigram-1">ICoSITeR</h2>
+    <div class="organigramsub">
+        <img src="{{ asset('assets') }}/images/background/item7eks.svg" id="item7eks">
+        <h2 data-aos="fade-down" data-aos-duration="1000" class="title-organigram"> Kepala Sub-divisi</h2>
+        <h2 data-aos="zoom-in" data-aos-duration="1000" class="title-organigram-1">ICoSITeR</h2>
 
         <div class="row text-center">
             <div class="row g-2 g-md-4">
 
                 <div class="col-12 col-md-6">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p class="jabatan">Kepala Sub Divisi Pendataan Peserta<br> TSE'20</br></p>
+                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
+                    <img data-aos="fade-right" data-aos-duration="3000"src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Kepala Sub Divisi Pendataan Peserta<br> TSE'20</br></p>
                     <!-- Button trigger modal -->
                     <div class="text-center">
                         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Staff</button>
@@ -85,9 +85,9 @@
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <h2 class="nama">Rahman Pajri</h2>
-                    <img src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p class="jabatan">Kepala Sub Divisi Website<br> TSE'20</br></p>
+                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
+                    <img data-aos="fade-right" data-aos-duration="3000" src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Kepala Sub Divisi Website<br> TSE'20</br></p>
                     <!-- Button trigger modal -->
                     <div class="text-center">
                         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Staff</button>
