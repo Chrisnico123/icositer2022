@@ -17,6 +17,11 @@
 </head>
 
 <body>
+    <script src="{{ asset('assets') }}/js/aos.js"></script>
+    <script src="{{ asset('assets') }}/js/bootstrap.bundle.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container ">
@@ -55,8 +60,27 @@
                     <h2 class="nama">Rahman Pajri</h2>
                     <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Kepala Sub Divisi Pendataan Peserta<br> TSE'20</br></p>
+                    <!-- Button trigger modal -->
                     <div class="text-center">
-                        <button type="button" class="btn btn-success">Staff</button>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Staff</button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Staff Sub Divisi...</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    staff masuk sini
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -64,8 +88,27 @@
                     <h2 class="nama">Rahman Pajri</h2>
                     <img src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p class="jabatan">Kepala Sub Divisi Website<br> TSE'20</br></p>
+                    <!-- Button trigger modal -->
                     <div class="text-center">
-                        <button type="button" class="btn btn-success">Staff</button>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Staff</button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Staff Sub Divisi...</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    staff masuk sini
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -76,16 +119,16 @@
 
 
     </div>
-    <!-- Footer -->
+    <!-- footer -->
     <footer>
         <div class="atas">
             <div class="icos">
                 <img src="{{ asset('assets') }}/images/logo.png" width="77.2" height="58.5" alt="">
             </div>
             <div class="alamat">
-                <p>Jl.Terusan Ryacudu,Wayhuwi,Kec,Jati Agung,
+                <p>Jl.Terusan Ryacudu, Wayhuwi, Kec. Jati Agung,
                     <br>
-                    Kabupaten Lampung Selatan,Lampung,35365
+                    Kabupaten Lampung Selatan, Lampung, 35365
                 </p>
             </div>
         </div>

@@ -70,7 +70,7 @@
                     <img data-aos="fade-right" data-aos-duration="3000" src="{{ asset('assets') }}/images/avatar-organigram.png">
                     <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Kepala Divisi Eksternal <br> TSE'20</br></p>
                     <div class="text-center">
-                        <a href="/divisi/acara">
+                        <a href="/divisi/eksternal">
                             <button type="button" class="btn btn-success">Sub Divisi</button>
                         </a>
                     </div>

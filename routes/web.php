@@ -43,7 +43,7 @@ Route::get('/divisi/eksternal', function () {
     return view('/templateDivisi/eksternal');
 });
 Route::get('/divisi/fundraising', function () {
-    return view('/templateDivisi/fundraising');
+    return view('/templateDivisi/fundaraising');
 });
 Route::get('/divisi/kominfo', function () {
     return view('/templateDivisi/kominfo');
