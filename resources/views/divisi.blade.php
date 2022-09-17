@@ -175,9 +175,9 @@
                 <img src="{{ asset('assets') }}/images/logo.png" width="77.2" height="58.5" alt="">
             </div>
             <div class="alamat">
-                <p>Jl.Terusan Ryacudu,Wayhuwi,Kec,Jati Agung,
+                <p>Jl.Terusan Ryacudu, Wayhuwi, Kec,Jati Agung,
                     <br>
-                    Kabupaten Lampung Selatan,Lampung,35365
+                    Kabupaten Lampung Selatan, Lampung, 35365
                 </p>
             </div>
         </div>

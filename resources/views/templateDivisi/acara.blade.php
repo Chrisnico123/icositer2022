@@ -78,7 +78,13 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    staff masuk sini
+                                    <p>
+                                        testtt - 120140088 - IF 20
+                                        <br>
+                                        testtt - 120140088 - IF 21
+                                        </br>
+                                    </p>
+
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -136,7 +142,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    staff masuk sini
+                                    staff masuk sini yaaaa
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
