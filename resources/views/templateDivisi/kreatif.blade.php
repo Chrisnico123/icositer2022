@@ -56,32 +56,43 @@
         <div class="row text-center">
             <div class="row g-2 g-md-4">
 
-                <div class="col-12 col-md-6">
-                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
-                    <img data-aos="fade-right" data-aos-duration="3000" src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Kepala Sub Divisi Dekorasi<br> TSE'20</br></p>
-                    <div class="text-center">
-                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Staff</button>
-                    </div>
+                @foreach ($data['anggota'] as $item)
+                    <div class="col-12 col-md-6">
+                        <h2 data-aos="fade-left" data-aos-duration="3000" class="nama"><?= $item['nama'] ?></h2>
+                        <img data-aos="fade-right" data-aos-duration="3000" src="{{ asset('assets') }}/images/avatar-organigram.png">
+                        <p data-aos="fade-up" data-aos-duration="3000" class="jabatan"><?= $item['jabatan'] ?> <?= $item['nim'] ?> <br>
+                            <?= $item['prodi'] ?></br></p>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Staff Sub Divisi...</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    staff masuk sini
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <!-- Button trigger modal -->
+                        <div class="text-center">
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal<?= $item['nim'] ?>">Staff</button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal<?= $item['nim'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Staff Sub Divisi...</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        @foreach ($item['anggota'] as $staf) 
+                                            <p>
+                                                <?= $staf['nama'] ?> - <?= $staf['nim'] ?> - <?= $staf['prodi'] ?>
+                                                <br>
+                                            </p>
+                                        @endforeach
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
 
 
             </div>

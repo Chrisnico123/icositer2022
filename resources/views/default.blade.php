@@ -260,54 +260,23 @@
         <h2 data-aos="zoom-in" data-aos-duration="1000" class="title-organigram-1">ICoSITeR</h2>
 
         <div class="row text-center">
-            <div class="row g-2 g-md-4">
+            <div class="row g-2 g-md-4"> 
                 <div class="col-12 col-md-6 ">
-                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
+                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama"><?= $data[0]['nama'] ?></h2>
                     <img data-aos="fade-right" data-aos-duration="3000"
                         src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Ketua Divisi xxxxx <br>
-                        TSE'20</br></p>
+                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan"><?= $data[0]['jabatan'] ?> <?= $data[0]['nim'] ?><br>
+                        <?=$data[0]['prodi'] ?></br></p>
                 </div>
-
-                <div class="col-12 col-md-6">
-                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
+                @foreach ($data[0]['anggota'] as $item)
+                <div class="col-12 col-md-6 ">
+                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama"><?= $item['nama'] ?></h2>
                     <img data-aos="fade-right" data-aos-duration="3000"
                         src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Ketua Divisi xxxxx <br>
-                        TSE'20</br></p>
+                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan"><?= $item['jabatan'] ?> <?= $item['nim'] ?> <br>
+                        <?= $item['prodi'] ?></br></p>
                 </div>
-
-                <div class="col-12 col-md-6">
-                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
-                    <img data-aos="fade-right" data-aos-duration="3000"
-                        src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Ketua Divisi xxxxx <br>
-                        TSE'20</br></p>
-                </div>
-
-                <div class="col-12 col-md-6">
-                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
-                    <img data-aos="fade-right" data-aos-duration="3000"
-                        src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Ketua Divisi xxxxx <br>
-                        TSE'20</br></p>
-                </div>
-
-                <div class="col-12 col-md-6">
-                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
-                    <img data-aos="fade-right" data-aos-duration="3000"
-                        src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Ketua Divisi xxxxx <br>
-                        TSE'20</br></p>
-                </div>
-
-                <div class="col-12 col-md-6">
-                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama">Rahman Pajri</h2>
-                    <img data-aos="fade-right" data-aos-duration="3000"
-                        src="{{ asset('assets') }}/images/avatar-organigram.png">
-                    <p data-aos="fade-up" data-aos-duration="3000" class="jabatan">Ketua Divisi xxxxx <br>
-                        TSE'20</br></p>
-                </div>
+                @endforeach
             </div>
         </div>
 

@@ -4,7 +4,7 @@ use App\Http\Controllers\Lomba1Controller;
 use App\Http\Controllers\Lomba2Controller;
 use App\Http\Controllers\Lomba3Controller;
 use App\Http\Controllers\Register;
-use GuzzleHttp\Psr7\Response;
+use App\Http\Controllers\Organigram;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,44 +29,21 @@ Route::get('/download/{filename}', function ($filename) {
     }
 });
 
-Route::get('/', function () {
-    return view('default');
-});
 
-Route::get('/divisi/acara', function () {
-    return view('/templateDivisi/acara');
-});
-Route::get('/divisi/akomodasi', function () {
-    return view('/templateDivisi/akomodasi');
-});
-Route::get('/divisi/eksternal', function () {
-    return view('/templateDivisi/eksternal');
-});
-Route::get('/divisi/fundraising', function () {
-    return view('/templateDivisi/fundaraising');
-});
-Route::get('/divisi/kominfo', function () {
-    return view('/templateDivisi/kominfo');
-});
-Route::get('/divisi/konsumsi', function () {
-    return view('/templateDivisi/konsumsi');
-});
-Route::get('/divisi/kreatif', function () {
-    return view('/templateDivisi/kreatif');
-});
-Route::get('/divisi/menlap', function () {
-    return view('/templateDivisi/menlap');
-});
-Route::get('/divisi/operasional', function () {
-    return view('/templateDivisi/operasional');
-});
-Route::get('/divisi/pusdat', function () {
-    return view('/templateDivisi/pusdat');
-});
+route::get('/' , [Organigram::class , "index"]);
 
-Route::get('/divisi', function(){
-    return view('divisi');
-});
+route::get('/divisi/acara' , [Organigram::class , "acara"]);
+route::get('/divisi/akomodasi' , [Organigram::class , "akomodasi"]);
+route::get('/divisi/eksternal' , [Organigram::class , "eksternal"]);
+route::get('/divisi/fundraising' , [Organigram::class , "fundraising"]);
+route::get('/divisi/kominfo' , [Organigram::class , "kominfo"]);
+route::get('/divisi/konsumsi' , [Organigram::class , "konsumsi"]);
+route::get('/divisi/kreatif' , [Organigram::class , "kreatif"]);
+route::get('/divisi/manlap' , [Organigram::class , "manlap"]);
+route::get('/divisi/operasional' , [Organigram::class , "operasional"]);
+route::get('/divisi/pusdat' , [Organigram::class , "pusdat"]);
+route::get('/divisi' , [Organigram::class , "divisi"]);
+
 
 Route::controller(Register::class)->group(function () {
     Route::get('/register', 'register_form')->name('register_form');

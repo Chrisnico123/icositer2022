@@ -1,0 +1,1441 @@
+{
+    "data": [
+        {
+            "divisi": [
+                {
+                    "nama": "Aushaf Nabil Ardhani",
+                    "nim": "120190008",
+                    "prodi": "Teknik Industri",
+                    "jabatan": "Ketua Pelaksana",
+                    "anggota": [
+                        {
+                            "nama": "Kurnia Andromedai",
+                            "nim": "120430068",
+                            "prodi": "Teknik Biomedis",
+                            "jabatan": "Sekretaris Jendral"
+                        },
+                        {
+                            "nama": "Nabila Putri Maharani",
+                            "nim": "120190157",
+                            "prodi": "Teknik Industri",
+                            "jabatan": "Sekretaris Umum 1"
+                        },
+                        {
+                            "nama": "Astika Sari Wijaya",
+                            "nim": "120190031",
+                            "prodi": "Teknik Industri",
+                            "jabatan": "Sekretaris Umum 2"
+                        },
+                        {
+                            "nama": "Erlieka Faslin Utami",
+                            "nim": "120410075",
+                            "prodi": "Sains Aktuaria",
+                            "jabatan": "Bendahara Umum 1"
+                        },
+                        {
+                            "nama": "Zefanya Putri Samiadi",
+                            "nim": "120260041",
+                            "prodi": "Farmasi",
+                            "jabatan": "Bendahara Umum 2"
+                        }
+                    ]
+                },
+                {
+                    "nama": "Tiara Afriliza",
+                    "nim": "120280009",
+                    "prodi": "Teknik Kimia",
+                    "jabatan": "Kepala Divisi Acara",
+                    "router": "/divisi/acara",
+                    "anggota": [
+                        {
+                            "nama": "Dwi Liza Ramadiani",
+                            "nim": "120270031",
+                            "prodi": "Teknik Kimia",
+                            "jabatan": "Kepala Sub-divisi Manajemen acara",
+                            "anggota": [
+                                {
+                                    "nama": "Alfin Delvan Joeyantu",
+                                    "nim": "120450024",
+                                    "prodi": "Sains Data "
+                                },
+                                {
+                                    "nama": "Ni Kadek Ratna",
+                                    "nim": "121190093",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Nabella Oktaviana Chandra",
+                                    "nim": "121260053",
+                                    "prodi": "Farmasi"
+                                },
+                                {
+                                    "nama": "Arfyani Deiastuti",
+                                    "nim": "120450006",
+                                    "prodi": "Sains Data"
+                                }
+                            ]
+                        },
+                        {
+                            "nama": "Muhammad Rivan Hasri",
+                            "nim": "120450079",
+                            "prodi": "Sains Data",
+                            "jabatan": "Kepala Sub Divisi Expo dan Exhibition",
+                            "anggota": [
+                                {
+                                    "nama": "Alfy Faza Muhammad",
+                                    "nim": "120250174",
+                                    "prodi": "Teknik Lingkungan"
+                                },
+                                {
+                                    "nama": "Ananda Jihan Assyifa",
+                                    "nim": "120290026",
+                                    "prodi": "Sains Atmosfer dan Keplanetan"
+                                },
+                                {
+                                    "nama": "Anjani Choirunnisa",
+                                    "nim": "120280006",
+                                    "prodi": "Teknik Kimia"
+                                },
+                                {
+                                    "nama": "Heru Nugroho",
+                                    "nim": "120330082",
+                                    "prodi": "Teknologi Industri Pertanian"
+                                },
+                                {
+                                    "nama": "Irkhas Geran Gerano",
+                                    "nim": "120430033",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Lis Nurani",
+                                    "nim": "120450055",
+                                    "prodi": "Sains Data"
+                                },
+                                {
+                                    "nama": "Genoveva Caroline Satyawati Indriarso",
+                                    "nim": "121400020",
+                                    "prodi": "Teknik Telekomunikasi"
+                                },
+                                {
+                                    "nama": "Hanifah Galatea Anjani Zoraya",
+                                    "nim": "121190094",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Melati Almukaroma",
+                                    "nim": "121190033",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Muhammad Alfarizi",
+                                    "nim": "121140093",
+                                    "prodi": "Teknik Informatika"
+                                },
+                                {
+                                    "nama": "Salwa Naqwadisa Madinna",
+                                    "nim": "121450157",
+                                    "prodi": "Sains Data"
+                                },
+                                {
+                                    "nama": "Shelvy Monica Rizal",
+                                    "nim": "121230096",
+                                    "prodi": "Teknik Geomatika"
+                                }
+                            ]
+                        },
+                        {
+                            "nama": "Gery Melia Suwanda",
+                            "nim": "120140147",
+                            "prodi": "Teknik Informatika",
+                            "jabatan": "Kepala Sub Divisi Perlombaan",
+                            "anggota": [
+                                {
+                                    "nama": "Alfy Faza Muhammad",
+                                    "nim": "120250174",
+                                    "prodi": "Teknik Lingkungan"
+                                },
+                                {
+                                    "nama": "Ananda Jihan Assyifa",
+                                    "nim": "120290026",
+                                    "prodi": "Sains Atmosfer dan Keplanetan"
+                                },
+                                {
+                                    "nama": "Anjani Choirunnisa",
+                                    "nim": "120280006",
+                                    "prodi": "Teknik Kimia"
+                                },
+                                {
+                                    "nama": "Heru Nugroho",
+                                    "nim": "120330082",
+                                    "prodi": "Teknologi Industri Pertanian"
+                                },
+                                {
+                                    "nama": "Irkhas Geran Gerano",
+                                    "nim": "120430033",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Lis Nurani",
+                                    "nim": "120450055",
+                                    "prodi": "Sains Data"
+                                },
+                                {
+                                    "nama": "Genoveva Caroline Satyawati Indriarso",
+                                    "nim": "121400020",
+                                    "prodi": "Teknik Telekomunikasi"
+                                },
+                                {
+                                    "nama": "Hanifah Galatea Anjani Zoraya",
+                                    "nim": "121190094",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Melati Almukaroma",
+                                    "nim": "121190033",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Muhammad Alfarizi",
+                                    "nim": "121140093",
+                                    "prodi": "Teknik Informatika"
+                                },
+                                {
+                                    "nama": "Salwa Naqwadisa Madinna",
+                                    "nim": "121450157",
+                                    "prodi": "Sains Data"
+                                },
+                                {
+                                    "nama": "Shelvy Monica Rizal",
+                                    "nim": "121230096",
+                                    "prodi": "Teknik Geomatika"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nama": "M. Aliffheo Ramadhan",
+                    "nim": "120430046",
+                    "prodi": "Teknik Biomedis",
+                    "jabatan": "Kepala Divisi Eksternal",
+                    "router": "/divisi/eksternal",
+                    "anggota": [
+                        {
+                            "nama": "Sellystia Ariani",
+                            "nim": "120280003",
+                            "prodi": "Teknik Kimia",
+                            "jabatan": "Kepala Sub Divisi Media Partner",
+                            "anggota": [
+                                {
+                                    "nama": "Kathrine Brigita Soraya",
+                                    "nim": "120450099",
+                                    "prodi": "Sains Data"
+                                },
+                                {
+                                    "nama": "Hanna Septiani",
+                                    "nim": "120450064",
+                                    "prodi": "Sains Data"
+                                },
+                                {
+                                    "nama": "Rafi Athallah",
+                                    "nim": "120450038",
+                                    "prodi": "Sains Data"
+                                },
+                                {
+                                    "nama": "Raya Febriyan Syaifullah",
+                                    "nim": "121170036",
+                                    "prodi": "Teknik Mesin"
+                                },
+                                {
+                                    "nama": "Haris Elkana L.Tobing",
+                                    "nim": "121190065",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Rizki Ardiansyah",
+                                    "nim": "121190030",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Annisa Husna H. Adfa",
+                                    "nim": "120260155",
+                                    "prodi": "Farmasi"
+                                },
+                                {
+                                    "nama": "Shabina Rizky Audry",
+                                    "nim": "121280035",
+                                    "prodi": "Teknik Kimia"
+                                },
+                                {
+                                    "nama": "Rahardi Pratama",
+                                    "nim": "121280018",
+                                    "prodi": "Teknik Kimia"
+                                }
+                            ]
+                        },
+                        {
+                            "nama": "Rahma Amalia",
+                            "nim": "120250069",
+                            "prodi": "Teknik Lingkungan",
+                            "jabatan": "Kepala Sub Divisi Public Relation",
+                            "anggota": [
+                                {
+                                    "nama": "Farsya Tsamrotul Qalbi Syamsuri",
+                                    "nim": "121250155",
+                                    "prodi": "Teknik Lingkungan"
+                                },
+                                {
+                                    "nama": "Doni Syahrizal ",
+                                    "nim": "121210110",
+                                    "prodi": "Teknik Sipil"
+                                },
+                                {
+                                    "nama": "Ammar Syarief Al Hakim",
+                                    "nim": "121280004",
+                                    "prodi": "Teknik Kimia"
+                                },
+                                {
+                                    "nama": "Priseputra Djayanasastra",
+                                    "nim": "120130159",
+                                    "prodi": "Teknik Elektro"
+                                },
+                                {
+                                    "nama": "Ibrahim Khalil",
+                                    "nim": "121210116",
+                                    "prodi": "Teknik Sipil"
+                                },
+                                {
+                                    "nama": "Zaidan M. Adnan",
+                                    "nim": "120190170",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Josevein Hutagalung",
+                                    "nim": "121130018",
+                                    "prodi": "Teknik Elektro"
+                                },
+                                {
+                                    "nama": "Debora Sebrina Br Simanjuntak",
+                                    "nim": "120450073",
+                                    "prodi": "Sains Data"
+                                },
+                                {
+                                    "nama": "Sekar Melinda Siregar",
+                                    "nim": "120190149",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "JULIANTO PASARIBU",
+                                    "nim": "121190024",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Aris Munandar",
+                                    "nim": "121460018",
+                                    "prodi": "Teknik Perkeretaapian"
+                                },
+                                {
+                                    "nama": "Tri Murniya Ningsih",
+                                    "nim": "121450038",
+                                    "prodi": "Sains Data"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nama": "Muhammad Raihan Adiwidya",
+                    "nim": "120280118",
+                    "prodi": "Teknik Kimia",
+                    "jabatan": "Kepala Divisi Medkominfo",
+                    "router": "/divisi/kominfo",
+                    "anggota": [
+                        {
+                            "nama": "Annisa J Muthia",
+                            "nim": "120250090",
+                            "prodi": "Teknik Lingkungan",
+                            "jabatan": "Kepala Sub Divisi Publikasi",
+                            "anggota": [
+                                {
+                                    "nama": "Yaniriang Fau",
+                                    "nim": "120290076",
+                                    "prodi": "Sains Atmosfer dan Keplanetan"
+                                },
+                                {
+                                    "nama": "Olivia Anastasia Gultom",
+                                    "nim": "121190109",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Venny Caecilia",
+                                    "nim": "120450066",
+                                    "prodi": "Sains Data"
+                                },
+                                {
+                                    "nama": "Fitria Anisa Sabilla",
+                                    "nim": "120390074",
+                                    "prodi": "Arsitektur Lanskap"
+                                },
+                                {
+                                    "nama": "Patricia Kimberly Danica Siagian",
+                                    "nim": "121190038",
+                                    "prodi": "Teknik Industri"
+                                }
+                            ]
+                        },
+                        {
+                            "nama": "Jimi Suhendra",
+                            "nim": "120280043",
+                            "prodi": "Teknik Kimia",
+                            "jabatan": "Kepala Sub Divisi Content Creator",
+                            "anggota": [
+                                {
+                                    "nama": "Devara Rafi Wijaya ",
+                                    "nim": "120280002",
+                                    "prodi": "Teknik Kimia"
+                                },
+                                {
+                                    "nama": "Alfred Aldora Duha",
+                                    "nim": "120420097",
+                                    "prodi": "Rekayasa Kehutanan"
+                                },
+                                {
+                                    "nama": "Noel Taripar Sinambela",
+                                    "nim": "121210112",
+                                    "prodi": "Teknik Sipil"
+                                },
+                                {
+                                    "nama": "Sifa Ulya",
+                                    "nim": "121380051",
+                                    "prodi": "Desain Komunikasi Visual"
+                                },
+                                {
+                                    "nama": "Muhammad Luthfi Raihan Nabil",
+                                    "nim": "121290043",
+                                    "prodi": "Sains Atmosfer dan Keplanetan"
+                                },
+                                {
+                                    "nama": "Raimundus Brilian Danu",
+                                    "nim": "121280115",
+                                    "prodi": "Teknik Kimia"
+                                },
+                                {
+                                    "nama": "Mega Widya Safitri",
+                                    "nim": "121430006",
+                                    "prodi": "Teknik Biomedis"
+                                }
+                            ]
+                        },
+                        {
+                            "nama": "Christian Vieri",
+                            "nim": "120290083",
+                            "prodi": "Sains Atmosfer dan Keplanetan",
+                            "jabatan": "Kepala Sub Divisi Dokumentasi",
+                            "anggota": [
+                                {
+                                    "nama": "Jeremia Yose Sijabat",
+                                    "nim": "120190191",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Putri Fadilla anggraini",
+                                    "nim": "120400006",
+                                    "prodi": "Teknik Telekomunikasi"
+                                },
+                                {
+                                    "nama": "Jihan Farah naila",
+                                    "nim": "120360015",
+                                    "prodi": "Teknik Material"
+                                },
+                                {
+                                    "nama": "Abrar Tiozami",
+                                    "nim": "120290088",
+                                    "prodi": "SAP"
+                                },
+                                {
+                                    "nama": "Rizxy Agung Saputra",
+                                    "nim": "120380098",
+                                    "prodi": "Desain Komunikasi Visual"
+                                },
+                                {
+                                    "nama": "Elisabeth Theresia Leydia Naibaho",
+                                    "nim": "121290058",
+                                    "prodi": "SAP"
+                                },
+                                {
+                                    "nama": "Sonya dita maharani",
+                                    "nim": "121240050",
+                                    "prodi": "Arsitektur"
+                                },
+                                {
+                                    "nama": "Fathan Hafiz",
+                                    "nim": "121340093",
+                                    "prodi": "Teknik Sistem Energi"
+                                },
+                                {
+                                    "nama": "Farhan Abdillah ",
+                                    "nim": "120390089",
+                                    "prodi": "Arsitektur Lanskap"
+                                }
+                            ]
+                        },
+                        {
+                            "nama": "Nazrey Dafaro",
+                            "nim": "120380014",
+                            "prodi": "DKV",
+                            "jabatan": "Kepala Sub Divisi Desain Digital",
+                            "anggota": [
+                                {
+                                    "nama": "Boyke Iskandarsyah Dermawijaya",
+                                    "nim": "120430095",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Dhita Kusumaningsih",
+                                    "nim": "120120041",
+                                    "prodi": "Teknik Geofisika"
+                                },
+                                {
+                                    "nama": "Akhmad Mulian",
+                                    "nim": "120380001",
+                                    "prodi": "Desain Komunikasi Visual"
+                                },
+                                {
+                                    "nama": "Salsabila Khozinatul Fadillah",
+                                    "nim": "121380113",
+                                    "prodi": "Desain Komunikasi Visual"
+                                },
+                                {
+                                    "nama": "Hikmal Darma Taruna",
+                                    "nim": "121380067",
+                                    "prodi": "Desain Komunikasi Visual"
+                                },
+                                {
+                                    "nama": "Aqyla Muqsitha",
+                                    "nim": "121190117",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Riola Angtona",
+                                    "nim": "121380001",
+                                    "prodi": "Desain Komunikasi Visual"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nama": "Hafizd Raka Ramadhan",
+                    "nim": "120440026",
+                    "prodi": "Sains Lingkungan Kelautan",
+                    "jabatan": "Kepala Divisi Operasional",
+                    "router": "/divisi/operasional",
+                    "anggota": [
+                        {
+                            "nama": "Immanuel Giri Lathan Silas",
+                            "nim": "120430099",
+                            "prodi": "Teknik Biomedis",
+                            "jabatan": "Kepala Sub Divisi Sarana dan Prasarana",
+                            "anggota": [
+                                {
+                                    "nama": "Fauzan Normansyah.S",
+                                    "nim": "120130120",
+                                    "prodi": "Teknik Elektro"
+                                },
+                                {
+                                    "nama": "Randhy Trianggara ",
+                                    "nim": "120150100",
+                                    "prodi": "Teknik geologi "
+                                },
+                                {
+                                    "nama": "Satriani Syarma Fasih",
+                                    "nim": "120430016",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Lincoln Luhut Fransiscus",
+                                    "nim": "120440029",
+                                    "prodi": "Sains Lingkungan Kelautan"
+                                },
+                                {
+                                    "nama": "Falasman Reynaldi",
+                                    "nim": "120340079",
+                                    "prodi": "Teknik Sistem Energi"
+                                },
+                                {
+                                    "nama": "Aditiya Firmansyah ",
+                                    "nim": "120190111",
+                                    "prodi": "Teknik Industri "
+                                },
+                                {
+                                    "nama": "Muhammad Bagaskara",
+                                    "nim": "120440001",
+                                    "prodi": "Sains Lingkungan Kelautan"
+                                },
+                                {
+                                    "nama": "Muhammad kevin syawaldi",
+                                    "nim": "121440037",
+                                    "prodi": "Sains lingkungan kelautan"
+                                },
+                                {
+                                    "nama": "Muhammad Hadi Wicaksono",
+                                    "nim": "121370037",
+                                    "prodi": "Teknik Pertambangan"
+                                },
+                                {
+                                    "nama": "Ramadhina Azzahra M ",
+                                    "nim": "121280029",
+                                    "prodi": "Teknik Kimia "
+                                },
+                                {
+                                    "nama": "M.Rizki Adi Purnomo",
+                                    "nim": "121120052",
+                                    "prodi": "Teknik geofisika"
+                                },
+                                {
+                                    "nama": "Nabila Putri",
+                                    "nim": "120280028",
+                                    "prodi": "Teknik Kimia"
+                                },
+                                {
+                                    "nama": "Siti Nuraeni",
+                                    "nim": "121430122",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Priskila Jely ",
+                                    "nim": "120370157",
+                                    "prodi": "Teknik Pertambangan "
+                                },
+                                {
+                                    "nama": "Salsabila Septha Kharisma",
+                                    "nim": "121430145",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Bella Intania",
+                                    "nim": "121390083",
+                                    "prodi": "Arsitektur Lanskap"
+                                },
+                                {
+                                    "nama": "Dofi Maulana",
+                                    "nim": "121190032",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Evi Yanti Pertiwi",
+                                    "nim": "121190126",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Andrianta Diamas Bangun",
+                                    "nim": "121190159",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Elma Kitriyani",
+                                    "nim": "121190120",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Anis Cahya Putri",
+                                    "nim": "121460009",
+                                    "prodi": "Teknik Perkeretaapian"
+                                },
+                                {
+                                    "nama": "Syifa Meydiaz Taufiq",
+                                    "nim": "121430017",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Frizhy Amelia Ningrum",
+                                    "nim": "121192001",
+                                    "prodi": "Teknik Industri"
+                                }
+                            ]
+                        },
+                        {
+                            "nama": "Sekar Ambarsari Sujatmiko Putri",
+                            "nim": "120430028",
+                            "prodi": "Teknik Biomedis",
+                            "jabatan": "Kepala Sub Divisi Perizinan",
+                            "anggota": [
+                                {
+                                    "nama": "Selly Permata Sari",
+                                    "nim": "120120110",
+                                    "prodi": "Teknik Geofisika"
+                                },
+                                {
+                                    "nama": "Nimas Prakesti Mika Aziz ",
+                                    "nim": "121160069",
+                                    "prodi": "Matematika "
+                                },
+                                {
+                                    "nama": "Siti Kharnela",
+                                    "nim": "121440012",
+                                    "prodi": "Sains Lingkungan Kelautan"
+                                },
+                                {
+                                    "nama": "Rizky Dwi Saputra ",
+                                    "nim": "121360001",
+                                    "prodi": "Teknik Material "
+                                },
+                                {
+                                    "nama": "Marleni Syifa Yulianita",
+                                    "nim": "120160014",
+                                    "prodi": "Matematika"
+                                },
+                                {
+                                    "nama": "Pinkan Nabila S",
+                                    "nim": "120370175",
+                                    "prodi": "Teknik Pertambangan"
+                                },
+                                {
+                                    "nama": "Nabila Syifa Azzahra",
+                                    "nim": "120190012",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Alan Dwi Pratama",
+                                    "nim": "120120152",
+                                    "prodi": "Teknik Geofisika"
+                                },
+                                {
+                                    "nama": "Ammalya Haqsan",
+                                    "nim": "120190147",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Reyhan Muhammad Hendry",
+                                    "nim": "120400042",
+                                    "prodi": "Teknik Telekomunikasi"
+                                },
+                                {
+                                    "nama": "Delta Annisa Putri",
+                                    "nim": "121300013",
+                                    "prodi": "Teknik Kelautan"
+                                },
+                                {
+                                    "nama": "Nopa Rahmadayanti Siregar",
+                                    "nim": "121190123",
+                                    "prodi": "Teknik Industri"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nama": "Firma Rianingsih",
+                    "nim": "120420040",
+                    "prodi": "Rekayasa Kehutanan",
+                    "jabatan": "Kepala Divisi Kreatif",
+                    "router": "/divisi/kreatif",
+                    "anggota": [
+                        {
+                            "nama": "Tekad Agung Suganda",
+                            "nim": "120240001",
+                            "prodi": "Arsitektur",
+                            "jabatan": "Kepala Sub Divisi Dekorasi",
+                            "anggota": [
+                                {
+                                    "nama": "Apriliyanis Wardhani",
+                                    "nim": "121210108",
+                                    "prodi": "Teknik Sipil"
+                                },
+                                {
+                                    "nama": "Nabila Rizki Salsabila",
+                                    "nim": "121240039",
+                                    "prodi": "Arsitektur"
+                                },
+                                {
+                                    "nama": "Nesya Pradipta Putri",
+                                    "nim": "120290007",
+                                    "prodi": "Sains Atmosfer dan Keplanetan"
+                                },
+                                {
+                                    "nama": "Tasyana Sofni Azahrani",
+                                    "nim": "120420046",
+                                    "prodi": "Rekayasa Kehutanan"
+                                },
+                                {
+                                    "nama": "Ikbal Maulana",
+                                    "nim": "121240037",
+                                    "prodi": "Arsitektur"
+                                },
+                                {
+                                    "nama": "Fanny Lorensa",
+                                    "nim": "120420021",
+                                    "prodi": "Rekayasa Kehutanan"
+                                },
+                                {
+                                    "nama": "Helsa Sari Bintang Simanjuntak",
+                                    "nim": "120290084",
+                                    "prodi": "Sains Atmosfer dan Keplanetan"
+                                },
+                                {
+                                    "nama": "DESNI DWI TIYOLANDA",
+                                    "nim": "121380021",
+                                    "prodi": "Desain Komunikasi Visual"
+                                },
+                                {
+                                    "nama": "Dita Asri Pratiwi",
+                                    "nim": "121240028",
+                                    "prodi": "Arsitektur"
+                                },
+                                {
+                                    "nama": "Muhammad Khatami",
+                                    "nim": "120240020",
+                                    "prodi": "Arsitektur"
+                                },
+                                {
+                                    "nama": "Agnesia putri maharani",
+                                    "nim": "120430052",
+                                    "prodi": "Teknik biomedis"
+                                },
+                                {
+                                    "nama": "Hafiz Zurrohmansyah",
+                                    "nim": "121190107",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Rahmadi wahyu cahya ningrat",
+                                    "nim": "121400118",
+                                    "prodi": "Teknik Telekomunikasi"
+                                },
+                                {
+                                    "nama": "Muhammad Sultan Syahrir Ar Rasyid",
+                                    "nim": "120240003",
+                                    "prodi": "Arsitektur"
+                                },
+                                {
+                                    "nama": "Lintang Alvina Chandra",
+                                    "nim": "121210118",
+                                    "prodi": "Teknik Sipil"
+                                },
+                                {
+                                    "nama": "Khaila Fadia Haya",
+                                    "nim": "121210128",
+                                    "prodi": "Teknik Sipil"
+                                },
+                                {
+                                    "nama": "Dian Cintantya Gardhawari",
+                                    "nim": "121380039",
+                                    "prodi": "Desain Komunikasi Visual"
+                                },
+                                {
+                                    "nama": "Loria Oktaviane",
+                                    "nim": "120290082",
+                                    "prodi": "Sains Atmosfer dan Keplanetan"
+                                },
+                                {
+                                    "nama": "Tafdhilah Tartil",
+                                    "nim": "120420089",
+                                    "prodi": "Rekayasa Kehutanan"
+                                },
+                                {
+                                    "nama": "R.H. Oktaviani",
+                                    "nim": "121220025",
+                                    "prodi": "Perencanaan Wilayah dan Kota"
+                                },
+                                {
+                                    "nama": "RAISSA AL WALY FAQIH",
+                                    "nim": "121120168",
+                                    "prodi": "Teknik Geofisika"
+                                },
+                                {
+                                    "nama": "Na'imatul Khalisa",
+                                    "nim": "120430080",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Tias Asma Salsabila",
+                                    "nim": "121240070",
+                                    "prodi": "Arsitektur"
+                                },
+                                {
+                                    "nama": "Pandu Putra Mulwanda",
+                                    "nim": "121140176",
+                                    "prodi": "Teknik Informatika"
+                                },
+                                {
+                                    "nama": "Rizki wahyu saputra",
+                                    "nim": "121210127",
+                                    "prodi": "Teknik Sipil"
+                                },
+                                {
+                                    "nama": "Carissa Amanda Putri Salsabila",
+                                    "nim": "121240035",
+                                    "prodi": "Arsitektur"
+                                },
+                                {
+                                    "nama": "Risa Meilansa Sijabat",
+                                    "nim": "120420010",
+                                    "prodi": "Rekayasa Kehutanan"
+                                },
+                                {
+                                    "nama": "Delima Syuwi Faidah",
+                                    "nim": "120190063",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Afiqa Najla Sifana",
+                                    "nim": "120260158",
+                                    "prodi": "Farmasi"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nama": "Indah Febriana Sani",
+                    "nim": "120250045",
+                    "prodi": "Teknik Lingkungan",
+                    "jabatan": "Kepala Divisi Fundraising",
+                    "router": "/divisi/fundraising",
+                    "anggota": [
+                        {
+                            "nama": "Delima Nuryana",
+                            "nim": "120250185",
+                            "prodi": "Teknik Lingkungan",
+                            "jabatan": "Kepala Sub Divisi Dana Usaha",
+                            "anggota": [
+                                {
+                                    "nama": "Fadillah Muhessa Latri",
+                                    "nim": "120450003",
+                                    "prodi": "Sains Data"
+                                },
+                                {
+                                    "nama": "Aginda Dufira",
+                                    "nim": "121140058",
+                                    "prodi": "Teknik Informatika"
+                                },
+                                {
+                                    "nama": "Rachel Ferlina",
+                                    "nim": "120260055",
+                                    "prodi": "Farmasi"
+                                },
+                                {
+                                    "nama": "Rima Angellina",
+                                    "nim": "120430041",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Octa Sunari Sidabutar",
+                                    "nim": "121280131",
+                                    "prodi": "121280131"
+                                },
+                                {
+                                    "nama": "Devi Dini Hariyana",
+                                    "nim": "121250005",
+                                    "prodi": "Teknik Lingkungan"
+                                },
+                                {
+                                    "nama": "Yaya Bunaya",
+                                    "nim": "120190108",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Usman Jordi",
+                                    "nim": "121190067",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Vincentia Helena DIla",
+                                    "nim": "121190087",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Mathias Paulido Nainggolan",
+                                    "nim": "120360002",
+                                    "prodi": "Teknik Material"
+                                },
+                                {
+                                    "nama": "Maria AltaRini",
+                                    "nim": "120390066",
+                                    "prodi": "Arsitektur Lanskap"
+                                },
+                                {
+                                    "nama": "Anasye Dwi Putri",
+                                    "nim": "121160065",
+                                    "prodi": "Matematika"
+                                },
+                                {
+                                    "nama": "Agung Pramudya",
+                                    "nim": "120370193",
+                                    "prodi": "Teknik Pertambangan"
+                                },
+                                {
+                                    "nama": "Feni Irmawati",
+                                    "nim": "120190064",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Ahmad Alfaizy",
+                                    "nim": "121190173",
+                                    "prodi": "Teknik Industri"
+                                }
+                            ]
+                        },
+                        {
+                            "nama": "Dian Maya Sari",
+                            "nim": "120450013",
+                            "prodi": "Sains Data",
+                            "jabatan": "Kepala Sub Divisi Sponsorship",
+                            "anggota": [
+                                {
+                                    "nama": "Maharani Putri Qodar",
+                                    "nim": "121430062",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Echa Dian Mellina",
+                                    "nim": "121260168",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Dariana Novaria Matondang",
+                                    "nim": "121310053",
+                                    "prodi": "Teknik Biosistem"
+                                },
+                                {
+                                    "nama": "Wulan Amalia Mustika D",
+                                    "nim": "121270092",
+                                    "prodi": "Kimia"
+                                },
+                                {
+                                    "nama": "Aldy Saputra",
+                                    "nim": "121190006",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Ade Intan w",
+                                    "nim": "121220157",
+                                    "prodi": "Perencanan Wilayah dan Kota"
+                                },
+                                {
+                                    "nama": "Sulton Arif Fido H.",
+                                    "nim": "121360046",
+                                    "prodi": "Teknik Material"
+                                },
+                                {
+                                    "nama": "Astin Ivana Olivia Marpaung",
+                                    "nim": "121220159",
+                                    "prodi": "Perencanan Wilayah dan Kota"
+                                },
+                                {
+                                    "nama": "Litya Chirstyana Simajuntak",
+                                    "nim": "120300109",
+                                    "prodi": "Teknik Kelautan"
+                                },
+                                {
+                                    "nama": "Alifah Ahzara",
+                                    "nim": "120420074",
+                                    "prodi": "Rekayasa Kehutanan"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nama": "Basrunki Siburian",
+                    "nim": "120140007",
+                    "prodi": "Teknik Informatika",
+                    "jabatan": "Kepala Divisi Pusat Data",
+                    "router": "/divisi/pusdat",
+                    "anggota": [
+                        {
+                            "nama": "Dessy Siar Rehulina Br Sembiring",
+                            "nim": "120190134",
+                            "prodi": "Teknik Industri",
+                            "jabatan": "Kepala Sub Divisi Pendataan Peserta",
+                            "anggota": [
+                                {
+                                    "nama": "Virya Pasya Aditya",
+                                    "nim": "120410081",
+                                    "prodi": "Sains Aktuaria"
+                                },
+                                {
+                                    "nama": "Muhammad Exel Putra",
+                                    "nim": "121120059",
+                                    "prodi": "Teknik Geofisika"
+                                },
+                                {
+                                    "nama": "Sophia Maranata Gultom",
+                                    "nim": "120190140",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Rina Oktavia",
+                                    "nim": "121430131",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Najwa Kayla",
+                                    "nim": "121290051",
+                                    "prodi": "Sains Atmosfer dan Keplanetan"
+                                }
+                            ]
+                        },
+                        {
+                            "nama": "Chrisnico Alexander Hutapea",
+                            "nim": "120140244",
+                            "prodi": "Teknik Informatika",
+                            "jabatan": "Kepala Sub Divisi Website",
+                            "anggota": [
+                                {
+                                    "nama": "Krisna Saputra",
+                                    "nim": "120140221",
+                                    "prodi": "Teknik Informatika"
+                                },
+                                {
+                                    "nama": "David Panondang Sinaga",
+                                    "nim": "121280137",
+                                    "prodi": "Teknik Kimia"
+                                },
+                                {
+                                    "nama": "William Rusli",
+                                    "nim": "120140090",
+                                    "prodi": "Teknik Informatika"
+                                },
+                                {
+                                    "nama": "Bayu Nindoko",
+                                    "nim": "120140088",
+                                    "prodi": "Teknik Informatika"
+                                },
+                                {
+                                    "nama": "Ericho Alda Firano",
+                                    "nim": "120140119",
+                                    "prodi": "Teknik Informatika"
+                                },
+                                {
+                                    "nama": "Rahman Pajri",
+                                    "nim": "120140118",
+                                    "prodi": "Teknik Informatika"
+                                },
+                                {
+                                    "nama": "Muhammad Nasechudin",
+                                    "nim": "120130105",
+                                    "prodi": "Teknik Elektro"
+                                },
+                                {
+                                    "nama": "Christian Arvianus Nathanael Biran",
+                                    "nim": "121450012",
+                                    "prodi": "Sains Data"
+                                },
+                                {
+                                    "nama": "Akbar Widiancoko",
+                                    "nim": "120430089",
+                                    "prodi": "Teknik Biomedis"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nama": "Naufal Fathur Rahman",
+                    "nim": "120210122",
+                    "prodi": "Teknik Sipil",
+                    "jabatan": "Kepala Divisi Akomodasi",
+                    "router": "/divisi/akomodasi",
+                    "anggota": [
+                        {
+                            "nama": "Aldio Febris",
+                            "nim": "120210048",
+                            "prodi": "Teknik Sipil",
+                            "jabatan": "Wakil Kepala Divisi Akomodasi",
+                            "anggota": [
+                                {
+                                    "nama": "Armanda Tantra Kumara",
+                                    "nim": "120450037",
+                                    "prodi": "Sains Data "
+                                },
+                                {
+                                    "nama": "Oscar Trianto Sitorus ",
+                                    "nim": "121370184",
+                                    "prodi": ""
+                                },
+                                {
+                                    "nama": "Agripa Moreno",
+                                    "nim": "120190155",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Rio Mardiansyah",
+                                    "nim": "120280106",
+                                    "prodi": "Teknik Kimia"
+                                },
+                                {
+                                    "nama": "Bayu Farid Azhari",
+                                    "nim": "120190052",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Danial Izzan",
+                                    "nim": "120190067",
+                                    "prodi": "Teknik Industri"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nama": "Ramadhian Arya Al Hakim",
+                    "nim": "120360007",
+                    "prodi": "Teknik Material",
+                    "jabatan": "Kepala Divisi Konsumsi",
+                    "router": "/divisi/konsumsi",
+                    "anggota": [
+                        {
+                            "nama": "Alya Janna Kasim",
+                            "nim": "120190054",
+                            "prodi": "Teknik Industri",
+                            "jabatan": "Wakil Kepala Divisi Konsumsi",
+                            "anggota": [
+                                {
+                                    "nama": "Zidan Arif Santoso",
+                                    "nim": "120430018",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Yedidah Shenazar Agrisativa",
+                                    "nim": "120360069",
+                                    "prodi": "Teknik Material"
+                                },
+                                {
+                                    "nama": "Titin Komalasari",
+                                    "nim": "120190044",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Fatika Mitsal Shafiyyah",
+                                    "nim": "120190010",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Irmayuni",
+                                    "nim": "120430100",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Bagas Wahyu Pradana",
+                                    "nim": "121280103",
+                                    "prodi": "Teknik Kimia"
+                                },
+                                {
+                                    "nama": "Noor Ichsan Alfandi",
+                                    "nim": "120360011",
+                                    "prodi": "Teknik Material"
+                                },
+                                {
+                                    "nama": "Julyanse Patricia",
+                                    "nim": "120440027",
+                                    "prodi": "Sains Lingkungan Kelautan"
+                                },
+                                {
+                                    "nama": "Hilmy Dyan Nugraha Huda",
+                                    "nim": "121140083",
+                                    "prodi": "Teknik Informatika"
+                                },
+                                {
+                                    "nama": "Dava Satri Utama",
+                                    "nim": "121370111",
+                                    "prodi": "Teknik Pertambangan"
+                                },
+                                {
+                                    "nama": "Debora Oktavia Girsang",
+                                    "nim": "121160105",
+                                    "prodi": "Matematika"
+                                },
+                                {
+                                    "nama": "Ardelia Atikah Rahma",
+                                    "nim": "121350072",
+                                    "prodi": "Teknologi Pangan"
+                                },
+                                {
+                                    "nama": "Kristiani Sitorus",
+                                    "nim": "120410001",
+                                    "prodi": "Sains Aktuaria"
+                                },
+                                {
+                                    "nama": "Aqillah Nabil Naufaldy",
+                                    "nim": "121430002",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Dara Cantika Dewi",
+                                    "nim": "121450027",
+                                    "prodi": "Sains Data"
+                                },
+                                {
+                                    "nama": "Gustya Salma Putrie",
+                                    "nim": "120360093",
+                                    "prodi": "Teknik Material"
+                                },
+                                {
+                                    "nama": "Putri Destiana",
+                                    "nim": "120190062",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "M. Maharaja Putera",
+                                    "nim": "120300030",
+                                    "prodi": "Teknik Kelautan"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nama": "Ilham Ivanda Nizar",
+                    "nim": "120440010",
+                    "prodi": "Sains Lingkungan Kelautan",
+                    "jabatan": "Kepala Divisi Manajemen Lapangan",
+                    "router": "/divisi/manlap",
+                    "anggota": [
+                        {
+                            "nama": "Bagus Indrajit",
+                            "nim": "120220151",
+                            "prodi": "PWK",
+                            "jabatan": "Kepala Sub Divisi Koor. Lapangan",
+                            "anggota": [
+                                {
+                                    "nama": "Rheynaldi Irawan ",
+                                    "nim": "120430053",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Noufri Rahmadani",
+                                    "nim": "120340017",
+                                    "prodi": "Teknik Sistem Energi"
+                                },
+                                {
+                                    "nama": "Kresna Bayu Naufal ",
+                                    "nim": "121430106",
+                                    "prodi": "Teknik Biomedis "
+                                },
+                                {
+                                    "nama": "Mohammad Arvarian Agata",
+                                    "nim": "121190129",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Muhamad Alwanudin",
+                                    "nim": "120440039",
+                                    "prodi": "Sains Lingkungan Kelautan"
+                                },
+                                {
+                                    "nama": "Erwin Rawijamal Sijabat",
+                                    "nim": "120440025",
+                                    "prodi": "Sains Lingkungan Kelautan"
+                                },
+                                {
+                                    "nama": "Difar Egi Faidzin",
+                                    "nim": "120440055",
+                                    "prodi": "Sains lingkungan kelautan"
+                                },
+                                {
+                                    "nama": "Muhammad Fadhil Firdaus",
+                                    "nim": "120210016",
+                                    "prodi": "Teknik Sipil"
+                                },
+                                {
+                                    "nama": "Abastian Yogianda",
+                                    "nim": "121120092",
+                                    "prodi": "Teknik Geofisika"
+                                },
+                                {
+                                    "nama": "Virgiata Dina Abrillia",
+                                    "nim": "120400015",
+                                    "prodi": "Teknik Telekomunikasi"
+                                },
+                                {
+                                    "nama": "Feryanto Sitanggang",
+                                    "nim": "120290038",
+                                    "prodi": "Sains Atmosfer dan Keplanetan"
+                                },
+                                {
+                                    "nama": "Adithia Novliantoni",
+                                    "nim": "120430088",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Alfiyan Adi Permana",
+                                    "nim": "121460027",
+                                    "prodi": "Teknik Perkeretaapian"
+                                },
+                                {
+                                    "nama": "Muhammad Farid Rahman",
+                                    "nim": "120210203",
+                                    "prodi": "Teknik Sipil"
+                                },
+                                {
+                                    "nama": "Imam Hidayattullah ",
+                                    "nim": "120190158",
+                                    "prodi": "Teknik Industri "
+                                },
+                                {
+                                    "nama": "Fathiya Lulu Uttamimah ",
+                                    "nim": "121110030",
+                                    "prodi": "Fisika"
+                                },
+                                {
+                                    "nama": "Faradiba",
+                                    "nim": "121440034",
+                                    "prodi": "Sains Lingkungan Kelautan"
+                                },
+                                {
+                                    "nama": "Zayani Putri Azizah",
+                                    "nim": "120190045",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Astri Sekar Ayuning S.L.",
+                                    "nim": "121340080",
+                                    "prodi": "Teknik Sistem Energi"
+                                },
+                                {
+                                    "nama": "Filsa Fatia Angelika ",
+                                    "nim": "121440020",
+                                    "prodi": "Sains Lingkungan Kelautan"
+                                }
+                            ]
+                        },
+                        {
+                            "nama": "Mundy Malvina",
+                            "nim": "120430065",
+                            "prodi": "Teknik Biomedis",
+                            "jabatan": "Kepala Sub Divisi Medis",
+                            "anggota": [
+                                {
+                                    "nama": "Anggie Puspitasari ",
+                                    "nim": "120430071",
+                                    "prodi": "Teknik biomedis "
+                                },
+                                {
+                                    "nama": "Bekim Rubiatmi Dwi Handayani",
+                                    "nim": "120440030",
+                                    "prodi": "Sains Lingkungan Kelautan"
+                                },
+                                {
+                                    "nama": "Akhdan Yafiq",
+                                    "nim": "120190015",
+                                    "prodi": "Teknik Industri"
+                                },
+                                {
+                                    "nama": "Hafizah Haura Atli ",
+                                    "nim": "120430070",
+                                    "prodi": "Teknik Biomedis"
+                                },
+                                {
+                                    "nama": "Revin Valent Lumban Tobing",
+                                    "nim": "121210162",
+                                    "prodi": "Teknik Sipil"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
