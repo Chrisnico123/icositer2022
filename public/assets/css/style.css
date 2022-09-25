@@ -782,3 +782,15 @@ footer p {
     background: linear-gradient(to bottom, #1dc2ee 0%, #90e463 15%);
     padding: 100px;
 }
+
+.modal-content {
+    background-color: cadetblue;
+}
+
+.modal-content p {
+    color: white;
+}
+
+.modal-header {
+    color: white;
+}
