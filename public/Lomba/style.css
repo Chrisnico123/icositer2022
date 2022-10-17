@@ -91,6 +91,10 @@ section img {
     text-align: center;
 }
 
+.video {
+    width: 1000px;
+}
+
 /* Responsive */
 @media screen and (max-width: 1280px) {
     section {

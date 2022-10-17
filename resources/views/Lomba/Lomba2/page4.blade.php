@@ -27,10 +27,25 @@
             @enderror
         </div>
         <div class="col-12">
+            <label for="inputPoster" class="form-label">Upload Poster atau karya Asli : Sesuai Lampiran, pdf</label>
+            <input type="file" name="upload_poster" class="form-control @error('upload_poster') is-invalid @enderror" value="{{ old('upload_poster', $lomba2s->upload_poster ?? '') }}" id="inputPoster">
+            @error('upload_poster')
+            <span class="text-danger">{{ $message }}</span>
+            @enderror
+        </div>
+        <div class="col-12">
             <label for="inputAddress" class="form-label">Identitas diri Dospem Format : Sesuai Lampiran, pdf</label>
             <input type="file" name="identitas_dospem" class="form-control @error('identitas_dospem') is-invalid @enderror" value="{{ old('identitas_dospem', $lomba2s->identitas_dospem ?? '') }}" id="inputAddress">
             @error('identitas_dospem')
             <span class="text-danger">{{ $message }}</span>
+            @enderror
+        </div>
+        <div class="col-md-12">
+            <label for="inputState" class="form-label">Upload Bukti Pembayaran Format : pdf</label>
+            <input type="file" class="form-control @error('payment') is-invalid @enderror" id="inputState" name="payment"
+                value="{{ old('payment', $lomba1s->payment ?? '') }}">
+            @error('payment')
+                <span class="text-danger">{{ $message }}</span>
             @enderror
         </div>
         <div class="col-12">

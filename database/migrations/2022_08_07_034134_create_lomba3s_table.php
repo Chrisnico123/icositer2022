@@ -28,8 +28,10 @@ return new class extends Migration
             $table->string('sketsa');
             $table->string('follow_ig');
             $table->string('upload_twibbon');
+            $table->string('upload_abstrak');
             $table->string('surat_pernyataan');
             $table->string('lampiran');
+            $table->string('payment');
             $table->timestamps();
         });
     }

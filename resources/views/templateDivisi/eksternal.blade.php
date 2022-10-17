@@ -34,13 +34,13 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#speakers">Speakers</a>
+                        <a class="nav-link" href="/">Speakers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="/">About</a>
                     </li>
                 </ul>
                 <a href="/register" type="button" class="btn btn-danger">Register</a>
@@ -58,8 +58,8 @@
             <div class="row g-2 g-md-4">
                 @foreach ($data['anggota'] as $item)
                 <div class="col-12 col-md-6">
-                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama"><?= $item['nama'] ?></h2>
-                    <img data-aos="fade-right" data-aos-duration="3000" src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <img data-aos="fade-right" data-aos-duration="3000" src="{{ asset('assets') }}/icos/<?= $item['nim'] ?>.png">
+                    <h2 data-aos="fade-left" data-aos-duration="3000"><?= $item['nama'] ?></h2>
                     <p data-aos="fade-up" data-aos-duration="3000" class="jabatan"><?= $item['jabatan'] ?> <?= $item['nim'] ?> <br>
                         <?= $item['prodi'] ?></br></p>
 

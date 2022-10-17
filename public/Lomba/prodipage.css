@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    overflow: hidden;
+}
+
+.induk {
+    top: 120px;
+    position: relative;
+    z-index: 9999999;
+    margin: 0 auto;
+    overflow-y: scroll;
+    height: 600px;
+}
+
+.button-like {
+    min-width: 100px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+.card {
+    margin: 0 auto;
+    width: 800px;
+}

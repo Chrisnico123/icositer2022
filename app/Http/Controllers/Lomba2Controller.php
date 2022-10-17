@@ -77,12 +77,12 @@ class Lomba2Controller extends Controller
 
     {
         $request->validate([
-            'ktm' => 'required|file|mimes:pdf|max:1024',
-            'follow_ig' => 'required|file|mimes:pdf|max:1024',
-            'twibon' => 'required|file|mimes:pdf|max:1024',
+            'ktm' => 'required|file|mimes:pdf',
+            'follow_ig' => 'required|file|mimes:pdf',
+            'twibon' => 'required|file|mimes:pdf',
             'subtema' => 'required',
             'judul_karya' => 'required',
-            'abstrak' => 'required|file|mimes:pdf|max:1024'
+            'abstrak' => 'required|file|mimes:pdf'
         ]);
 
         $lomba2s = $request->session()->get('lomba2s');
@@ -112,16 +112,20 @@ class Lomba2Controller extends Controller
     public function lomba2s_page4(Request $request)
     {
         $request->validate([
-            'surat_pernyataan' => 'required|file|mimes:pdf|max:1024',
-            'identitas_peserta' => 'required|file|mimes:pdf|max:1024',
-            'identitas_dospem' => 'required|file|mimes:pdf|max:1024',
+            'surat_pernyataan' => 'required|file|mimes:pdf',
+            'identitas_peserta' => 'required|file|mimes:pdf',
+            'identitas_dospem' => 'required|file|mimes:pdf',
+            'upload_poster' => 'required|file|mimes:pdf',
+            'payment' => 'required|file|mimes:pdf',
         ]);
         $lomba2s = $request->session()->get('lomba2s');
-        if ($request->file('surat_pernyataan') && $request->file('identitas_peserta') && $request->file('identitas_dospem')) {
+        if ($request->file('surat_pernyataan') && $request->file('identitas_peserta') && $request->file('identitas_dospem') && $request->file('upload_poster')) {
             $lomba2s->fill([
                 'surat_pernyataan' => $request->file('surat_pernyataan')->storeAs('public/' . $lomba2s->nama_tim , $request->file('surat_pernyataan')->getClientOriginalName()),
                 'identitas_peserta' => $request->file('identitas_peserta')->storeAs('public/' . $lomba2s->nama_tim , $request->file('identitas_peserta')->getClientOriginalName()),
                 'identitas_dospem' => $request->file('identitas_dospem')->storeAs('public/' . $lomba2s->nama_tim , $request->file('identitas_dospem')->getClientOriginalName()),
+                'upload_poster' => $request->file('upload_poster')->storeAs('public/' . $lomba2s->nama_tim , $request->file('upload_poster')->getClientOriginalName()),
+                'payment' => $request->file('payment')->storeAs('public/' . $lomba2s->nama_tim , $request->file('payment')->getClientOriginalName()),
             ]);
         }
         $lomba2s->save();

@@ -42,7 +42,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background: var(--scroll);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 }
 
 /* Start Page 1 */
@@ -405,7 +405,7 @@ section img#clouds3 {
     z-index: 9999;
 }
 
-figcaption>h3 {
+figcaption > h3 {
     background-color: rgba(0, 0, 0, 0.25);
 }
 
@@ -456,7 +456,7 @@ figcaption>h3 {
     font-family: var(--font-family2);
 }
 
-.page5>h2 {
+.page5 > h2 {
     color: var(--font-color);
     font-size: 4vw;
     font-family: var(--font-family2);
@@ -679,6 +679,11 @@ footer p {
     z-index: 0;
 }
 
+video {
+    max-width: 100%;
+    height: auto;
+}
+
 .nama {
     position: absolute;
     padding-left: 25%;
@@ -717,15 +722,14 @@ footer p {
     .nama {
         position: absolute;
         padding-left: 33%;
-        padding-top: 42.5%;
-        font-size: 4vw;
+        padding-top: 32.5%;
+        font-size: 2.5vw;
     }
 
     .col-12 {
         display: flex;
         flex-direction: column;
     }
-
 
     .title-organigram {
         padding-top: 0;
@@ -736,7 +740,6 @@ footer p {
     .title-organigram-1 {
         font-size: 35px;
     }
-
 }
 
 .modal-backdrop {

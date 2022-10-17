@@ -40,6 +40,22 @@
         <span class = "text-danger">{{ $message }}</span>
       @enderror
     </div>
+    <div class="col-md-12">
+      <label for="inputState" class="form-label">Upload Bukti Pembayaran Format : pdf</label>
+      <input type="file" class="form-control @error('payment') is-invalid @enderror" id="inputState" name="payment"
+          value="{{ old('payment', $lomba3s->payment ?? '') }}">
+      @error('payment')
+          <span class="text-danger">{{ $message }}</span>
+      @enderror
+    </div>
+    <div class="col-md-12">
+      <label for="upload_abstrak" class="form-label">Upload Abstrak : pdf</label>
+      <input type="file" class="form-control @error('upload_abstrak') is-invalid @enderror" id="upload_abstrak" name="upload_abstrak"
+          value="{{ old('upload_abstrak', $lomba3s->upload_abstrak ?? '') }}">
+      @error('upload_abstak')
+          <span class="text-danger">{{ $message }}</span>
+      @enderror
+    </div>
     <div class="col-12">
       <button type="submit" class="btn btn-primary">Submit</button>
     </div>

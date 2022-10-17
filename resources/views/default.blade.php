@@ -218,20 +218,11 @@
         <h2 data-aos="zoom-in" data-aos-duration="1000" class="title">Recent Post</h2>
         <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000"
             class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random/1"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random/2"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random/3"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random/4"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random/5"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random/6"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random/7"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random/8"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random/9"></div>
-                <div class="swiper-slide"><img src="https://source.unsplash.com/random/10"></div>
-            </div>
+                <div class="swiper-slide"><video controls autoplay muted width="1000px">
+                    <source src="{{ asset('assets') }}/icos/trailer.mp4" type="video/mp4">
+                    Your browser does not support the video tag
+                </video>></div>
             <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
         </div>
 
     </div>
@@ -262,17 +253,17 @@
         <div class="row text-center">
             <div class="row g-2 g-md-4"> 
                 <div class="col-12 col-md-6 ">
-                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama"><?= $data[0]['nama'] ?></h2>
                     <img data-aos="fade-right" data-aos-duration="3000"
-                        src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    src="{{ asset('assets') }}/icos/120190008.png">
+                    <h2 data-aos="fade-left" data-aos-duration="3000"><?= $data[0]['nama'] ?></h2>
                     <p data-aos="fade-up" data-aos-duration="3000" class="jabatan"><?= $data[0]['jabatan'] ?> <?= $data[0]['nim'] ?><br>
                         <?=$data[0]['prodi'] ?></br></p>
                 </div>
                 @foreach ($data[0]['anggota'] as $item)
                 <div class="col-12 col-md-6 ">
-                    <h2 data-aos="fade-left" data-aos-duration="3000" class="nama"><?= $item['nama'] ?></h2>
-                    <img data-aos="fade-right" data-aos-duration="3000"
-                        src="{{ asset('assets') }}/images/avatar-organigram.png">
+                    <img class="organigram-size" data-aos="fade-right" data-aos-duration="3000"
+                    src="{{ asset('assets') }}/icos/<?= $item['nim'] ?>.png">
+                    <h2 data-aos="fade-left" data-aos-duration="3000"><?= $item['nama'] ?></h2>
                     <p data-aos="fade-up" data-aos-duration="3000" class="jabatan"><?= $item['jabatan'] ?> <?= $item['nim'] ?> <br>
                         <?= $item['prodi'] ?></br></p>
                 </div>

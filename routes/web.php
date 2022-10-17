@@ -5,6 +5,7 @@ use App\Http\Controllers\Lomba2Controller;
 use App\Http\Controllers\Lomba3Controller;
 use App\Http\Controllers\Register;
 use App\Http\Controllers\Organigram;
+use App\Http\Controllers\prodipage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,6 +48,10 @@ route::get('/divisi' , [Organigram::class , "divisi"]);
 
 Route::controller(Register::class)->group(function () {
     Route::get('/register', 'register_form')->name('register_form');
+});
+
+Route::controller(prodipage::class)->group(function () {
+    Route::get('/prodipage', 'prodipage')->name('prodipage');
 });
 
 

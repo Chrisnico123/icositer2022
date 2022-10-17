@@ -35,8 +35,10 @@ return new class extends Migration
             $table->string('identitas_peserta');
             $table->string('identitas_dospem');
             $table->string('subtema');
+            $table->string('upload_poster');
             $table->string('abstrak');
             $table->string('judul_karya');
+            $table->string('payment');
             $table->timestamps();
         });
     }

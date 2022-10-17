@@ -84,16 +84,20 @@ class Lomba3Controller extends Controller
         $request->validate([
             'follow_ig' => 'required|mimes:pdf',
             'upload_twibbon' => 'required|mimes:pdf',
+            'upload_abstrak' => 'required|mimes:pdf',
             'surat_pernyataan' => 'required|mimes:pdf',
             'lampiran' => 'required|mimes:pdf',
+            'payment' => 'required|mimes:pdf',
         ]);
 
         $lomba3s = $request->session()->get('lomba3s');
         $lomba3s->fill([
             'follow_ig' => $request->file('follow_ig')->storeAs('public/' . $lomba3s->nama_tim , $request->file('follow_ig')->getClientOriginalName()),
             'upload_twibbon' => $request->file('upload_twibbon')->storeAs('public/' . $lomba3s->nama_tim, $request->file('upload_twibbon')->getClientOriginalName()),
+            'upload_abstrak' => $request->file('upload_abstrak')->storeAs('public/' . $lomba3s->nama_tim, $request->file('upload_abstrak')->getClientOriginalName()),
             'surat_pernyataan' => $request->file('surat_pernyataan')->storeAs('public/' . $lomba3s->nama_tim , $request->file('surat_pernyataan')->getClientOriginalName()),
             'lampiran' => $request->file('lampiran')->storeAs('public/' . $lomba3s->nama_tim , $request->file('lampiran')->getClientOriginalName()),
+            'payment' => $request->file('payment')->storeAs('public/' . $lomba3s->nama_tim , $request->file('payment')->getClientOriginalName()),
         ]);
 
         $lomba3s->save();
