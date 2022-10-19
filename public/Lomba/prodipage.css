@@ -7,12 +7,11 @@ body {
 }
 
 .induk {
-    top: 120px;
     position: relative;
     z-index: 9999999;
-    margin: 0 auto;
+    margin: 100px auto;
     overflow-y: scroll;
-    height: 600px;
+    height: 700px;
 }
 
 .button-like {
@@ -22,6 +21,7 @@ body {
     border-radius: 10px;
 }
 .card {
-    margin: 0 auto;
+    top: 50px;
+    margin: 20px auto;
     width: 800px;
 }

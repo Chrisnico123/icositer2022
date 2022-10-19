@@ -31,20 +31,64 @@
         <img src="{{ asset('assets') }}/images/ground.svg" id="ground">
     </section>
     <script>
-        function buttonClick () { 
-            const target = document.getElementById('btn-like');
-            const like = document.getElementById('like');
-            if( localStorage.getItem("like") === "" ){
+        function refreshData(){
+            let local = localStorage.getItem('like');
+            let id = localStorage.getItem('id');
+            let idlike = localStorage.getItem('idlike');
+            const target = document.getElementById(id);
+            const like = document.getElementById(idlike);
+            if(local === "done") {
+                target.innerHTML = 'Unlike <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg>';
                 localStorage.setItem("like" , "done")
                 let temp = parseInt(like.textContent) + 1
                 like.innerHTML = temp
-                target.innerHTML = 'Unlike <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg>';
+                let selector = document.querySelectorAll(`.button-like:not(#${id})`);
+                for(let i = 0; i < selector.length; i++){
+                    selector[i].setAttribute("disabled" , false);
+                }
             }
-            else{
+            if(local === null) {
+                target.innerHTML = 'Like <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg>';
                 localStorage.setItem("like" , "")
                 let temp = parseInt(like.textContent) - 1
                 like.innerHTML = temp
+                let selector = document.querySelectorAll(`.button-like:not(#${id})`);
+                for(let i = 0; i < selector.length; i++){
+                    selector[i].setAttribute("disabled" , true);
+                }
+            };
+        }
+        window.addEventListener("load", () => {
+            refreshData();
+        });
+        if(typeof (Storage) !== 'undified') {
+            if(localStorage.getItem("like") === null){
+                localStorage.setItem("like" , "");
+                localStorage.setItem("id" , "");
+                localStorage.setItem("idlike" , "");
+            }
+        }
+        function buttonClick (id , idlike) {
+            const tmp = id;
+            const tmp1 = idlike;
+            localStorage.setItem("id" , tmp);
+            localStorage.setItem("idlike" , tmp1);
+            const target = document.getElementById(tmp);
+            const like = document.getElementById(tmp1);
+            if( localStorage.getItem("like") === "" ){
+                target.innerHTML = 'Unlike <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg>';
+                localStorage.setItem("like" , "done")
+                let temp = parseInt(like.textContent) + 1
+                like.innerHTML = temp
+            }else{
                 target.innerHTML = 'Like <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg>';
+                localStorage.setItem("like" , "")
+                let temp = parseInt(like.textContent) - 1
+                like.innerHTML = temp
+            }
+            let selector = document.querySelectorAll(`.button-like:not(#${id})`);
+            for(let i = 0; i < selector.length; i++){
+                selector[i].toggleAttribute("disabled");
             }
         }
     </script>
