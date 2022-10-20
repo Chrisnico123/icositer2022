@@ -11,7 +11,7 @@ body {
     z-index: 9999999;
     margin: -200px auto;
     overflow-y: scroll;
-    max-height: 850px;
+    max-height: 900px;
 }
 
 .button-like {
@@ -26,6 +26,12 @@ body {
     width: 800px;
 }
 
+@media only screen and (max-height: 855px) {
+    .induk {
+        margin: -150px auto;
+        max-height: 750px;
+    }
+}
 @media only screen and (max-height: 800px) {
     .induk {
         margin: -150px auto;
@@ -44,9 +50,15 @@ body {
         max-height: 600px;
     }
 }
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 670px) {
     .induk {
-        margin: -200px auto;
-        max-height: 500px;
+        margin: -220px auto;
+        max-height: 700px;
+    }
+}
+@media only screen and (max-height: 610px) {
+    .induk {
+        margin: -220px auto;
+        max-height: 600px;
     }
 }
