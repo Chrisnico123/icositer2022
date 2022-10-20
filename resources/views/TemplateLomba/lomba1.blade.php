@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="/Lomba/style.css">
     <link rel="stylesheet" href="/Lomba/register.css">
     <link rel="stylesheet" href="/Lomba/prodipage.css">
-    <link rel="stylesheet" type="text.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+    <link rel="stylesheet" type="text.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -31,66 +32,87 @@
         <img src="{{ asset('assets') }}/images/ground.svg" id="ground">
     </section>
     <script>
-        function refreshData(){
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        function refreshData() {
             let local = localStorage.getItem('like');
             let id = localStorage.getItem('id');
             let idlike = localStorage.getItem('idlike');
             const target = document.getElementById(id);
             const like = document.getElementById(idlike);
-            if(local === "done") {
-                target.innerHTML = 'Unlike <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg>';
-                localStorage.setItem("like" , "done")
-                let temp = parseInt(like.textContent) + 1
-                like.innerHTML = temp
+
+            if (local === "done") {
+                target.innerHTML =
+                    'Unlike <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg>';
+                localStorage.setItem("like", "done")
                 let selector = document.querySelectorAll(`.button-like:not(#${id})`);
-                for(let i = 0; i < selector.length; i++){
-                    selector[i].setAttribute("disabled" , false);
+                for (let i = 0; i < selector.length; i++) {
+                    selector[i].setAttribute("disabled", false);
                 }
             }
-            if(local === null) {
-                target.innerHTML = 'Like <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg>';
-                localStorage.setItem("like" , "")
-                let temp = parseInt(like.textContent) - 1
-                like.innerHTML = temp
+            if (local === null) {
+                target.innerHTML =
+                    'Like <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg>';
+                localStorage.setItem("like", "")
                 let selector = document.querySelectorAll(`.button-like:not(#${id})`);
-                for(let i = 0; i < selector.length; i++){
-                    selector[i].setAttribute("disabled" , true);
+                for (let i = 0; i < selector.length; i++) {
+                    selector[i].setAttribute("disabled", true);
                 }
             };
         }
         window.addEventListener("load", () => {
             refreshData();
         });
-        if(typeof (Storage) !== 'undified') {
-            if(localStorage.getItem("like") === null){
-                localStorage.setItem("like" , "");
-                localStorage.setItem("id" , "");
-                localStorage.setItem("idlike" , "");
+        if (typeof(Storage) !== 'undified') {
+            if (localStorage.getItem("like") === null) {
+                localStorage.setItem("like", "");
+                localStorage.setItem("id", "");
+                localStorage.setItem("idlike", "");
             }
         }
-        function buttonClick (id , idlike) {
+
+        function buttonClick(id, idlike) {
             const tmp = id;
             const tmp1 = idlike;
-            localStorage.setItem("id" , tmp);
-            localStorage.setItem("idlike" , tmp1);
+            localStorage.setItem("id", tmp);
+            localStorage.setItem("idlike", tmp1);
             const target = document.getElementById(tmp);
             const like = document.getElementById(tmp1);
-            if( localStorage.getItem("like") === "" ){
-                target.innerHTML = 'Unlike <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg>';
-                localStorage.setItem("like" , "done")
+            if (localStorage.getItem("like") === "") {
+                target.innerHTML =
+                    'Unlike <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg>';
+                localStorage.setItem("like", "done")
                 let temp = parseInt(like.textContent) + 1
-                like.innerHTML = temp
-            }else{
-                target.innerHTML = 'Like <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg>';
-                localStorage.setItem("like" , "")
+                if (temp == "") {
+                    setCookie(tmp, "0", 7);
+                } else {
+                    setCookie(tmp, temp, 7)
+                }
+            } else {
+                target.innerHTML =
+                    'Like <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg>';
+                localStorage.setItem("like", "")
                 let temp = parseInt(like.textContent) - 1
-                like.innerHTML = temp
+                if (temp == "") {
+                    setCookie(tmp, "0", 7);
+                } else {
+                    setCookie(tmp, temp, 7)
+                }
             }
             let selector = document.querySelectorAll(`.button-like:not(#${id})`);
-            for(let i = 0; i < selector.length; i++){
+            for (let i = 0; i < selector.length; i++) {
                 selector[i].toggleAttribute("disabled");
             }
         }
     </script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LikePostController;
 use App\Http\Controllers\Lomba1Controller;
 use App\Http\Controllers\Lomba2Controller;
 use App\Http\Controllers\Lomba3Controller;
@@ -31,19 +32,19 @@ Route::get('/download/{filename}', function ($filename) {
 });
 
 
-route::get('/' , [Organigram::class , "index"]);
+route::get('/', [Organigram::class, "index"]);
 
-route::get('/divisi/acara' , [Organigram::class , "acara"]);
-route::get('/divisi/akomodasi' , [Organigram::class , "akomodasi"]);
-route::get('/divisi/eksternal' , [Organigram::class , "eksternal"]);
-route::get('/divisi/fundraising' , [Organigram::class , "fundraising"]);
-route::get('/divisi/kominfo' , [Organigram::class , "kominfo"]);
-route::get('/divisi/konsumsi' , [Organigram::class , "konsumsi"]);
-route::get('/divisi/kreatif' , [Organigram::class , "kreatif"]);
-route::get('/divisi/manlap' , [Organigram::class , "manlap"]);
-route::get('/divisi/operasional' , [Organigram::class , "operasional"]);
-route::get('/divisi/pusdat' , [Organigram::class , "pusdat"]);
-route::get('/divisi' , [Organigram::class , "divisi"]);
+route::get('/divisi/acara', [Organigram::class, "acara"]);
+route::get('/divisi/akomodasi', [Organigram::class, "akomodasi"]);
+route::get('/divisi/eksternal', [Organigram::class, "eksternal"]);
+route::get('/divisi/fundraising', [Organigram::class, "fundraising"]);
+route::get('/divisi/kominfo', [Organigram::class, "kominfo"]);
+route::get('/divisi/konsumsi', [Organigram::class, "konsumsi"]);
+route::get('/divisi/kreatif', [Organigram::class, "kreatif"]);
+route::get('/divisi/manlap', [Organigram::class, "manlap"]);
+route::get('/divisi/operasional', [Organigram::class, "operasional"]);
+route::get('/divisi/pusdat', [Organigram::class, "pusdat"]);
+route::get('/divisi', [Organigram::class, "divisi"]);
 
 
 Route::controller(Register::class)->group(function () {
@@ -84,4 +85,15 @@ Route::controller(Lomba3Controller::class)->group(function () {
     Route::post('/lomba3s/page3', 'lomba3s_page3')->name('lomba3s_page3');
     Route::get('/lomba3s/page4', 'lomba3s_page4')->name('lomba3s_page4');
     // Route::post('/lomba2/page3' , 'lomba2_page3')->name('lomba2_page3');
+});
+
+Route::controller(LikePostController::class)->group(function () {
+    Route::post('/like_pwk', 'like_post')->name('like_post');
+    Route::post('/like_teknik_fisika', 'like_post')->name('like_post');
+    Route::post('/like_rekayasa_kehutanan', 'like_post')->name('like_post');
+    Route::post('/like_rekayasa_instrumentasi_dan_automasi', 'like_post')->name('like_post');
+    Route::post('/like_teknik_elektro', 'like_post')->name('like_post');
+    Route::post('/like_sap', 'like_post')->name('like_post');
+    Route::post('/like_teknik_lingkungan', 'like_post')->name('like_post');
+    Route::post('/like_sistem_energi', 'like_post')->name('like_post');
 });
