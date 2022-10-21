@@ -398,6 +398,7 @@ section img#clouds3 {
 .sizeimg {
     width: 320px !important;
     height: 400px !important;
+    margin: 0 auto;
 }
 
 .speaker {

@@ -129,55 +129,17 @@
     {{-- Page3 --}}
     <div class="page3" id="speakers">
         <img src="{{ asset('assets') }}/images/background/item4.svg" id="item4">
-        <h2 data-aos="zoom-in" data-aos-duration="1000" class="title">SPEAKER</h2>
+        <h2 data-aos="zoom-in" data-aos-duration="1000" class="title">International Conference</h2>
         <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000" class="speaker">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <figure>
-                            <img src="{{ asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png') }}"
-                                class="sizeimg bg-light">
-                        </figure>
-                    </div>
-                    <div class="swiper-slide">
-                        <figure>
-                            <img src="{{ asset('assets/images/108-1081678_clipart-info-tanda-tanya-vector-removebg-preview.png') }}"
-                                class="sizeimg bg-light">
-                        </figure>
+            <center>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <img src="{{ asset('assets/images/conference.jpg') }}"
+                        class="sizeimg bg-light">
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
-
-            <!-- Swiper JS -->
-            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-            <!-- Initialize Swiper -->
-            <script>
-                var swiper = new Swiper(".mySwiper", {
-                    effect: "coverflow",
-                    grabCursor: true,
-                    centeredSlides: true,
-                    loop: true,
-                    slidesPerView: "auto",
-                    coverflowEffect: {
-                        rotate: 50,
-                        stretch: 0,
-                        depth: 100,
-                        modifier: 1,
-                        slideShadows: true,
-                    },
-                    pagination: {
-                        el: ".swiper-pagination",
-                    },
-                });
-            </script>
+            </center>
         </div>
-        <section class="s3">
-            <img src="{{ asset('assets') }}/images/group1.png" class="isi1">
-            <img src="{{ asset('assets') }}/images/group2.png" class="isi2">
-        </section>
-        {{-- </p> --}}
     </div>
 
     <!-- Page4 -->
