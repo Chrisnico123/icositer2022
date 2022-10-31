@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    overflow: hidden;
+}
+
+.induk {
+    position: relative;
+    z-index: 9999999;
+    margin: -200px auto;
+    overflow-y: scroll;
+    max-height: 900px;
+}
+
+.button-like {
+    min-width: 100px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+.card {
+    top: 50px;
+    margin: 0 auto;
+    width: 800px;
+}
+
+@media only screen and (max-height: 855px) {
+    .induk {
+        margin: -150px auto;
+        max-height: 750px;
+    }
+}
+@media only screen and (max-height: 800px) {
+    .induk {
+        margin: -150px auto;
+        max-height: 700px;
+    }
+}
+@media only screen and (max-height: 750px) {
+    .induk {
+        margin: -150px auto;
+        max-height: 650px;
+    }
+}
+@media only screen and (max-height: 700px) {
+    .induk {
+        margin: -50px auto;
+        max-height: 600px;
+    }
+}
+@media only screen and (max-height: 670px) {
+    .induk {
+        margin: -220px auto;
+        max-height: 700px;
+    }
+}
+@media only screen and (max-height: 610px) {
+    .induk {
+        margin: -220px auto;
+        max-height: 600px;
+    }
+}
